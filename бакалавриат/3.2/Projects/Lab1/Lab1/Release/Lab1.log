@@ -1,0 +1,6 @@
+﻿E:\Program file\Visual Studio\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(391,5): warning MSB8028: промежуточный каталог (Release\) содержит файлы, которые используются совместно с другим проектом (Lab1.vcxproj).  Это может привести к ошибкам очистки и перестроения.
+  Source1.cpp
+  Создание кода
+  All 86 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Создание кода завершено
+  Lab1.vcxproj -> C:\Users\forty\Documents\Visual Studio 2017\Projects\Lab1\Release\Lab1.1.exe

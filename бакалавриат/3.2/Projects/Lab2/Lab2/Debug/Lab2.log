@@ -1,0 +1,27 @@
+﻿  Source.cpp
+c:\users\forty\documents\visual studio 2017\projects\lab2\lab2\source.cpp(68): warning C4244: аргумент: преобразование "__int64" в "fix", возможна потеря данных
+c:\users\forty\documents\visual studio 2017\projects\lab2\lab2\source.cpp(206): warning C4244: =: преобразование "float" в "fix", возможна потеря данных
+c:\users\forty\documents\visual studio 2017\projects\lab2\lab2\source.cpp(207): warning C4244: =: преобразование "__int64" в "fix", возможна потеря данных
+c:\users\forty\documents\visual studio 2017\projects\lab2\lab2\source.cpp(210): warning C4244: =: преобразование "float" в "fix", возможна потеря данных
+c:\users\forty\documents\visual studio 2017\projects\lab2\lab2\source.cpp(211): warning C4244: return: преобразование "float" в "fix", возможна потеря данных
+c:\users\forty\documents\visual studio 2017\projects\lab2\lab2\source.cpp(216): warning C4244: инициализация: преобразование "__int64" в "fix", возможна потеря данных
+c:\users\forty\documents\visual studio 2017\projects\lab2\lab2\source.cpp(217): warning C4244: аргумент: преобразование "float" в "__int64", возможна потеря данных
+c:\users\forty\documents\visual studio 2017\projects\lab2\lab2\source.cpp(218): warning C4244: аргумент: преобразование "float" в "__int64", возможна потеря данных
+c:\users\forty\documents\visual studio 2017\projects\lab2\lab2\source.cpp(219): warning C4244: аргумент: преобразование "float" в "__int64", возможна потеря данных
+c:\users\forty\documents\visual studio 2017\projects\lab2\lab2\source.cpp(219): warning C4244: return: преобразование "float" в "fix", возможна потеря данных
+c:\users\forty\documents\visual studio 2017\projects\lab2\lab2\source.cpp(226): warning C4244: аргумент: преобразование "__int64" в "fix", возможна потеря данных
+c:\users\forty\documents\visual studio 2017\projects\lab2\lab2\source.cpp(226): warning C4244: =: преобразование "fix" в "float", возможна потеря данных
+c:\users\forty\documents\visual studio 2017\projects\lab2\lab2\source.cpp(241): warning C4244: +=: преобразование "float" в "int", возможна потеря данных
+c:\users\forty\documents\visual studio 2017\projects\lab2\lab2\source.cpp(244): warning C4244: =: преобразование "__int64" в "float", возможна потеря данных
+c:\users\forty\documents\visual studio 2017\projects\lab2\lab2\source.cpp(271): warning C4244: аргумент: преобразование "__int64" в "const unsigned int", возможна потеря данных
+c:\users\forty\documents\visual studio 2017\projects\lab2\lab2\source.cpp(273): warning C4244: return: преобразование "float" в "__int64", возможна потеря данных
+c:\users\forty\documents\visual studio 2017\projects\lab2\lab2\source.cpp(284): warning C4244: =: преобразование "__int64" в "double", возможна потеря данных
+c:\users\forty\documents\visual studio 2017\projects\lab2\lab2\source.cpp(295): warning C4244: аргумент: преобразование "__int64" в "const unsigned int", возможна потеря данных
+c:\users\forty\documents\visual studio 2017\projects\lab2\lab2\source.cpp(297): warning C4244: return: преобразование "float" в "__int64", возможна потеря данных
+c:\users\forty\documents\visual studio 2017\projects\lab2\lab2\source.cpp(308): warning C4244: =: преобразование "__int64" в "double", возможна потеря данных
+c:\users\forty\documents\visual studio 2017\projects\lab2\lab2\source.cpp(319): warning C4244: аргумент: преобразование "__int64" в "fix", возможна потеря данных
+c:\users\forty\documents\visual studio 2017\projects\lab2\lab2\source.cpp(325): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+c:\users\forty\documents\visual studio 2017\projects\lab2\lab2\source.cpp(329): warning C4244: аргумент: преобразование "__int64" в "fix", возможна потеря данных
+c:\users\forty\documents\visual studio 2017\projects\lab2\lab2\source.cpp(329): warning C4244: =: преобразование "fix" в "float", возможна потеря данных
+c:\users\forty\documents\visual studio 2017\projects\lab2\lab2\source.cpp(335): warning C4244: инициализация: преобразование "float" в "int", возможна потеря данных
+  Lab2.vcxproj -> C:\Users\forty\Documents\Visual Studio 2017\Projects\Lab2\Debug\Lab2.exe

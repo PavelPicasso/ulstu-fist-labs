@@ -1,0 +1,37 @@
+﻿  Source.cpp
+c:\users\forty\documents\visual studio 2017\projects\lab2\lab2\source.cpp(69): warning C4244: аргумент: преобразование "__int64" в "fix", возможна потеря данных
+c:\users\forty\documents\visual studio 2017\projects\lab2\lab2\source.cpp(207): warning C4244: =: преобразование "float" в "fix", возможна потеря данных
+c:\users\forty\documents\visual studio 2017\projects\lab2\lab2\source.cpp(208): warning C4244: =: преобразование "__int64" в "fix", возможна потеря данных
+c:\users\forty\documents\visual studio 2017\projects\lab2\lab2\source.cpp(211): warning C4244: =: преобразование "float" в "fix", возможна потеря данных
+c:\users\forty\documents\visual studio 2017\projects\lab2\lab2\source.cpp(212): warning C4244: return: преобразование "float" в "fix", возможна потеря данных
+c:\users\forty\documents\visual studio 2017\projects\lab2\lab2\source.cpp(216): warning C4244: инициализация: преобразование "__int64" в "fix", возможна потеря данных
+c:\users\forty\documents\visual studio 2017\projects\lab2\lab2\source.cpp(219): warning C4244: аргумент: преобразование "float" в "__int64", возможна потеря данных
+c:\users\forty\documents\visual studio 2017\projects\lab2\lab2\source.cpp(223): warning C4244: инициализация: преобразование "__int64" в "fix", возможна потеря данных
+c:\users\forty\documents\visual studio 2017\projects\lab2\lab2\source.cpp(224): warning C4244: return: преобразование "float" в "fix", возможна потеря данных
+c:\users\forty\documents\visual studio 2017\projects\lab2\lab2\source.cpp(230): warning C4244: инициализация: преобразование "__int64" в "fix", возможна потеря данных
+c:\users\forty\documents\visual studio 2017\projects\lab2\lab2\source.cpp(231): warning C4244: аргумент: преобразование "float" в "__int64", возможна потеря данных
+c:\users\forty\documents\visual studio 2017\projects\lab2\lab2\source.cpp(232): warning C4244: аргумент: преобразование "float" в "__int64", возможна потеря данных
+c:\users\forty\documents\visual studio 2017\projects\lab2\lab2\source.cpp(233): warning C4244: аргумент: преобразование "float" в "__int64", возможна потеря данных
+c:\users\forty\documents\visual studio 2017\projects\lab2\lab2\source.cpp(233): warning C4244: return: преобразование "float" в "fix", возможна потеря данных
+c:\users\forty\documents\visual studio 2017\projects\lab2\lab2\source.cpp(240): warning C4244: аргумент: преобразование "__int64" в "fix", возможна потеря данных
+c:\users\forty\documents\visual studio 2017\projects\lab2\lab2\source.cpp(240): warning C4244: =: преобразование "fix" в "float", возможна потеря данных
+c:\users\forty\documents\visual studio 2017\projects\lab2\lab2\source.cpp(255): warning C4244: +=: преобразование "float" в "int", возможна потеря данных
+c:\users\forty\documents\visual studio 2017\projects\lab2\lab2\source.cpp(257): warning C4244: =: преобразование "__int64" в "float", возможна потеря данных
+c:\users\forty\documents\visual studio 2017\projects\lab2\lab2\source.cpp(285): warning C4244: аргумент: преобразование "__int64" в "const unsigned int", возможна потеря данных
+c:\users\forty\documents\visual studio 2017\projects\lab2\lab2\source.cpp(287): warning C4244: return: преобразование "float" в "__int64", возможна потеря данных
+c:\users\forty\documents\visual studio 2017\projects\lab2\lab2\source.cpp(298): warning C4244: =: преобразование "__int64" в "double", возможна потеря данных
+c:\users\forty\documents\visual studio 2017\projects\lab2\lab2\source.cpp(309): warning C4244: аргумент: преобразование "__int64" в "const unsigned int", возможна потеря данных
+c:\users\forty\documents\visual studio 2017\projects\lab2\lab2\source.cpp(311): warning C4244: return: преобразование "float" в "__int64", возможна потеря данных
+c:\users\forty\documents\visual studio 2017\projects\lab2\lab2\source.cpp(322): warning C4244: =: преобразование "__int64" в "double", возможна потеря данных
+c:\users\forty\documents\visual studio 2017\projects\lab2\lab2\source.cpp(333): warning C4244: аргумент: преобразование "__int64" в "fix", возможна потеря данных
+c:\users\forty\documents\visual studio 2017\projects\lab2\lab2\source.cpp(339): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+c:\users\forty\documents\visual studio 2017\projects\lab2\lab2\source.cpp(343): warning C4244: аргумент: преобразование "__int64" в "fix", возможна потеря данных
+c:\users\forty\documents\visual studio 2017\projects\lab2\lab2\source.cpp(343): warning C4244: =: преобразование "fix" в "float", возможна потеря данных
+c:\users\forty\documents\visual studio 2017\projects\lab2\lab2\source.cpp(349): warning C4244: инициализация: преобразование "float" в "int", возможна потеря данных
+c:\users\forty\documents\visual studio 2017\projects\lab2\lab2\source.cpp(361): warning C4244: аргумент: преобразование "float" в "fix", возможна потеря данных
+  Создание кода
+  3 of 163 functions ( 1.8%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    3 functions had inline decision re-evaluated but remain unchanged
+  Создание кода завершено
+  Lab2.vcxproj -> C:\Users\forty\Documents\Visual Studio 2017\Projects\Lab2\Release\Lab2.exe

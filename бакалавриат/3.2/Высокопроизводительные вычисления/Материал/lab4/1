@@ -1,0 +1,16 @@
+ 
+Granulyarnost: 1000000
+Bez rassparall: t = 0.05445862 c; 
+kol potokov(1): t = 0.05235737 c; 
+Granulyarnost: 100000
+Bez rassparall: t = 0.00522709 c; 
+kol potokov(1): t = 0.00524121 c; 
+Granulyarnost: 10000
+Bez rassparall: t = 0.00051999 c; 
+kol potokov(1): t = 0.00052217 c; 
+Granulyarnost: 1000
+Bez rassparall: t = 0.00005221 c; 
+kol potokov(1): t = 0.00005227 c; 
+Granulyarnost: 100
+Bez rassparall: t = 0.00000572 c; 
+kol potokov(1): t = 0.00000540 c; 

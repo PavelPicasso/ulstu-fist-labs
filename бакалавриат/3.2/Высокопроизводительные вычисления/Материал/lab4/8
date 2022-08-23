@@ -1,0 +1,86 @@
+ 
+Granulyarnost: 1000000
+Granulyarnost: 1000000
+Granulyarnost: 1000000
+Granulyarnost: 1000000
+Granulyarnost: 1000000
+Granulyarnost: 1000000
+Granulyarnost: 1000000
+Granulyarnost: 1000000
+Bez rassparall:  t = 0.05231857 c
+Bez rassparall:  t = 0.05231833 c
+Bez rassparall:  t = 0.05233479 c
+Bez rassparall:  t = 0.05285144 c
+Bez rassparall:  t = 0.05220675 c
+Bez rassparall:  t = 0.05236912 c
+Bez rassparall:  t = 0.05997276 c
+Bez rassparall:  t = 0.06682396 c
+Granulyarnost: 100000
+Granulyarnost: 100000
+Granulyarnost: 100000
+Granulyarnost: 100000
+Granulyarnost: 100000
+kol potokov(8):t = 0.00876077 c
+Granulyarnost: 100000
+Granulyarnost: 100000
+Granulyarnost: 100000
+Bez rassparall: t = 0.00523877 c
+Bez rassparall: t = 0.00526214 c
+Bez rassparall: t = 0.00522208 c
+Bez rassparall: t = 0.00523615 c
+Bez rassparall: t = 0.00522017 c
+Bez rassparall: t = 0.00521684 c
+Bez rassparall: t = 0.00568342 c
+Bez rassparall: t = 0.00655103 c
+Granulyarnost: 10000
+Granulyarnost: 10000
+Granulyarnost: 10000
+Granulyarnost: 10000
+Granulyarnost: 10000
+kol potokov(8): t = 0.00117275 c;
+Granulyarnost: 10000
+Granulyarnost: 10000
+Granulyarnost: 10000
+Bez rassparall: t = 0.00054336 c;
+Bez rassparall: t = 0.00055432 c;
+Bez rassparall: t = 0.00052047 c;
+Bez rassparall: t = 0.00053954 c;
+Bez rassparall: t = 0.00052094 c;
+Bez rassparall: t = 0.00052047 c;
+Bez rassparall: t = 0.00052023 c;
+Bez rassparall: t = 0.00141358 c;
+Granulyarnost: 1000
+Bez rassparall: t = 0.00005198 c;
+Granulyarnost: 1000
+Granulyarnost: 1000
+Granulyarnost: 1000
+Bez rassparall: t = 0.00006461 c;
+Bez rassparall: t = 0.00005221 c;
+Bez rassparall: t = 0.00005221 c;
+kol potokov(8): t = 0.00050246 c;
+Granulyarnost: 1000
+Granulyarnost: 1000
+Granulyarnost: 1000
+Bez rassparall: t = 0.00005198 c;
+Granulyarnost: 1000
+Bez rassparall: t = 0.00005221 c;
+Bez rassparall: t = 0.00006104 c;
+Bez rassparall: t = 0.00005198 c;
+Granulyarnost: 100
+Bez rassparall: t = 0.00000548 c;
+Granulyarnost: 100
+Granulyarnost: 100
+Bez rassparall: t = 0.00000548 c;
+Granulyarnost: 100
+Bez rassparall: t = 0.00000548 c;
+Bez rassparall: t = 0.00000548 c;
+kol potokov(8): t = 0.00044199 c;
+Granulyarnost: 100
+Granulyarnost: 100
+Granulyarnost: 100
+Bez rassparall: t = 0.00000548 c;
+Granulyarnost: 100
+Bez rassparall: t = 0.00000525 c;
+Bez rassparall: t = 0.00000548 c;
+Bez rassparall: t = 0.00000548 c;
+kol potokov(8): t = 0.00048632 c;

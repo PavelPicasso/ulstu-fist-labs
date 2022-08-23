@@ -1,0 +1,297 @@
+Turbo Assembler	 Version 2.02	     03/18/19 11:22:39	    Page 1
+mlab1l.asm
+
+
+
+      1					 ;*********************************************************
+      2					 ; Процедуры для учебного примера лабораторной работы N	1  *
+      3					 ; по МОП. 10.09.02: Негода В.Н.			   *
+      4					 ;*********************************************************
+      5
+      6	    0000			 .MODEL	SMALL
+      7	    0000			 .CODE
+      8					 .386
+      9					  INCLUDE MLAB1.INC
+1    10					 ;*********************************************************
+1    11					 ; Константы для учебного примера лабораторной работы N	1  *
+1    12					 ; по МОП. 10.09.02: Негода В.Н.			   *
+1    13					 ;*********************************************************
+1    14
+1    15		  = 001B		 CHESC	 = 1Bh
+1    16		  = 000D		 CHCR	 = 13
+1    17		  = 003D		 CHSEP	 = '='
+1    18		  = 0060		 CHCOMMA = '`'
+1    19		  = 000A		 CHLF	 = 10
+1    20		  = 0021		 DOSFU	 = 21h
+1    21		  = 0002		 FUPUTC	 = 2
+1    22		  = 0008		 FUGETCH = 8
+1    23		  = 000A		 FUGETS	 = 0Ah
+1    24		  = 004C		 FUEXIT	 = 4Ch
+1    25		  = 0000		 PAUSE_L = 0000	 ; Младшее слово стартового значения паузы
+1    26		  = 0000		 PAUSE_H = 0	 ; Старшее слово
+1    27		  = 0012		 LENNUM	 = 18	 ; Число символов в строке десятичного числа
+1    28		  = 0009		 LENPACK = 9	 ; Упаковонное в два раза короче
+1    29
+1    30
+     31					  LOCALS
+     32
+     33
+     34					 ;==============================================
+     35					 ;
+     36					 ;	     Подпрограмма 1 lab
+     37					 ;
+     38					 ;==============================================
+     39	    0000			 LAB1	 PROC	 NEAR
+     40	    0000  8B D3				 mov dx, bx
+     41	    0002  B4 09				 mov ah, 09h
+     42	    0004  CD 21				 int 21h
+     43
+     44
+     45	    0006			 LAB1	 ENDP
+     46
+     47
+     48					 ;=====================================================
+     49					 ; Подпрограмма	вывода на экран	строки,	адресуемой SI,
+     50					 ; с задержкой времени между символами в <CX,DX> mcs.
+     51					 ; Завершителями строки	являеются байты	0 или 0FFh.
+     52					 ; ЕСЛИ	строка заканчивается байтом 0,
+     53					 ;   ТО	добавляется переход в начало новой строки
+     54					 ;
+     55					 ;=====================================================
+     56	    0006			 PUTSS	 PROC	 NEAR
+     57	    0006  8A 04			 @@L:	 MOV	 AL,	 [SI]
+Turbo Assembler	 Version 2.02	     03/18/19 11:22:39	    Page 2
+mlab1l.asm
+
+
+
+     58	    0008  3C FF				 CMP	 AL,	 0FFH
+     59	    000A  74 1B	90 90			 JE	 @@R
+     60	    000E  3C 00				 CMP	 AL,	 0
+     61	    0010  74 0B	90 90			 JZ	 @@E
+     62	    0014  E8 0011			 CALL	 PUTC
+     63	    0017  46				 INC	 SI
+     64	    0018  E8 00B5			 CALL	 DILAY
+     65	    001B  EB E9				 JMP	 SHORT @@L
+     66						 ; Переход на следующую	строку
+     67	    001D  B0 0D			 @@E:	 MOV	 AL, CHCR
+     68	    001F  E8 0006			 CALL	 PUTC
+     69	    0022  B0 0A				 MOV	 AL, CHLF
+     70	    0024  E8 0001			 CALL	 PUTC
+     71	    0027  C3			 @@R:	 RET
+     72	    0028			 PUTSS	 ENDP
+     73
+     74					 ;==============================================
+     75					 ; Подпрограмма	вывода AL на терминал
+     76					 ;==============================================
+     77	    0028			 PUTC	 PROC	 NEAR
+     78	    0028  52				 PUSH	 DX
+     79	    0029  8A D0				 MOV	 DL,   AL
+     80	    002B  B4 02				 MOV	 AH,   FUPUTC
+     81	    002D  CD 21				 INT	 DOSFU
+     82	    002F  5A				 POP	 DX
+     83	    0030  C3				 RET
+     84	    0031			 PUTC	 ENDP
+     85
+     86					 ;==============================================
+     87					 ; Подпрограмма	ввода символа в	AL с терминала
+     88					 ;==============================================
+     89	    0031			 GETCH	 PROC	 NEAR
+     90	    0031  B4 08				 MOV	 AH,   FUGETCH
+     91	    0033  CD 21				 INT	 DOSFU
+     92	    0035  C3				 RET
+     93	    0036			 GETCH	 ENDP
+     94
+     95					 ;=================================================
+     96					 ; Подпрограмма	ввода строки в буфер, адресуемый DX
+     97					 ;   и имеющий структуру:
+     98					 ;    {	char size; // размер буфера
+     99					 ;	char len;  // реально введено
+    100					 ;	char str[size];	// символы строки }
+    101					 ;=================================================
+    102	    0036			 GETS	 PROC	 NEAR
+    103	    0036  56				 PUSH	 SI
+    104	    0037  8B F2				 MOV	 SI,	 DX
+    105	    0039  B4 0A				 MOV	 AH,	 FUGETS
+    106	    003B  CD 21				 INT	 DOSFU
+    107						 ; прописать байт 0 в конец строки
+    108	    003D  32 E4				 XOR	 AH,	 AH
+    109	    003F  8A 44	01			 MOV	 AL,	 [SI+1]
+    110	    0042  03 F0				 ADD	 SI,	 AX
+    111	    0044  C6 44	02 00			 MOV	 BYTE PTR [SI+2], 0
+    112	    0048  5E				 POP	 SI
+    113	    0049  C3				 RET
+    114	    004A			 GETS	 ENDP
+Turbo Assembler	 Version 2.02	     03/18/19 11:22:39	    Page 3
+mlab1l.asm
+
+
+
+    115
+    116					 ;==============================================
+    117					 ; Подпрограмма	подсчета числа символов	в строке,
+    118					 ; адресуемой SI. Завершители строки: 0	и 0FFh
+    119					 ; Результат возвращается в AX
+    120					 ;==============================================
+    121	    004A			 SLEN	 PROC	 NEAR
+    122	    004A  33 C0				 XOR	 AX,   AX
+    123	    004C  80 3C	00		 LSLEN:	 CMP	 BYTE PTR [SI],	0
+    124	    004F  74 0D	90 90			 JE	 RSLEN
+    125	    0053  80 3C	FF			 CMP	 BYTE PTR [SI],	0FFh
+    126	    0056  74 06	90 90			 JE	 RSLEN
+    127	    005A  40				 INC	 AX
+    128	    005B  46				 INC	 SI
+    129	    005C  EB EE				 JMP	 SHORT	 LSLEN
+    130	    005E  C3			 RSLEN:	 RET
+    131	    005F			 SLEN	 ENDP
+    132
+    133					 ;====================================================
+    134					 ; Подпрограмма	преобразования <EDX,EAX> в беззнаковое
+    135					 ; десятичное, размещаемое по адресу DI
+    136					 ;==============================================
+    137	    005F				 .DATA
+    138	    0000  0000000000000000	 UBINARY DQ	 0  ; Исходное двоичное	64-разрядное
+    139	    0008  00000000000000000000	 UPACK	 DT	 0  ; Упакованные 18 десятичных	цифр
+    140	    0012				 .CODE
+    141	    005F			 UTOA10	 PROC	 NEAR
+    142	    005F  51				 PUSH	 CX
+    143	    0060  57				 PUSH	 DI
+    144	    0061  66| A3 0000r			 MOV	 DWORD PTR [UBINARY],	EAX
+    145	    0065  66| 89 16 0004r		 MOV	 DWORD PTR [UBINARY+4],	EDX
+    146	    006A  9B DB	E3			 FINIT			 ; инициализация сопроцессора
+    147	    006D  DF 2E	0000r			 FILD	 UBINARY	 ; забрасывание	в него бинарного
+    148	    0071  DF 36	0008r			 FBSTP	 UPACK		 ; извлечение упаковонного десятичного
+    149	    0075  B9 0009			 MOV	 CX,	 LENPACK ; получено 9 пар цифр
+    150	    0078  1E				 PUSH	 DS		 ; писать
+    151	    0079  07				 POP	 ES		 ;   будем
+    152	    007A  FC				 CLD			 ;     через stosw
+    153	    007B  BE 0008r			 LEA	 SI,	 UPACK	 ;     с конца
+    154	    007E  83 C6	09			 ADD	 SI,	 LENPACK ;     буфера upack
+    155						 ; Цикл	преобразования пар полубайтов в	ASCII-коды цифр
+    156	    0081  33 C0			 @@L:	 XOR	 AX,	 AX
+    157	    0083  4E				 DEC	 SI
+    158	    0084  8A 04				 MOV	 AL,	 [SI]
+    159	    0086  C1 E0	04			 SHL	 AX,	 4
+    160	    0089  C0 E8	04			 SHR	 AL,	 4
+    161	    008C  05 3030			 ADD	 AX,	 3030h
+    162	    008F  86 C4				 XCHG	 AL,	 AH
+    163	    0091  AB				 STOSW
+    164	    0092  E2 ED				 LOOP	 @@L
+    165						 ; Фиксация конца строки
+    166	    0094  32 C0				 XOR	 AL,	 AL
+    167	    0096  AA				 STOSB
+    168						 ; Улучшим читабельность слишком длинного числа
+    169	    0097  FC				 CLD
+    170	    0098  B8 000E			 MOV	 AX,	 LENNUM-4
+    171	    009B  8B C8			 @@L1:	 MOV	 CX,	 AX
+Turbo Assembler	 Version 2.02	     03/18/19 11:22:39	    Page 4
+mlab1l.asm
+
+
+
+    172	    009D  5F				 POP	 DI	    ; встаем на	начало строки
+    173	    009E  57				 PUSH	 DI
+    174	    009F  8B F7				 MOV	 SI,	 DI
+    175	    00A1  46				 INC	 SI
+    176	    00A2  F3> A4			 REP	 MOVSB
+    177	    00A4  C6 05	60			 MOV	 BYTE PTR [DI],	CHCOMMA	; вставить разделитель троек цифр
+    178	    00A7  2D 0004			 SUB	 AX,	 4  ;	  3 цифры + разделитель	обработаны
+    179	    00AA  78 04	90 90			 JS	 @@E	    ; прекратить, если осталось	не больше 3-х цифр
+    180	    00AE  EB EB				 JMP	 SHORT	 @@L1
+    181	    00B0  5E			 @@E:	 POP	 SI
+    182	    00B1  56				 PUSH	 SI
+    183	    00B2  33 C9				 XOR	 CX,	 CX
+    184						 ; Съедаем первые нули
+    185						 ;   сначала подсчитываем
+    186	    00B4  80 3C	30		 @@L2:	 CMP	 BYTE PTR [SI],	'0'
+    187	    00B7  74 09	90 90			 JE	 @@N
+    188	    00BB  80 3C	60			 CMP	 BYTE PTR [SI],	CHCOMMA
+    189	    00BE  75 06	90 90			 JNE	 @@N1
+    190	    00C2  41			 @@N:	 INC	 CX
+    191	    00C3  46				 INC	 SI
+    192	    00C4  EB EE				 JMP	 SHORT	 @@L2
+    193	    00C6			 @@N1:	 ;   а теперь съедаем
+    194	    00C6  5F				 POP	 DI
+    195	    00C7  83 E9	13			 SUB	 CX, LENNUM+1
+    196	    00CA  F7 D9				 NEG	 CX
+    197	    00CC  F3> A4			 REP	 MOVSB
+    198	    00CE  59				 POP	 CX
+    199	    00CF  C3				 RET
+    200	    00D0			 UTOA10	 ENDP
+    201
+    202					 ;==============================================
+    203					 ; Подпрограмма	задержки выполнения программы
+    204					 ; на <CX,DX> микросекунд
+    205					 ;==============================================
+    206	    00D0			 DILAY	 PROC	 NEAR
+    207	    00D0  B4 86				 MOV	 AH,	 86h
+    208	    00D2  CD 15				 INT	 15h
+    209	    00D4  C3				 RET
+    210	    00D5			 DILAY	 ENDP
+    211
+    212						 PUBLIC	 LAB1, PUTSS, PUTC, GETCH, GETS, DILAY,	SLEN, UTOA10
+    213
+    214						 END
+Turbo Assembler	 Version 2.02	     03/18/19 11:22:39	    Page 5
+Symbol Table
+
+
+
+
+Symbol Name			  Type	 Value
+
+??DATE				  Text	 "03/18/19"
+??FILENAME			  Text	 "mlab1l  "
+??TIME				  Text	 "11:22:39"
+??VERSION			  Number 0202
+@@E				  Near	 _TEXT:001D
+@@E				  Near	 _TEXT:00B0
+@@L				  Near	 _TEXT:0006
+@@L				  Near	 _TEXT:0081
+@@L1				  Near	 _TEXT:009B
+@@L2				  Near	 _TEXT:00B4
+@@N				  Near	 _TEXT:00C2
+@@N1				  Near	 _TEXT:00C6
+@@R				  Near	 _TEXT:0027
+@CODE				  Text	 _TEXT
+@CODESIZE			  Text	 0
+@CPU				  Text	 0D0FH
+@CURSEG				  Text	 _TEXT
+@DATA				  Text	 DGROUP
+@DATASIZE			  Text	 0
+@FILENAME			  Text	 MLAB1L
+@MODEL				  Text	 2
+@WORDSIZE			  Text	 2
+CHCOMMA				  Number 0060
+CHCR				  Number 000D
+CHESC				  Number 001B
+CHLF				  Number 000A
+CHSEP				  Number 003D
+DILAY				  Near	 _TEXT:00D0
+DOSFU				  Number 0021
+FUEXIT				  Number 004C
+FUGETCH				  Number 0008
+FUGETS				  Number 000A
+FUPUTC				  Number 0002
+GETCH				  Near	 _TEXT:0031
+GETS				  Near	 _TEXT:0036
+LAB1				  Near	 _TEXT:0000
+LENNUM				  Number 0012
+LENPACK				  Number 0009
+LSLEN				  Near	 _TEXT:004C
+PAUSE_H				  Number 0000
+PAUSE_L				  Number 0000
+PUTC				  Near	 _TEXT:0028
+PUTSS				  Near	 _TEXT:0006
+RSLEN				  Near	 _TEXT:005E
+SLEN				  Near	 _TEXT:004A
+UBINARY				  Qword	 DGROUP:0000
+UPACK				  Tbyte	 DGROUP:0008
+UTOA10				  Near	 _TEXT:005F
+
+Groups & Segments		  Bit Size Align  Combine Class
+
+DGROUP				  Group
+  _DATA				  16  0012 Word	  Public  DATA
+_TEXT				  16  00D5 Word	  Public  CODE
+

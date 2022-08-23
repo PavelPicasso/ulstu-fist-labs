@@ -1,0 +1,7 @@
+c:\Users\forty\documents\visual studio 2017\Projects\Csharf\Lab1\bin\Debug\Lab1.exe.config
+c:\Users\forty\documents\visual studio 2017\Projects\Csharf\Lab1\bin\Debug\Lab1.exe
+c:\Users\forty\documents\visual studio 2017\Projects\Csharf\Lab1\bin\Debug\Lab1.pdb
+c:\Users\forty\documents\visual studio 2017\Projects\Csharf\Lab1\obj\Debug\Lab1.csprojAssemblyReference.cache
+c:\Users\forty\documents\visual studio 2017\Projects\Csharf\Lab1\obj\Debug\Lab1.csproj.CoreCompileInputs.cache
+c:\Users\forty\documents\visual studio 2017\Projects\Csharf\Lab1\obj\Debug\Lab1.exe
+c:\Users\forty\documents\visual studio 2017\Projects\Csharf\Lab1\obj\Debug\Lab1.pdb

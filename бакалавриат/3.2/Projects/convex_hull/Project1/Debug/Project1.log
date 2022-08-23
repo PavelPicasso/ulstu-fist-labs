@@ -1,0 +1,7 @@
+﻿  Source.cpp
+c:\users\forty\documents\visual studio 2017\projects\project1\project1\source.cpp(18): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  e:\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1270): note:  см. объявление "scanf"
+c:\users\forty\documents\visual studio 2017\projects\project1\project1\source.cpp(116): warning C4018: <: несоответствие типов со знаком и без знака
+c:\users\forty\documents\visual studio 2017\projects\project1\project1\source.cpp(105): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  e:\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1270): note:  см. объявление "scanf"
+  Project1.vcxproj -> C:\Users\forty\Documents\Visual Studio 2017\Projects\Project1\Debug\Project1.exe

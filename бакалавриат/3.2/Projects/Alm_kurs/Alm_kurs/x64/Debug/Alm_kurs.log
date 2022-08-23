@@ -1,0 +1,6 @@
+﻿  Source.cpp
+c:\users\forty\documents\visual studio 2017\projects\alm_kurs\alm_kurs\source.cpp(412): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+c:\users\forty\documents\visual studio 2017\projects\alm_kurs\alm_kurs\source.cpp(414): warning C4101: choice: неиспользованная локальная переменная
+c:\users\forty\documents\visual studio 2017\projects\alm_kurs\alm_kurs\source.cpp(411): warning C4101: end: неиспользованная локальная переменная
+c:\users\forty\documents\visual studio 2017\projects\alm_kurs\alm_kurs\source.cpp(411): warning C4101: start: неиспользованная локальная переменная
+  Alm_kurs.vcxproj -> C:\Users\forty\Documents\Visual Studio 2017\Projects\Alm_kurs\x64\Debug\Alm_kurs.exe

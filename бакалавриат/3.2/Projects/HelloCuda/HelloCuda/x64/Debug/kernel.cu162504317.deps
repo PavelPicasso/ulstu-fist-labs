@@ -1,0 +1,249 @@
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\cuda_runtime.h
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\crt/host_config.h
+E:\Program file\Visual Studio\VC\Tools\MSVC\14.14.26428\include\crtdefs.h
+E:\Program file\Visual Studio\VC\Tools\MSVC\14.14.26428\include\vcruntime.h
+E:\Program file\Visual Studio\VC\Tools\MSVC\14.14.26428\include\sal.h
+E:\Program file\Visual Studio\VC\Tools\MSVC\14.14.26428\include\concurrencysal.h
+E:\Program file\Visual Studio\VC\Tools\MSVC\14.14.26428\include\vadefs.h
+E:\Windows Kits\10\Include\10.0.10240.0\ucrt\corecrt.h
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\builtin_types.h
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\device_types.h
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\crt/host_defines.h
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\driver_types.h
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\crt/host_defines.h
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\vector_types.h
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\crt/host_defines.h
+E:\Program file\Visual Studio\VC\Tools\MSVC\14.14.26428\include\limits.h
+E:\Windows Kits\10\Include\10.0.10240.0\ucrt\stddef.h
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\surface_types.h
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\driver_types.h
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\texture_types.h
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\driver_types.h
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\vector_types.h
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\library_types.h
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\channel_descriptor.h
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\cuda_runtime_api.h
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\crt/host_defines.h
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\builtin_types.h
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\device_types.h
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\driver_types.h
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\surface_types.h
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\texture_types.h
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\vector_types.h
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\cuda_device_runtime_api.h
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\driver_types.h
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\crt/host_defines.h
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\cuda_runtime_api.h
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\driver_functions.h
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\builtin_types.h
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\device_types.h
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\driver_types.h
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\surface_types.h
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\texture_types.h
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\vector_types.h
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\crt/host_defines.h
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\driver_types.h
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\crt/host_defines.h
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\vector_functions.h
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\cuda_runtime_api.h
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\vector_functions.hpp
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\cuda_runtime_api.h
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\crt/common_functions.h
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\builtin_types.h
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\device_types.h
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\driver_types.h
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\surface_types.h
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\texture_types.h
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\vector_types.h
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\crt\host_defines.h
+E:\Windows Kits\10\Include\10.0.10240.0\ucrt\string.h
+E:\Windows Kits\10\Include\10.0.10240.0\ucrt\corecrt_memory.h
+E:\Windows Kits\10\Include\10.0.10240.0\ucrt\corecrt_memcpy_s.h
+E:\Windows Kits\10\Include\10.0.10240.0\ucrt\errno.h
+E:\Program file\Visual Studio\VC\Tools\MSVC\14.14.26428\include\vcruntime_string.h
+E:\Windows Kits\10\Include\10.0.10240.0\ucrt\corecrt_wstring.h
+E:\Windows Kits\10\Include\10.0.10240.0\ucrt\time.h
+E:\Windows Kits\10\Include\10.0.10240.0\ucrt\corecrt_wtime.h
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\crt\math_functions.h
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\builtin_types.h
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\device_types.h
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\driver_types.h
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\surface_types.h
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\texture_types.h
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\vector_types.h
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\crt\host_defines.h
+E:\Windows Kits\10\Include\10.0.10240.0\ucrt\math.h
+E:\Windows Kits\10\Include\10.0.10240.0\ucrt\stdlib.h
+E:\Windows Kits\10\Include\10.0.10240.0\ucrt\corecrt_malloc.h
+E:\Windows Kits\10\Include\10.0.10240.0\ucrt\corecrt_search.h
+E:\Windows Kits\10\Include\10.0.10240.0\ucrt\corecrt_wstdlib.h
+E:\Program file\Visual Studio\VC\Tools\MSVC\14.14.26428\include\cmath
+E:\Program file\Visual Studio\VC\Tools\MSVC\14.14.26428\include\cstdlib
+E:\Program file\Visual Studio\VC\Tools\MSVC\14.14.26428\include\yvals.h
+E:\Program file\Visual Studio\VC\Tools\MSVC\14.14.26428\include\xkeycheck.h
+E:\Program file\Visual Studio\VC\Tools\MSVC\14.14.26428\include\crtdefs.h
+E:\Program file\Visual Studio\VC\Tools\MSVC\14.14.26428\include\use_ansi.h
+E:\Windows Kits\10\Include\10.0.10240.0\ucrt\math.h
+E:\Program file\Visual Studio\VC\Tools\MSVC\14.14.26428\include\xtgmath.h
+E:\Program file\Visual Studio\VC\Tools\MSVC\14.14.26428\include\xtr1common
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\crt\math_functions.hpp
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\builtin_types.h
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\device_types.h
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\driver_types.h
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\surface_types.h
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\texture_types.h
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\vector_types.h
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\crt\host_defines.h
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\cuda_surface_types.h
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\channel_descriptor.h
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\cuda_runtime_api.h
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\cuda_texture_types.h
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\channel_descriptor.h
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\cuda_runtime_api.h
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\crt/device_functions.h
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\builtin_types.h
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\device_types.h
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\driver_types.h
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\surface_types.h
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\texture_types.h
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\vector_types.h
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\device_types.h
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\crt\host_defines.h
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\crt\device_functions.hpp
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\builtin_types.h
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\device_types.h
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\driver_types.h
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\surface_types.h
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\texture_types.h
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\vector_types.h
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\device_types.h
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\crt\host_defines.h
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\device_atomic_functions.h
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\cuda_runtime_api.h
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\cuda_runtime_api.h
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\crt\device_double_functions.h
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\builtin_types.h
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\device_types.h
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\driver_types.h
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\surface_types.h
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\texture_types.h
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\vector_types.h
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\device_types.h
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\crt\host_defines.h
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\crt\device_double_functions.hpp
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\builtin_types.h
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\device_types.h
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\driver_types.h
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\surface_types.h
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\texture_types.h
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\vector_types.h
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\device_types.h
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\crt\host_defines.h
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\sm_20_atomic_functions.h
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\cuda_runtime_api.h
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\sm_32_atomic_functions.h
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\cuda_runtime_api.h
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\sm_35_atomic_functions.h
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\sm_32_atomic_functions.h
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\sm_60_atomic_functions.h
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\cuda_runtime_api.h
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\sm_20_intrinsics.h
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\cuda_runtime_api.h
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\sm_30_intrinsics.h
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\cuda_runtime_api.h
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\sm_32_intrinsics.h
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\cuda_runtime_api.h
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\sm_35_intrinsics.h
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\sm_32_intrinsics.h
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\sm_61_intrinsics.h
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\cuda_runtime_api.h
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\crt\sm_70_rt.h
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\builtin_types.h
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\device_types.h
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\driver_types.h
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\surface_types.h
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\texture_types.h
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\vector_types.h
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\device_types.h
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\crt\host_defines.h
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\surface_functions.h
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\cuda_runtime_api.h
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\cuda_surface_types.h
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\texture_fetch_functions.h
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\cuda_runtime_api.h
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\cuda_texture_types.h
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\texture_indirect_functions.h
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\cuda_runtime_api.h
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\surface_indirect_functions.h
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\cuda_runtime_api.h
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\device_launch_parameters.h
+c:\program files\nvidia gpu computing toolkit\cuda\v10.1\include\vector_types.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\cuda_runtime.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\device_launch_parameters.h
+E:\Program file\Visual Studio\VC\Tools\MSVC\14.14.26428\include\iostream
+E:\Program file\Visual Studio\VC\Tools\MSVC\14.14.26428\include\istream
+E:\Program file\Visual Studio\VC\Tools\MSVC\14.14.26428\include\ostream
+E:\Program file\Visual Studio\VC\Tools\MSVC\14.14.26428\include\ios
+E:\Program file\Visual Studio\VC\Tools\MSVC\14.14.26428\include\xlocnum
+E:\Program file\Visual Studio\VC\Tools\MSVC\14.14.26428\include\climits
+E:\Program file\Visual Studio\VC\Tools\MSVC\14.14.26428\include\cstdio
+E:\Windows Kits\10\Include\10.0.10240.0\ucrt\stdio.h
+E:\Windows Kits\10\Include\10.0.10240.0\ucrt\corecrt_wstdio.h
+E:\Windows Kits\10\Include\10.0.10240.0\ucrt\corecrt_stdio_config.h
+E:\Program file\Visual Studio\VC\Tools\MSVC\14.14.26428\include\streambuf
+E:\Program file\Visual Studio\VC\Tools\MSVC\14.14.26428\include\xiosbase
+E:\Program file\Visual Studio\VC\Tools\MSVC\14.14.26428\include\xlocale
+E:\Program file\Visual Studio\VC\Tools\MSVC\14.14.26428\include\cstring
+E:\Program file\Visual Studio\VC\Tools\MSVC\14.14.26428\include\stdexcept
+E:\Program file\Visual Studio\VC\Tools\MSVC\14.14.26428\include\exception
+E:\Program file\Visual Studio\VC\Tools\MSVC\14.14.26428\include\type_traits
+E:\Program file\Visual Studio\VC\Tools\MSVC\14.14.26428\include\xstddef
+E:\Program file\Visual Studio\VC\Tools\MSVC\14.14.26428\include\cstddef
+E:\Program file\Visual Studio\VC\Tools\MSVC\14.14.26428\include\initializer_list
+E:\Windows Kits\10\Include\10.0.10240.0\ucrt\malloc.h
+E:\Program file\Visual Studio\VC\Tools\MSVC\14.14.26428\include\vcruntime_exception.h
+E:\Program file\Visual Studio\VC\Tools\MSVC\14.14.26428\include\eh.h
+E:\Windows Kits\10\Include\10.0.10240.0\ucrt\corecrt_terminate.h
+E:\Program file\Visual Studio\VC\Tools\MSVC\14.14.26428\include\xstring
+E:\Program file\Visual Studio\VC\Tools\MSVC\14.14.26428\include\xmemory0
+E:\Program file\Visual Studio\VC\Tools\MSVC\14.14.26428\include\cstdint
+E:\Program file\Visual Studio\VC\Tools\MSVC\14.14.26428\include\stdint.h
+E:\Program file\Visual Studio\VC\Tools\MSVC\14.14.26428\include\limits
+E:\Program file\Visual Studio\VC\Tools\MSVC\14.14.26428\include\ymath.h
+E:\Program file\Visual Studio\VC\Tools\MSVC\14.14.26428\include\cfloat
+E:\Windows Kits\10\Include\10.0.10240.0\ucrt\float.h
+E:\Program file\Visual Studio\VC\Tools\MSVC\14.14.26428\include\cwchar
+E:\Windows Kits\10\Include\10.0.10240.0\ucrt\wchar.h
+E:\Windows Kits\10\Include\10.0.10240.0\ucrt\corecrt_wconio.h
+E:\Windows Kits\10\Include\10.0.10240.0\ucrt\corecrt_wctype.h
+E:\Windows Kits\10\Include\10.0.10240.0\ucrt\corecrt_wdirect.h
+E:\Windows Kits\10\Include\10.0.10240.0\ucrt\corecrt_wio.h
+E:\Windows Kits\10\Include\10.0.10240.0\ucrt\corecrt_share.h
+E:\Windows Kits\10\Include\10.0.10240.0\ucrt\corecrt_wprocess.h
+E:\Windows Kits\10\Include\10.0.10240.0\ucrt\sys/stat.h
+E:\Windows Kits\10\Include\10.0.10240.0\ucrt\sys/types.h
+E:\Program file\Visual Studio\VC\Tools\MSVC\14.14.26428\include\new
+E:\Program file\Visual Studio\VC\Tools\MSVC\14.14.26428\include\vcruntime_new.h
+E:\Program file\Visual Studio\VC\Tools\MSVC\14.14.26428\include\xutility
+E:\Program file\Visual Studio\VC\Tools\MSVC\14.14.26428\include\utility
+E:\Program file\Visual Studio\VC\Tools\MSVC\14.14.26428\include\iosfwd
+E:\Windows Kits\10\Include\10.0.10240.0\ucrt\crtdbg.h
+E:\Program file\Visual Studio\VC\Tools\MSVC\14.14.26428\include\vcruntime_new_debug.h
+E:\Program file\Visual Studio\VC\Tools\MSVC\14.14.26428\include\xatomic0.h
+E:\Program file\Visual Studio\VC\Tools\MSVC\14.14.26428\include\intrin0.h
+E:\Program file\Visual Studio\VC\Tools\MSVC\14.14.26428\include\typeinfo
+E:\Program file\Visual Studio\VC\Tools\MSVC\14.14.26428\include\vcruntime_typeinfo.h
+E:\Program file\Visual Studio\VC\Tools\MSVC\14.14.26428\include\xlocinfo
+E:\Program file\Visual Studio\VC\Tools\MSVC\14.14.26428\include\xlocinfo.h
+E:\Windows Kits\10\Include\10.0.10240.0\ucrt\ctype.h
+E:\Windows Kits\10\Include\10.0.10240.0\ucrt\locale.h
+E:\Program file\Visual Studio\VC\Tools\MSVC\14.14.26428\include\memory
+E:\Program file\Visual Studio\VC\Tools\MSVC\14.14.26428\include\xmemory
+E:\Program file\Visual Studio\VC\Tools\MSVC\14.14.26428\include\xfacet
+E:\Program file\Visual Studio\VC\Tools\MSVC\14.14.26428\include\system_error
+E:\Program file\Visual Studio\VC\Tools\MSVC\14.14.26428\include\cerrno
+E:\Program file\Visual Studio\VC\Tools\MSVC\14.14.26428\include\xcall_once.h
+E:\Program file\Visual Studio\VC\Tools\MSVC\14.14.26428\include\xerrc.h
+E:\Windows Kits\10\Include\10.0.10240.0\ucrt\share.h
+E:\Windows Kits\10\Include\10.0.10240.0\ucrt\math.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\cuda_runtime.h

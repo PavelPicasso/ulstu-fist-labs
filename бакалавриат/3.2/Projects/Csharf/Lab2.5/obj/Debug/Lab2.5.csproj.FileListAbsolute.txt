@@ -1,0 +1,7 @@
+C:\Users\forty\Documents\Visual Studio 2017\Projects\Csharf\Lab2.5\bin\Debug\Lab2.5.exe.config
+C:\Users\forty\Documents\Visual Studio 2017\Projects\Csharf\Lab2.5\bin\Debug\Lab2.5.exe
+C:\Users\forty\Documents\Visual Studio 2017\Projects\Csharf\Lab2.5\bin\Debug\Lab2.5.pdb
+C:\Users\forty\Documents\Visual Studio 2017\Projects\Csharf\Lab2.5\obj\Debug\Lab2.5.csprojAssemblyReference.cache
+C:\Users\forty\Documents\Visual Studio 2017\Projects\Csharf\Lab2.5\obj\Debug\Lab2.5.csproj.CoreCompileInputs.cache
+C:\Users\forty\Documents\Visual Studio 2017\Projects\Csharf\Lab2.5\obj\Debug\Lab2.5.exe
+C:\Users\forty\Documents\Visual Studio 2017\Projects\Csharf\Lab2.5\obj\Debug\Lab2.5.pdb
