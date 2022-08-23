@@ -1,0 +1,45 @@
+body, td, th, input, select {
+	FONT-FAMILY: Tahoma, Verdana, Arial ;
+	FONT-SIZE: 12px;
+	COLOR: #222222;
+}
+
+A:link {
+	COLOR: #000066; TEXT-DECORATION: none;
+}
+A:visited {
+	COLOR: #000066; TEXT-DECORATION: none;
+}
+A:hover {
+	COLOR: #B0009F; TEXT-DECORATION: underline;
+}
+A:active {
+	COLOR: #000066; TEXT-DECORATION: none;
+}
+
+body {background: url(../ /img/Oboi2.jpg);}
+table.table td {background: url(/img/Oboi2.jpg);}
+table.table th {background: url(/img/Oboi2.jpg);}
+
+th {background: url(/img/Oboi2.jpg); PADDING: 1px;}
+
+h1 {color: #000033; font-family: arial cyr, sans-serif; font-size: 16px; text-align:center}
+h2 {color: #000066 ; text-align:center; font-style: normal;}
+h3  {color: #000066 ; text-align:center; font-style: normal;}
+
+em.h1 {color: #000033; font-family: arial cyr, sans-serif; font-style: normal; font-weight: bold; font-size: 16px; text-align:center }   /* Заголовки первого уровня*/
+em.h2 {color: #000033; font-family: arial cyr, sans-serif; font-style: normal; font-weight: bold;}   /* названия планов*/
+
+strong {color: #000066; font-style: normal; font-weight: bold;}              /*заголовки таблиц*/
+
+table.line td {background-color: #92a2d9}
+
+table.ramka td {background-color: #0040A0;}
+
+table.distable td, table.distable th {border: #0040A0 1px solid;}
+
+.CicleTitle {
+	FONT-WEIGHT: bold; 
+	FONT-SIZE: 14px;
+}
+.ErrMessage {color: #FF2A00; font-style: normal; font-size: 14px;}

@@ -1,0 +1,26 @@
+<function>
+<name>test_visit</name>
+<rusname>Контрольное посещение</rusname>
+<isplan>Y</isplan>
+<display>Y</display>
+<externalparameters>
+<externalparametersname>lab</externalparametersname>
+</externalparameters>
+<externalparameters>
+<externalparametersname>wc</externalparametersname>
+</externalparameters>
+<formula>
+<operator>
+<type>variable</type>
+<value>lab</value>
+</operator>
+<operator>
+<type>operation</type>
+<value>*</value>
+</operator>
+<operator>
+<type>variable</type>
+<value>wc</value>
+</operator>
+</formula>
+</function>

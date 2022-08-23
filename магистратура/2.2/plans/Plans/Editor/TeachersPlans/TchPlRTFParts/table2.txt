@@ -1,0 +1,25 @@
+\pard \qc \li0\ri0\widctlpar\intbl\aspalpha\aspnum\faauto\adjustright\rin0\lin0 
+{\fs22\insrsid11566491 \hich\af0\dbch\af11\loch\f0 1}
+{\fs22\dbch\af34\insrsid11566491 \cell \hich\af0\dbch\af34\loch\f0 2\cell }
+{\fs22\dbch\af34\insrsid3767566 \hich\af0\dbch\af34\loch\f0 3}{\fs22\dbch\af34\insrsid11566491 \cell }
+{\fs22\dbch\af34\insrsid3767566 \hich\af0\dbch\af34\loch\f0 4}{\fs22\dbch\af34\insrsid11566491 \cell }
+{\fs22\dbch\af34\insrsid3767566 \hich\af0\dbch\af34\loch\f0 5}{\fs22\dbch\af34\insrsid11566491 \cell }
+\pard \qc \li0\ri0\widctlpar\intbl\aspalpha\aspnum\faauto\adjustright\rin0\lin0\pararsid7228180 
+{\fs22\dbch\af34\insrsid3767566 \hich\af0\dbch\af34\loch\f0 6}{\fs22\dbch\af34\insrsid11566491 \cell }
+\pard \qc \li0\ri0\widctlpar\intbl\aspalpha\aspnum\faauto\adjustright\rin0\lin0\pararsid11566491 
+{\fs22\dbch\af34\insrsid3767566 \hich\af0\dbch\af34\loch\f0 7}{\fs22\dbch\af34\insrsid11566491 \cell }
+{\fs22\dbch\af34\insrsid3767566 \hich\af0\dbch\af34\loch\f0 8}{\fs22\dbch\af34\insrsid11566491 \cell }
+\pard \qc \li0\ri0\widctlpar\intbl\aspalpha\aspnum\faauto\adjustright\rin0\lin0 
+{\fs22\dbch\af34\insrsid3767566 \hich\af0\dbch\af34\loch\f0 9}{\fs22\dbch\af34\insrsid11566491 \cell }
+{\fs22\dbch\af34\insrsid3767566 \hich\af0\dbch\af34\loch\f0 10}{\fs22\dbch\af34\insrsid11566491 \cell }
+{\fs22\dbch\af34\insrsid3767566 \hich\af0\dbch\af34\loch\f0 11}{\fs22\dbch\af34\insrsid11566491 \cell }
+{\fs22\dbch\af34\insrsid3767566 \hich\af0\dbch\af34\loch\f0 12}{\fs22\dbch\af34\insrsid11566491 \cell }
+{\fs22\dbch\af34\insrsid3767566 \hich\af0\dbch\af34\loch\f0 13}{\fs22\dbch\af34\insrsid11566491 \cell }
+{\fs22\dbch\af34\insrsid3767566 \hich\af0\dbch\af34\loch\f0 14}{\fs22\dbch\af34\insrsid11566491 \cell }
+{\fs22\dbch\af34\insrsid3767566 \hich\af0\dbch\af34\loch\f0 15}{\fs22\dbch\af34\insrsid11566491 \cell }
+{\fs22\dbch\af34\insrsid3767566 \hich\af0\dbch\af34\loch\f0 16}{\fs22\dbch\af34\insrsid11566491 \cell }
+{\fs22\dbch\af34\insrsid3767566 \hich\af0\dbch\af34\loch\f0 17}{\fs22\dbch\af34\insrsid11566491 \cell }
+{\fs22\dbch\af34\insrsid3767566 \hich\af0\dbch\af34\loch\f0 18}{\fs22\dbch\af34\insrsid11566491 \cell }
+{\fs22\dbch\af34\insrsid3767566 \hich\af0\dbch\af34\loch\f0 19}{\fs22\dbch\af34\insrsid11566491 \cell }
+{\fs22\dbch\af34\insrsid3767566 \hich\af0\dbch\af34\loch\f0 20}{\fs22\dbch\af34\insrsid11566491 \cell }
+\pard \ql \li0\ri0\widctlpar\intbl\aspalpha\aspnum\faauto\adjustright\rin0\lin0

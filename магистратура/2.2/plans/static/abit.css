@@ -1,0 +1,10 @@
+body {background-color: #ffffff;}
+table.table_abit td {background-color: #ffffff;}
+table.table_abit th.h1  {background-color: #aaaaff;}
+table.table_abit th.h2  {background-color: #ccccff;}
+table.table_abit th.noname  {background-color: #ffffff;}
+
+table.ramka {background-color: #0040A0;}
+h1 {color: #000033; font-family: arial cyr, sans-serif; font-size: large; text-align:center}
+h2 {color: #000066; font-family: arial cyr, sans-serif; font-size: medium; text-align:center}
+

@@ -1,0 +1,34 @@
+body, table.table td {
+	background-image: url(http://plans.nilaos.ustu/Plans/img/Oboi2.jpg);  
+	background-color: #ffffff;
+	font-size: 14px;
+}
+body.abit {background-color: #ffffff;}
+table.table th.h1  {background-color: #aaaaff;}
+table.table th.h2  {background-color: #ccccff;}
+table.table th.noname  {background: url(http://plans.nilaos.ustu/Plans/img/Oboi2.jpg); background-color: #ffffff;}
+table.table_abit td{background-color: #ffffff;}
+table.ramka {background-color: #0040A0;}
+h1 {color: #000033; font-family: arial cyr, sans-serif; font-size: large; text-align:center}
+h2 {color: #000066; font-family: arial cyr, sans-serif; font-size: medium; text-align:center}
+em.h1 {color: #000033; font-family: arial cyr, sans-serif; font-style: normal; font-weight: bold; font-size: large; text-align:center }   /* Заголовки первого уровня*/
+em {color: #000033; font-style: normal; font-weight: bold}
+strong {color: #000066; font-style: normal; font-weight: bold; font-size: 105%}
+strong.light  {color: #000066; font-style: normal; font-weight: bold; font-size: 95%}
+.comments{
+	color: #000066; 
+	font-family: arial cyr, sans-serif; 
+	font-size: 10px; 
+}
+
+.comments a:link, .comments a:visited{
+	color: #000066; 
+	font-family: arial cyr, sans-serif; 
+	font-size: 10px; 
+	text-decoration:underline;
+
+}
+
+.comments a:hover{
+	color:grey;
+}
