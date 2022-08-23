@@ -1,0 +1,14 @@
+c:\users\forty\documents\visual studio 2017\Projects\GeomModelirov Kurs\GeomModelirov Kurs\bin\Debug\GeomModelirov Kurs.exe.config
+c:\users\forty\documents\visual studio 2017\Projects\GeomModelirov Kurs\GeomModelirov Kurs\bin\Debug\GeomModelirov Kurs.exe
+c:\users\forty\documents\visual studio 2017\Projects\GeomModelirov Kurs\GeomModelirov Kurs\bin\Debug\GeomModelirov Kurs.pdb
+c:\users\forty\documents\visual studio 2017\Projects\GeomModelirov Kurs\GeomModelirov Kurs\obj\Debug\GeomModelirov Kurs.csprojAssemblyReference.cache
+c:\users\forty\documents\visual studio 2017\Projects\GeomModelirov Kurs\GeomModelirov Kurs\obj\Debug\GeomModelirov_Kurs.Form1.resources
+c:\users\forty\documents\visual studio 2017\Projects\GeomModelirov Kurs\GeomModelirov Kurs\obj\Debug\GeomModelirov_Kurs.Form2.resources
+c:\users\forty\documents\visual studio 2017\Projects\GeomModelirov Kurs\GeomModelirov Kurs\obj\Debug\GeomModelirov_Kurs.Properties.Resources.resources
+c:\users\forty\documents\visual studio 2017\Projects\GeomModelirov Kurs\GeomModelirov Kurs\obj\Debug\GeomModelirov Kurs.csproj.GenerateResource.cache
+c:\users\forty\documents\visual studio 2017\Projects\GeomModelirov Kurs\GeomModelirov Kurs\obj\Debug\GeomModelirov Kurs.csproj.CoreCompileInputs.cache
+c:\users\forty\documents\visual studio 2017\Projects\GeomModelirov Kurs\GeomModelirov Kurs\obj\Debug\GeomModelirov Kurs.exe
+c:\users\forty\documents\visual studio 2017\Projects\GeomModelirov Kurs\GeomModelirov Kurs\obj\Debug\GeomModelirov Kurs.pdb
+c:\users\forty\documents\visual studio 2017\Projects\GeomModelirov Kurs\GeomModelirov Kurs\obj\Debug\GeomModelirov_Kurs.Form3.resources
+C:\Users\forty\documents\visual studio 2017\Projects\GeomModelirov Kurs\GeomModelirov Kurs\obj\Debug\GeomModelirov_Kurs.Form4.resources
+C:\Users\forty\Documents\Visual Studio 2017\Projects\GeomModelirov Kurs\GeomModelirov Kurs\obj\Debug\GeomModelirov_Kurs.Form5.resources
