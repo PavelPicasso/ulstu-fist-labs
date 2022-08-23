@@ -1,0 +1,4 @@
+1. Start Server(Backend)
+    node server
+2. Start Client web page(Frontend - http://localhost:8080/)
+    http-server

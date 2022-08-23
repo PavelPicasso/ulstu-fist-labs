@@ -1,0 +1,12 @@
+https://github.com/ulstu/robotics_ml
+
+windows: anaconda, python3.6, VS code, pycharm
+WSL Ubuntu 16/19, MobaXterm
+
+jupyter
+skikit-learn
+numpy
+pandas
+matplotlib
+seaborn
+plotly
