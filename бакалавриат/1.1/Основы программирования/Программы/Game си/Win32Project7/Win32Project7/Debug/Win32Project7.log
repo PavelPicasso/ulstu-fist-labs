@@ -1,0 +1,4 @@
+﻿  stdafx.cpp
+  Win32Project7.cpp
+E:\IVT\курс прог\1 курс прог\Game си\Win32Project7\Win32Project7\Win32Project7.cpp(266,13): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  Win32Project7.vcxproj -> E:\IVT\курс прог\1 курс прог\Game си\Win32Project7\Debug\Win32Project7.exe

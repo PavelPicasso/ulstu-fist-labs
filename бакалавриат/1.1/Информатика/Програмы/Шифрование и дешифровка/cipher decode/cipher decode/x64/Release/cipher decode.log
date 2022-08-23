@@ -1,0 +1,10 @@
+﻿  cipher decode.cpp
+cipher decode.cpp(18): warning C4473: "fscanf_s": передано недостаточно аргументов для строки формата
+  cipher decode.cpp(18): note: заполнители и их параметры ожидают переменное число аргументов в количестве 2, но было предоставлено 1
+  cipher decode.cpp(18): note: отсутствующий вариативный аргумент "2" требуется для строки форматирования "%c"
+  cipher decode.cpp(18): note: этот аргумент используется в качестве размера буфера
+  Создание кода
+  All 10 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Создание кода завершено
+  cipher decode.vcxproj -> C:\Users\PavelPicasso\Documents\Visual Studio 2015\Projects\cipher decode\x64\Release\cipher decode.exe
+  cipher decode.vcxproj -> C:\Users\PavelPicasso\Documents\Visual Studio 2015\Projects\cipher decode\x64\Release\cipher decode.pdb (Full PDB)

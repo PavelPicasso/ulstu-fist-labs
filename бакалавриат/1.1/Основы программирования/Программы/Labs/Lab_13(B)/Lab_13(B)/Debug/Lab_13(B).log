@@ -1,0 +1,8 @@
+﻿  Source.cpp
+d:\л\lab_13(b)\lab_13(b)\source.cpp(36): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(453): note:  см. объявление "strtok"
+d:\л\lab_13(b)\lab_13(b)\source.cpp(39): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(453): note:  см. объявление "strtok"
+  LINK : не найден или не выполнена сборка D:\Л\Lab_13(B)\Debug\Lab_13(B).exe при последней инкрементной компоновке; выполняется полная компоновка
+  Lab_13(B).vcxproj -> D:\Л\Lab_13(B)\Debug\Lab_13(B).exe
+  Lab_13(B).vcxproj -> D:\Л\Lab_13(B)\Debug\Lab_13(B).pdb (Partial PDB)

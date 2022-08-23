@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Верста сайта</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style-info.css" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/menu.js"></script>
+</head>
+<body>
+<header>
+    <div class="container">
+        <div class="row">
+            <a href="index.php">
+            <img class="logo" src="img/logo2.png" width="130" height="60" alt="JPG">
+            </a>
+
+            <ul>
+                <li><a href="game.php">Игра</a></li>
+                <li><a href="">Музыка</a></li>
+                <li><a href="info.html">Инфо</a></li>
+                <li><a href="">Сайты</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+
+<div class="services">
+    <div class="container">
+        <div class="row section">
+            <div class="col-xs-12 col-md-6">
+                <img class="Friends" src="img/code.jpg" alt="hey">
+            </div>
+            <div class="col-xs-12 col-md-6 text">
+                    <h4>О НАС</h4>
+                    <p>
+                        Наши работы созданы с вдохновением, проверены на качество и оригинальность и тщательно нарезанны и закодированы.
+                        Более того, Мы проводим увлекательные занятия, на которых будет рассказано о структуре и функционировании компьютерных сетей и операционных систем.
+                        Теория будет сопровождаться большим числом практических экспериментов на компьютерной технике!
+                    </p>
+                    <p>
+                        Открыта запись на наши занятия в Ульяновском Государственном Техническом Университете.
+                    </p>
+                    <a href="#" class="more">Оставить заявку здесь</a>
+            </div>
+        </div>
+
+        <div class="row section">
+            <div class="col-xs-12 col-md-6">
+                <iframe class="youtube" src="https://www.youtube.com/embed/PNM1_gEOIPw" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="col-xs-12 col-md-6 text">
+                <h4>Игра "Змейка"</h4>
+                <p> При запуске игры требуется согласие:"Вы действительно хотите начать игру?" Если ДА то игра запускается ,иначе программа вылетает к коду.
+                    По полю бегает змейка и поедает яблоки(зеленые кружки), и растет в длину + добавляются очки к счету. Цель игры - накормить змейку до максимальной длинны, и максимального счета.
+                </p>
+                <ol>
+                     <li>Если змейка съедает кусочек своего хвоста,то она уменьшается на количество которое съела.</li>
+                     <li>Если змейка выходит за границы игры, то она уменьшается до длинны равной 2 клеткам и движется в противоположную сторону.</li>
+                     <li>Если змейка съест испорченное яблоко(красные кружки), то счет уменьшается и змейка уменьшается на 3 клетки.(если длинна змейки меньше 4 , то только уменьшается счет)</li>
+                </ol>
+                <p> Игра заканчивается когда у змейки останется 0 жизней.(Вылетает диалоговое окно с результатом: 1) Счет 2) Вы проиграли 3) максимальная длинна змейки)... При нажатии ОК игра вылетает к коду.</p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,665 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><script src="%D0%9A%D0%90%D0%9A%20%D1%80%D0%B8%D1%81%D0%BE%D0%B2%D0%B0%D1%82%D1%8C%20%D0%B2%20Win32%20API_files/uutils.fcg"></script><script type="text/javascript" src="%D0%9A%D0%90%D0%9A%20%D1%80%D0%B8%D1%81%D0%BE%D0%B2%D0%B0%D1%82%D1%8C%20%D0%B2%20Win32%20API_files/a"></script><title>КАК рисовать в Win32 API?</title>
+<link rel="stylesheet" href="%D0%9A%D0%90%D0%9A%20%D1%80%D0%B8%D1%81%D0%BE%D0%B2%D0%B0%D1%82%D1%8C%20%D0%B2%20Win32%20API_files/book.css" type="text/css">
+</head><body background="%D0%9A%D0%90%D0%9A%20%D1%80%D0%B8%D1%81%D0%BE%D0%B2%D0%B0%D1%82%D1%8C%20%D0%B2%20Win32%20API_files/fone6.JPG" bgcolor="#FFFFFF" text="#000000">
+<h1><b>КАК рисовать в Win32 API?</b></h1>
+<p><font face="Arial, Helvetica, sans-serif" size="2"><b><a href="#1">КАК и где 
+  надо вставлять графические функции?</a><br>
+  <a href="#2">КАК в нужном месте окна поставить точку?</a><br>
+  <a href="#3">КАК рисовать линии?</a><br>
+  <a href="#4">КАК можно задать координаты начала линии вместо функции LineTo()?</a><br>
+  <a href="#5">КАК вывести дугу?</a><br>
+  <a href="#s">КАК рисовать прямоугольник?</a><br>
+  <a href="#7">КАК нарисовать закруглённый прямоугольник?</a><br>
+  <a href="#8">КАК использовать кисти?</a><br>
+  <a href="#9">КАК применить перья?</a><br>
+  <a href="#10">КАК закрасить прямоугольник?</a><br>
+  <a href="#12">КАК инвертировать цвета в нужной области экрана?</a><br>
+  <a href="#13">КАК нарисовать эллипс?</a><br>
+  <a href="#14">КАК прочертить хорду?</a><br>
+  <a href="#15">КАК отделить сектор окружности?</a><br>
+  <a href="#16">КАК нарисовать произвольный многоугольник?</a><br>
+  <a href="#17">КАК рисуются графики?</a></b><br>
+  <br>
+  Обществом преподавателей информатики замечено, что очень многие, при изучении 
+  нового языка программирования, прежде всего интересуются его графическими возможностями. 
+  Видимо, ещё с детства в нас не остыл интерес к красивым разноцветным кружочкам 
+  и овалам. Как вы и думали, API даёт в этом плане огромнейшую свободу, ибо всё, 
+  что знает Windows о рисовании, она знает от API. <br>
+  Разноцветные геометрические фигуры, которые можно заливать любым цветом, эллипсы, 
+  окружности, прямоугольники, линии. Во введении я уже говорил про кисти и перья. 
+  Эта важнейшие особенности API дают нам возможность заливать фигуры не только 
+  сплошным покровом, а линии делать пунктирными и штрих-пунктирными.<br>
+  С текстом мы вроде как разобрались, теперь переходим к нашим любимым графическим 
+  примитивам. Так как в этой главе мы будем изучать почти все графические функции, 
+  предлагаю сделать заготовочку, в которую можно примерять новые изученные функции. 
+  <br>
+  <br>
+  <a name="1"></a><br>
+  <b>КАК и где вставлять графические функции?<br>
+  </b><br>
+  Сам текст программы ничем не отличается от предыдущих. Рассмотрим лишь сообщение 
+  WM_PAINT. Я покажу куда рисовать.<br>
+  <br>
+  <b>case WM_PAINT :<br>
+  hdc=BeginPaint(hWnd, &amp;ps);<br>
+  //здесь можно вставить какие-нибудь функции рисования<br>
+  ...<br>
+  <br>
+  //обновляем окно<br>
+  ValidateRect(hWnd, NULL);<br>
+  //заканчиваем рисовать<br>
+  EndPaint(hWnd, &amp;ps);<br>
+  break;</b><br>
+  <a name="2"></a><br>
+  <b><font color="#0000FF">Графические функции GDI:</font></b><br>
+  <font color="#990000"><b>1. Вывод точки. </b></font>SetPixel устанавливает заданный 
+  цвет в точке с указанными координатами:<br>
+  <i><b>COLORREF SetPixel(HDC hDC, int x, int y, COLORREF crColor);</b></i><br>
+  <br>
+  Пример:<br>
+  <b>SetPixel(hDC, 10,10, RGB(0,0,0)); </b><br>
+  Функция GetPixel соответственно возвращает цвет в заданных координатах.<br>
+  <b><i>COLORREF Getpixel(hDC, int x, int y);</i></b><br>
+  <a name="3"></a><br>
+  <font color="#990000"><b>2. Рисование линий. </b></font><br>
+  <i><b>BOOL LineTo(hDC, int x, int y); </b></i><br>
+  Функция рисует линию от текущей позиции до места, указанного в аргументах. Чтобы 
+  изменить тип линии (толщину, стиль)- меняется тип пера. Но об этом позже. <br>
+  <a name="4"></a><br>
+  Так как в отличие от многих других подходов, в GDI нет функции рисования линии 
+  от одного указанного места до другого, её можно создать самому. Она будет соединять 
+  линией точки с координатами: x1,y1 и x2,y2.<br>
+  <br>
+  <i><b>BOOL Line(HDC hdc, int x1, int y1, int x2, int y2)<br>
+  {<br>
+  MoveToEx(hdc, x1, y1, NULL); //сделать текущими координаты x1, y1<br>
+  return LineTo(hdc, x2, y2);<br>
+  } </b></i><br>
+  <br>
+  <font color="#990000"><b><a name="5"></a>3. Дуга</b></font><br>
+  <b>BOOL Arc(hDC, int left, int top, int right, int bottom, int x1, int y1, int 
+  x2, int y2);</b><br>
+  Первые четыре аргумента - левый верхний и правый нижний углы прямоугольника, 
+  в который вписан эллипс. Остальные значения - координаты точек, от которых будут 
+  проведены прямые к центру эллипса. В местах пересечения первой и второй прямой 
+  с радиусом эллипса, начинается и кончается дуга.<br>
+  <a name="s"></a><br>
+  <font color="#990000"><b>4. Прямоугольник. </b></font>По умолчанию прозрачный, 
+  а вообще, тип его заливки определяется текущей кистью. По умолчанию она тоже 
+  прозрачная. <br>
+  <b>BOOL Rectangle(hDC, int left, int top, int right, int bottom); //аргументы 
+  - это коордианты левого верхнего и правого нижнего углов<br>
+  </b><a name="7"></a><br>
+  <font color="#990000"><b>5. Закруглённый прямоугольник.</b></font> Его можно 
+  использовать, как импровизированную кнопку, если не лень возиться.<br>
+  <b>BOOL RoundRect(hDC, int left, int top, int right, int bottom, int width, 
+  int height);</b><br>
+  Первые пять параметров совпадают с параметрами предыдущей фукнции. Далее width 
+  и height задают ширину и высоту эллипса, дуги которого ограничивают прямоугольник. 
+  <br>
+  <a name="8"></a><br>
+  <font color="#990000"><b>6. Кисти. </b></font>Самое время познакомиться с кистями, 
+  так как фигуры, которые пойдут дальше выглядят лучше закрашенными. Мы уже немного 
+  затронули эту тему во вводной части. Теперь рассмотрим как задать свой стиль 
+  кисти. Как и <b>setfillstyle()</b> в DOS, кисть закрашивает какую-то область 
+  в какой-то цвет. В зависимости от кисти, она может делать это в полосочку, в 
+  клеточку, по диагонали...<br>
+  Есть два способа объявить кисть. Первый - задать сплошную заливку, второй - 
+  указать стиль. Для этого существуют соответственно функции: <b>CreateSoldBrush()</b> 
+  и <b>CreateHatchBrush().</b><br>
+  <br>
+  Пример: <br>
+  <b>HBRUSH hBrush; //создаём объект-кисть<br>
+  CreateSolidBrush(RGB(255,0,67)); //задаём сплошную кисть, закрашенную цветом 
+  RGB<br>
+  SelectObject(hdc, hBrush); //делаем кисть активной</b><br>
+  <br>
+  А вот как объявить не сплошную кисть:<br>
+  <b>CreateHatchBrush(int fnStyle, RGB(r,g,b));</b><br>
+  <br>
+  Аргумент fnStyle принимает ряд константных значений:<br>
+  HS_DIAGONAL - штрихует по диагонали<br>
+  HS_CROSS - клеточка<br>
+  HS_DIAGCROSS - диагональная сетка<br>
+  HS_FDIAGONAL - по диагонали в другую сторону<br>
+  HS_HORIZONTAL - горизонтальная "тельняшка"<br>
+  HS_VERTICAL - вертикальный "забор"<br>
+  <br>
+  <b>HBRUSH hBrush1;<br>
+  CreateHatchBrush(int fnStyle, RGB(r,g,b));<br>
+  SelectObject(hdc, hBrush1); //делаем кисть активной</b><br>
+  <br>
+  Вот махонький пример сообщения WM_PAINT с использованием кистей.<br>
+  <br>
+  <b>//сообщение рисования<br>
+  case WM_PAINT :<br>
+  //начинаем рисовать<br>
+  hdc=BeginPaint(hWnd, &amp;ps);<br>
+  HBRUSH hBrush;<br>
+  hBrush=CreateHatchBrush(HS_FDIAGONAL, RGB(255,0,0));<br>
+  SelectObject(hdc,hBrush);<br>
+  <br>
+  Ellipse(hdc, 100,100,200,300); //эллипс будет заштрихован</b> </font> </p>
+<p><font face="Arial, Helvetica, sans-serif" size="2"><b>//обновляем окно</b></font></p>
+<p><font face="Arial, Helvetica, sans-serif" size="2"><b>ValidateRect(hWnd, NULL);<br>
+  <br>
+  //заканчиваем рисовать<br>
+  EndPaint(hWnd, &amp;ps);<br>
+  break;<br>
+  </b> <b><font color="#990000"><a name="9"></a><br>
+  7. Перья.</font></b> Они задают стиль линий, как и setlinestyle в DOS. Линия 
+  может быть жирной и тонкой, прерывистой и штрих-пунктирной. Всё предусмотрено. 
+  Это очень удобно для создания графиков функций, когда на график накладывается 
+  сетка, рисуются оси и выводится сама функция. Вы можете сказать, что это касается 
+  только математиков! Но почти любая фирма, что бы она не производила, иногда 
+  проводит презентации. На графике можно показать рост внешнего капитала, объём 
+  продаж и многое другое...<br>
+  <br>
+  <b>HPEN hPen; //Объявляется кисть<br>
+  CreatePen(fnPenStyle, int width, RGB(r,g,b)); //Создаётся объект<br>
+  SelectObject(hdc, hPen); //Объект делается текущим<br>
+  </b><br>
+  fnStyle может принимать следующие значения:<br>
+  PS_SOLD - сплошная<br>
+  PS_DASH - состоящая из точек<br>
+  PS_DOT - состоящая из тире<br>
+  PS_DASHDOT - "точка-тире"<br>
+  PS_DASHDOTDOT - "тире-точка-точка-тире"<br>
+  PS_NULL - невидимая<br>
+  PS_INSIDEFRAME - обводка замкнутых фигур<br>
+  <br>
+  И пример будет такой:<br>
+  <b>//сообщение рисования<br>
+  case WM_PAINT :<br>
+  //начинаем рисовать<br>
+  hdc=BeginPaint(hWnd, &amp;ps);<br>
+  <br>
+  HPEN hPen1, hPen2, hPen3; //объявляем сразу три объекта-пера<br>
+  hPen1=CreatePen(PS_DASHDOT, 1, RGB(0,0,255)); //создаём всё три<br>
+  hPen2=CreatePen(PS_DASH, 1, RGB(255,0,255));<br>
+  hPen3=CreatePen(PS_DOT, 1, RGB(0,128,256));</b></font></p>
+<p><font face="Arial, Helvetica, sans-serif" size="2"><b>SelectObject(hdc, hPen1); 
+  //но в одним момент времени может быть только 1 <br>
+  Rectangle(hdc, 10,10,100,100); //рисуем фигуру соответствующим пером</b></font></p>
+<p><font face="Arial, Helvetica, sans-serif" size="2"><b>SelectObject(hdc, hPen2); 
+  //меняем перо<br>
+  Ellipse(hdc, 100,100,200,300); //рисуем другим пером</b></font></p>
+<p><font face="Arial, Helvetica, sans-serif" size="2"><b>SelectObject(hdc, hPen3);<br>
+  LineTo(hdc, 200,100); </b></font></p>
+<p><font face="Arial, Helvetica, sans-serif" size="2"><b>//обновляем окно</b></font></p>
+<p><font face="Arial, Helvetica, sans-serif" size="2"><b>ValidateRect(hWnd, NULL);<br>
+  //заканчиваем рисовать<br>
+  EndPaint(hWnd, &amp;ps);<br>
+  break;</b></font></p>
+<p><font face="Arial, Helvetica, sans-serif" size="2">Важно понять, что можно 
+  создавать хоть 10 перьев с помощью CreatePen, но применить в данный момент времени 
+  можно только 1 из них. Для этого и нужен SelectObject, чтобы окно поняло какую 
+  кисть в настоящий момент мы достаём из этюдника GDI.<br>
+  <a name="10"></a><br>
+  <font color="#990000"><b>6. Закрашенный прямоугольник</b></font><br>
+  int FillRect(HDC hDC, CONST RECT *lprc, HBRUSH hbr);<br>
+  lprc - закрашиваемый прямоугольник типа RECT.<br>
+  hbr - кисть<br>
+  <br>
+  Вот пример-фрагмент WM_PAINT:<br>
+  <br>
+  <b>RECT r; //объявляем экзмепляр структуры RECT - координаты прямоугольника.<br>
+  r.left=100; //левый верхний угол<br>
+  r.top=100; <br>
+  r.right=200; //правый нижний<br>
+  r.right=300;</b></font></p>
+<p><font face="Arial, Helvetica, sans-serif" size="2"><b>//Заполняем прямоугольник<br>
+  FillRect(hdc, &amp;r, (HBRUSH)CreateSolidBrush(RGB(255,0,0)));<br>
+  <br>
+  </b>А вот и первый пример программы подоспел! Нарисуем что-то очень красивое 
+  - то, что мы уже умеем.</font></p>
+<p align="center"><font face="Arial, Helvetica, sans-serif" size="2"><br>
+  <br>
+  <img src="%D0%9A%D0%90%D0%9A%20%D1%80%D0%B8%D1%81%D0%BE%D0%B2%D0%B0%D1%82%D1%8C%20%D0%B2%20Win32%20API_files/paint.jpg" height="200" width="250"><br>
+  </font></p>
+<p><font face="Arial, Helvetica, sans-serif" size="2">В этом примере мы освежим 
+  методы работы со шрифтами, поменяв стандартный системный шрифт на свой, затем 
+  нарисуем прямоугольник, заполненный красным цветом, зелёный эллипс и прямоугольник 
+  с закруглёнными краями жёлтого цвета. Естественно, что для того, чтобы их заполнить 
+  нам понадобятся кисти, а для синей рамки на жёлтом прямоугольнике понадобятся 
+  перья. Всё, что есть в этой программе вы уже умеете. Мы просто закрепляем теорию 
+  на практике.<br>
+  <br>
+  <b>#include&lt;windows.h&gt;<br>
+  #include&lt;string.h&gt;</b></font></p>
+<p><b><font face="Arial, Helvetica, sans-serif" size="2">LRESULT CALLBACK WndProc(HWND, 
+  UINT, WPARAM, LPARAM);<br>
+  char szProgName[]="Имя программы";</font></b></p>
+<p><b><font face="Arial, Helvetica, sans-serif" size="2">int WINAPI WinMain(HINSTANCE 
+  hInstance, HINSTANCE hPrevInstance, LPSTR lpszCmdLine, int nCmdShow)<br>
+  {<br>
+  HWND hWnd;<br>
+  MSG lpMsg;<br>
+  WNDCLASS w;</font></b></p>
+<p><b><font face="Arial, Helvetica, sans-serif" size="2">w.lpszClassName=szProgName; 
+  //имя программы - объявлено выше<br>
+  w.hInstance=hInstance; //идентификатор текущего приложения<br>
+  w.lpfnWndProc=WndProc; //указатель на функцию окна<br>
+  w.hCursor=LoadCursor(NULL, IDC_ARROW); //загружаем курсор<br>
+  w.hIcon=0; <br>
+  w.lpszMenuName=0; <br>
+  w.hbrBackground=(HBRUSH)GetStockObject(WHITE_BRUSH); //цвет фона окна<br>
+  w.style=CS_HREDRAW|CS_VREDRAW;<br>
+  w.cbClsExtra=0;<br>
+  w.cbWndExtra=0;</font></b></p>
+<p><b><font face="Arial, Helvetica, sans-serif" size="2">//Если не удалось зарегистрировать 
+  класс окна - выходим<br>
+  if(!RegisterClass(&amp;w))<br>
+  return 0;</font></b></p>
+<p><b><font face="Arial, Helvetica, sans-serif" size="2">//Создадим окно в памяти, 
+  заполнив аргументы CreateWindow<br>
+  hWnd=CreateWindow(szProgName, //Имя программы<br>
+  "Грфические возможности Win32 API", //Заголовок окна<br>
+  WS_OVERLAPPEDWINDOW, //Стиль окна - перекрывающееся<br>
+  100, //положение окна на экране по х<br>
+  100, //положение по у<br>
+  500, //ширина<br>
+  400, //высота<br>
+  (HWND)NULL, //идентификатор родительского окна<br>
+  (HMENU)NULL, //идентификатор меню<br>
+  (HINSTANCE)hInstance, //идентификатор экземпляра программы<br>
+  (HINSTANCE)NULL); //отсутствие дополнительных параметров</font></b></p>
+<p><b><font face="Arial, Helvetica, sans-serif" size="2">//Выводим окно из памяти 
+  на экран<br>
+  ShowWindow(hWnd, nCmdShow);<br>
+  //Обновим содержимое окна<br>
+  UpdateWindow(hWnd);</font></b></p>
+<p><b><font face="Arial, Helvetica, sans-serif" size="2">//Цикл обработки сообщений</font></b></p>
+<p><b><font face="Arial, Helvetica, sans-serif" size="2">while(GetMessage(&amp;lpMsg, 
+  NULL, 0, 0)) {<br>
+  TranslateMessage(&amp;lpMsg); <br>
+  DispatchMessage(&amp;lpMsg);<br>
+  }<br>
+  return(lpMsg.wParam); <br>
+  }</font></b></p>
+<p><b><font face="Arial, Helvetica, sans-serif" size="2">//Функция окна<br>
+  LRESULT CALLBACK WndProc(HWND hWnd, UINT messg, <br>
+  WPARAM wParam, LPARAM lParam)<br>
+  {<br>
+  HDC hdc; //создаём контекст устройства<br>
+  PAINTSTRUCT ps; //создаём экземпляр структуры графического вывода<br>
+  LOGFONT lf;<br>
+  HFONT hFont;<br>
+  RECT r;<br>
+  HBRUSH hBrush;<br>
+  HPEN hPen;</font></b></p>
+<p><b><font face="Arial, Helvetica, sans-serif" size="2">//Цикл обработки сообщений<br>
+  switch(messg)<br>
+  {<br>
+  //сообщение рисования<br>
+  case WM_PAINT :<br>
+  hdc=BeginPaint(hWnd, &amp;ps);</font></b></p>
+<p><b><font face="Arial, Helvetica, sans-serif" size="2">//Создаём свой шрифт<br>
+  strcpy(lf.lfFaceName,"Times New Roman"); //копируем в строку название 
+  шрифта <br>
+  lf.lfHeight=20;<br>
+  lf.lfItalic=1;<br>
+  lf.lfStrikeOut=0;<br>
+  lf.lfUnderline=0;<br>
+  lf.lfWidth=10;<br>
+  lf.lfWeight=40;<br>
+  lf.lfCharSet=DEFAULT_CHARSET; //значение по умолчанию<br>
+  lf.lfPitchAndFamily=DEFAULT_PITCH; //значения по умолчанию<br>
+  lf.lfEscapement=0;</font></b></p>
+<p><b><font face="Arial, Helvetica, sans-serif" size="2">hFont = CreateFontIndirect(&amp;lf);<br>
+  SelectObject(hdc, hFont);<br>
+  SetTextColor(hdc, RGB(0,0,255));<br>
+  TextOut(hdc, 80,40, "Красота спасёт мир!!", 20);</font></b></p>
+<p><b><font face="Arial, Helvetica, sans-serif" size="2">//рисуем красный прямоугольник<br>
+  r.top=100;<br>
+  r.left=180;<br>
+  r.right=400;<br>
+  r.bottom=300;<br>
+  FillRect(hdc, &amp;r, HBRUSH(CreateSolidBrush(RGB(255,0,55))));</font></b></p>
+<p><b><font face="Arial, Helvetica, sans-serif" size="2">//рисуем зелёный эллипс<br>
+  hBrush=CreateSolidBrush(RGB(10,200,100));<br>
+  SelectObject(hdc, hBrush);<br>
+  Ellipse(hdc, 20,100,200,200);</font></b></p>
+<p><b><font face="Arial, Helvetica, sans-serif" size="2">//рисуем закруглённый 
+  прямоугольник<br>
+  hBrush=CreateSolidBrush(RGB(250,200,100));<br>
+  SelectObject(hdc, hBrush);<br>
+  hPen=CreatePen(2,2,RGB(0,0,255));<br>
+  SelectObject(hdc, hPen);<br>
+  RoundRect(hdc, 20, 250, 250, 350, 15, 15);</font></b></p>
+<p><b><font face="Arial, Helvetica, sans-serif" size="2"><br>
+  ValidateRect(hWnd, NULL);<br>
+  EndPaint(hWnd, &amp;ps);<br>
+  break;</font></b></p>
+<p><b><font face="Arial, Helvetica, sans-serif" size="2">//сообщение выхода - 
+  разрушение окна<br>
+  case WM_DESTROY:<br>
+  PostQuitMessage(0); //Посылаем сообщение выхода с кодом 0 - нормальное завершение<br>
+  DeleteObject(hPen);<br>
+  DeleteObject(hBrush);<br>
+  break;</font></b></p>
+<p><b><font face="Arial, Helvetica, sans-serif" size="2">default:<br>
+  return(DefWindowProc(hWnd, messg, wParam, lParam)); //освобождаем очередь приложения 
+  от нераспознаных<br>
+  }<br>
+  return 0;<br>
+  }</font></b></p>
+<p><font face="Arial, Helvetica, sans-serif" size="2">Правда, красиво? Наконец-то 
+  из этой API нам удалось выжать что-то стоящее. Продолжаем обзор.</font><b><font face="Arial, Helvetica, sans-serif" size="2"><br>
+  </font></b><font face="Arial, Helvetica, sans-serif" size="2"><b><br>
+  <font color="#990000"><a name="11"></a><br>
+  7. Прямоугольная рамка</font></b> - как видите, существует немало функций для 
+  работы с прямоугольниками:<br>
+  <br>
+  <b>int FrameRect(HDC hDC, CONST RECT *lprc, HBRUSH hbr);</b><br>
+  Применение аналогично предыдущей.<br>
+  <a name="12"></a><br>
+  <font color="#990000"><b>8. Инверсия значения цветов точек в заданной области</b></font><br>
+  <b>BOOL InvertRect(HDC hDC, CONST RECT *lprc);</b><br>
+  <a name="13"></a><br>
+  <font color="#990000"><b>9. Эллипс</b></font><br>
+  <b>BOOL Ellipse(HDC hdc, int x1, int y1, int x2, int y2); </b><br>
+  координаты - это прямоугольник, в который вписывается эллипс<br>
+  <a name="14"></a><br>
+  <b><font color="#990000">10. Хорда (сегмент эллипса)</font></b> - параметры 
+  аналогичны Arc<br>
+  BOOL Chord(HDC hDC, int left, int top, int right, int bottom, int x1, int y1, 
+  int x2, int y2); Функция соединяет хордой точки начала и конца дуги эллипса 
+  и закрашивает выделенный сегмент текущей кистью.<br>
+  <font color="#990000"><b><a name="15"></a><br>
+  11. Сектор эллипса</b></font> - аналог pieslice в DOS.<br>
+  BOOL Pie(HDC hDC, int left, int top, int right, int bottom, int x1, int y1, 
+  int x2, int y2);<br>
+  <a name="16"></a><br>
+  <font color="#990000"><b>12. Многоугольник</b></font>. Есть много функций рисования 
+  мноугольников. Мы рассмотрим две. Рисования от вершины к вершине и рисования 
+  отрезками:<br>
+  PolyDraw оперирует вершинами:<br>
+  <br>
+  <b>POINT poly[8];<br>
+  BYTE polytype[8];<br>
+  <br>
+  poly[0].x=375; //координаты первой вершины<br>
+  poly[0].y=375;<br>
+  <br>
+  ....//и так заполняем координаты всех восьми вершин<br>
+  <br>
+  poly[7].x=400; //координаты восьмой вершины<br>
+  poly[7].y =400;<br>
+  <br>
+  polytype[0]=PT_LINETO;<br>
+  <br>
+  ... //другой массив содержит режим рисования<br>
+  <br>
+  polytype[7]=PT_LINETO; <br>
+  <br>
+  PolyDraw(hdc, poly, polytype, 8); //рисование многоугольника<br>
+  </b><br>
+  Функция <b>Polyline</b> рисует набором отрезков:<br>
+  <br>
+  <b>POINT poly[4];</b></font></p>
+<p><font face="Arial, Helvetica, sans-serif" size="2"><b>poly[0].x =10;<br>
+  poly[0].y =30;</b></font></p>
+<p><font face="Arial, Helvetica, sans-serif" size="2"><b>poly[1].x =30;<br>
+  poly[1].y =30;</b></font></p>
+<p><font face="Arial, Helvetica, sans-serif" size="2"><b>poly[2].x =30;<br>
+  poly[2].y =60;</b></font></p>
+<p><font face="Arial, Helvetica, sans-serif" size="2"><b>poly[3].x=10;<br>
+  poly[3].y=30;</b></font></p>
+<p><font face="Arial, Helvetica, sans-serif" size="2"><b>Polyline(hdc, poly , 
+  4);</b><br>
+  <br>
+  <a name="17"></a><br>
+  <b>КАК вывести график функции?</b><br>
+  <br>
+  Всё это были фрагменты графических функций. Теперь рассмотрим настоящий полноценный 
+  пример. Это будет простейший график функции. <br>
+  <br>
+  </font></p>
+<table border="0" width="96%">
+  <tbody><tr>
+    <td bgcolor="#000000" width="27%">
+      <div align="center"><font face="Arial, Helvetica, sans-serif" size="2"><img src="%D0%9A%D0%90%D0%9A%20%D1%80%D0%B8%D1%81%D0%BE%D0%B2%D0%B0%D1%82%D1%8C%20%D0%B2%20Win32%20API_files/graphic.jpg" height="144" width="180"></font></div>
+    </td>
+    <td width="73%"><font face="Arial, Helvetica, sans-serif" size="2">Вообще 
+      графики очень часто используются в промышленных приложениях. А ведь промышленная 
+      автоматизация один из главныз заказчиков программиста. На деле никто не 
+      занимается программированием ради программирования. Обязательно придётся 
+      осваивать какую-то ещё предметную область. Будь то склад для программиста 
+      баз данных или производство упаковок для системного программиста. Так или 
+      иначе, программы, контроллирующие какой-нибудь физический парметр (температуру 
+      больного, давление в шахте, скорость двигателя, частоту оборотов, напряжённость 
+      магнитного поля) выводят оперативную информацию на грфик. Специальный человек 
+      - оператор следит за тем, чтобы значения графика не достигали предельных 
+      значений.<br>
+      Как вы сами понимаете, мы не можем обойти столь важную тему. Именно для 
+      неё наша следующая программа. <br>
+      Создайте пустой проект Win API и включите в него следующий текст:</font></td>
+  </tr>
+</tbody></table>
+<p><font face="Arial, Helvetica, sans-serif" size="2"><br>
+  <b>#include&lt;windows.h&gt;<br>
+  #include&lt;math.h&gt;</b></font></p>
+<p><font face="Arial, Helvetica, sans-serif" size="2"><b>#define pi 3.14</b></font></p>
+<p><font face="Arial, Helvetica, sans-serif" size="2"><b>LRESULT CALLBACK WndProc(HWND, 
+  UINT, WPARAM, LPARAM);<br>
+  //Процедура рисования линии<br>
+  BOOL Line(HDC hdc, int x1, int y1, int x2, int y2);</b></font></p>
+<p><font face="Arial, Helvetica, sans-serif" size="2"><b>char szProgName[]="Имя 
+  программы";</b></font></p>
+<p><font face="Arial, Helvetica, sans-serif" size="2"><b>int i, xView, yView;<br>
+  double y;<br>
+  char Buf[2];</b></font></p>
+<p><font face="Arial, Helvetica, sans-serif" size="2"><b>int WINAPI WinMain(HINSTANCE 
+  hInstance, HINSTANCE hPrevInstance, LPSTR lpszCmdLine, int nCmdShow)<br>
+  {<br>
+  HWND hWnd;<br>
+  MSG lpMsg;<br>
+  WNDCLASS w; </b></font></p>
+<p><font face="Arial, Helvetica, sans-serif" size="2"><b>w.lpszClassName=szProgName; 
+  <br>
+  w.hInstance=hInstance; <br>
+  w.lpfnWndProc=WndProc; <br>
+  w.hCursor=LoadCursor(NULL, IDC_ARROW); <br>
+  w.hIcon=0; <br>
+  w.lpszMenuName=0; <br>
+  w.hbrBackground=(HBRUSH)GetStockObject(WHITE_BRUSH); <br>
+  w.style=CS_HREDRAW|CS_VREDRAW; <br>
+  w.cbClsExtra=0;<br>
+  w.cbWndExtra=0;</b></font></p>
+<p><font face="Arial, Helvetica, sans-serif" size="2"><b>//Если не удалось зарегистрировать 
+  класс окна - выходим<br>
+  if(!RegisterClass(&amp;w))<br>
+  return 0;</b></font></p>
+<p><font face="Arial, Helvetica, sans-serif" size="2"><b>//Создадим окно в памяти, 
+  заполнив аргументы CreateWindow<br>
+  hWnd=CreateWindow(szProgName, <br>
+  "График функции", <br>
+  WS_OVERLAPPEDWINDOW, <br>
+  100, <br>
+  100, <br>
+  500, <br>
+  400, <br>
+  (HWND)NULL,<br>
+  (HMENU)NULL, <br>
+  (HINSTANCE)hInstance,<br>
+  (HINSTANCE)NULL); </b></font></p>
+<p><font face="Arial, Helvetica, sans-serif" size="2"><b>//Выводим окно из памяти 
+  на экран<br>
+  ShowWindow(hWnd, nCmdShow);<br>
+  //Обновим содержимое окна<br>
+  UpdateWindow(hWnd);</b></font></p>
+<p><font face="Arial, Helvetica, sans-serif" size="2"><b>//Цикл обработки сообщений</b></font></p>
+<p><font face="Arial, Helvetica, sans-serif" size="2"><b>while(GetMessage(&amp;lpMsg, 
+  NULL, 0, 0)) { //Получаем сообщение из очереди<br>
+  TranslateMessage(&amp;lpMsg); //Преобразует сообщения клавиш в символы<br>
+  DispatchMessage(&amp;lpMsg); //Передаёт сообщение соответствующей функции окна<br>
+  }<br>
+  return(lpMsg.wParam); <br>
+  }</b></font></p>
+<p><font face="Arial, Helvetica, sans-serif" size="2"><b>//Функция окна<br>
+  LRESULT CALLBACK WndProc(HWND hWnd, UINT messg, <br>
+  WPARAM wParam, LPARAM lParam)<br>
+  {<br>
+  HDC hdc; //создаём контекст устройства<br>
+  PAINTSTRUCT ps; //создаём экземпляр структуры графического вывода<br>
+  HPEN hPen; //создаём перо<br>
+  //Цикл обработки сообщений<br>
+  switch(messg)<br>
+  {</b></font></p>
+<p><font face="Arial, Helvetica, sans-serif" size="2"><b>case WM_SIZE:<br>
+  xView=LOWORD(lParam);<br>
+  yView=HIWORD(lParam);</b></font></p>
+<p><font face="Arial, Helvetica, sans-serif" size="2"><b> break;<br>
+  <br>
+  <br>
+  //сообщение рисования<br>
+  case WM_PAINT:<br>
+  hdc = BeginPaint(hWnd, &amp;ps);<br>
+  SetMapMode(hdc, MM_ISOTROPIC); //логические единицы отображаем, как физические<br>
+  SetWindowExtEx(hdc, 500,500, NULL); //Длина осей<br>
+  SetViewportExtEx(hdc, xView, -yView, NULL); //Определяем облась вывода<br>
+  SetViewportOrgEx(hdc, xView/6, yView/2, NULL); //Начало координат<br>
+  <br>
+  //Рисуем оси координат<br>
+  Line(hdc,0, 220,0,-220);//ось У<br>
+  Line(hdc, -100,0,500,0);//ось Х<br>
+  MoveToEx(hdc, 0,0,NULL); //перемещаемся в начало координат</b></font></p>
+<p><font face="Arial, Helvetica, sans-serif" size="2"><b> //Создание красного 
+  пера<br>
+  hPen=CreatePen(1,4,RGB(255,25,0));<br>
+  SelectObject(hdc, hPen);</b></font></p>
+<p><font face="Arial, Helvetica, sans-serif" size="2"><b> //синусоида<br>
+  for(i=0; i&lt;450; i++){<br>
+  y=180.0*(exp(-i*0.01))*sin(pi*i*(200.0/400.0)/180.0);<br>
+  LineTo(hdc, i, (int)y);<br>
+  }</b></font></p>
+<p><font face="Arial, Helvetica, sans-serif" size="2"><b> //Делаем перо снова 
+  чёрным<br>
+  hPen=CreatePen(1,1,RGB(0,0,0));<br>
+  SelectObject(hdc, hPen);</b></font></p>
+<p><font face="Arial, Helvetica, sans-serif" size="2"><b> //Наносим деления<br>
+  for(i=-100; i&lt;500; i+=100)<br>
+  {<br>
+  Line(hdc, i, 3,i,-3);<br>
+  Line(hdc, -3, i,3,i);<br>
+  itoa(i, Buf, 10);<br>
+  TextOut(hdc, i-5, -5, Buf , strlen(Buf));<br>
+  TextOut(hdc, -5, i, Buf , strlen(Buf)); <br>
+  }<br>
+  <br>
+  ValidateRect(hWnd, NULL); //Обновляем экран<br>
+  EndPaint(hWnd, &amp;ps);<br>
+  break;</b></font></p>
+<p><font face="Arial, Helvetica, sans-serif" size="2"><b>//сообщение выхода - 
+  разрушение окна<br>
+  case WM_DESTROY:<br>
+  DeleteObject(hPen); //не забываем уничтожать перья<br>
+  PostQuitMessage(0); //Посылаем сообщение выхода с кодом 0 - нормальное завершение<br>
+  break;</b></font></p>
+<p><font face="Arial, Helvetica, sans-serif" size="2"><b>default:<br>
+  return(DefWindowProc(hWnd, messg, wParam, lParam)); //освобождаем очередь приложения 
+  от нераспознаных<br>
+  }<br>
+  return 0;<br>
+  }<br>
+  <br>
+  //Функция рисования линии<br>
+  BOOL Line(HDC hdc, int x1, int y1, int x2, int y2)<br>
+  {<br>
+  MoveToEx(hdc, x1, y1, NULL); //сделать текущими координаты x1, y1<br>
+  return LineTo(hdc, x2, y2); //нарисовать линию<br>
+  }</b></font></p>
+<p></p>
+<p></p>
+<p></p>
+<p><font face="Arial, Helvetica, sans-serif" size="2">Поскольку в данной программе 
+  большое внимание уделяется всяким украшательствам: делениям и надписям, обращу 
+  ваше внимание на главное - создавать графики совсем не сложно. И вот как это 
+  делается:<br>
+  <br>
+  Мы знаем, что отсчёт координат задаётся от левого верхнего угла вниз и вправо. 
+  Как известно, значения на графике изменяются вверх и вправо. Вряд ли мы сможем 
+  объяснить пользователю, почему график "растёт вниз". На счастье, в 
+  Windows предусмотрена функция, преобразует координаты в нужном нам направлении.<br>
+  Первым делом, мы узнаём размер окна. Для этого используется сообщение <b>WM_SIZE</b>. 
+  Параметр lParam содержит по этому сообщению размеры экрана. Переменные xView 
+  и yView будут содержать эти значения:<br>
+  <b><br>
+  case WM_SIZE:<br>
+  xView=LOWORD(lParam);<br>
+  yView=HIWORD(lParam);</b></font><br>
+  <font face="Arial, Helvetica, sans-serif" size="2"><b>break;</b></font></p>
+<p><font face="Arial, Helvetica, sans-serif" size="2">Затем определим область 
+  вывода. Мы хотим, чтобы при увеличении координаты по у график рос вверх, а не 
+  вниз. <br>
+  <br>
+  <b>SetViewportExtEx(hdc, xView, -yView, NULL); </b><br>
+  <br>
+  Обратите внимание: yView указан со знаком <b>-</b>. Значит все координаты по 
+  у будут расти в обратную сторону - вверх.<br>
+  Центр графика обычно где-нибудь посередине экрана. Координаты же увеличиваются 
+  из левого верхнего угла. Перенесём центр графика:<br>
+  <br>
+  <b>SetViewportOrgEx(hdc, xView/6, yView/2, NULL);<br>
+  <br>
+  </b>В точке, равной 1/6 максимального значения по х и 1/2 значения по этого 
+  значения по у будет центр.<br>
+  Можно также задать длину осей - 500 и 500. Для этого применяется следующая функция:<br>
+  <br>
+  <b>SetWindowExtEx(hdc, 500,500, NULL); </b><br>
+  <br>
+  Как вы уже знаете, окно имеет логические координаты и физические. Для того, 
+  чтобы логические координаты совпадали с физическими, а также, чтобы единица 
+  отложенная по х была равно единице отложенной по у, задаётся режим MM_ISOTROPIC. 
+  Его задаёт функция:<br>
+  <br>
+  <b>SetMapMode(hdc, MM_ISOTROPIC); </b><br>
+  <br>
+  Вот, как будет выглядеть эта конструкция вцелом:<br>
+  <br>
+  <b>SetMapMode(hdc, MM_ISOTROPIC); //логические единицы отображаем, как физические<br>
+  SetWindowExtEx(hdc, 500,500, NULL); //Длина осей<br>
+  SetViewportExtEx(hdc, xView, -yView, NULL); //Определяем облась вывода<br>
+  SetViewportOrgEx(hdc, xView/6, yView/2, NULL); //Начало координат</b><br>
+  <br>
+  Дальше надо нарисовать оси. К нашей радости, точка 0, 0 сместилась на середину 
+  экрана, в левую его часть. Исходя из этого, рисуем оси, применяя самописную 
+  функцию Line:<br>
+  <b><br>
+  Line(hdc,0, 220,0,-220);//ось У<br>
+  Line(hdc, -100,0,500,0);//ось Х<br>
+  MoveToEx(hdc, 0,0,NULL); </b></font></p>
+<p><font face="Arial, Helvetica, sans-serif" size="2">В выводе графика нет ничего 
+  примечательного. Переменная i меняется от 0 до 450. Подставляя i в формулу, 
+  мы получаем зависимость y от i. Рисуем линию до этой точки. Небольшие отрезки 
+  сольются в непрерывную линию.<b><br>
+  <br>
+  for(i=0; i&lt;450; i++){<br>
+  y=180.0*(exp(-i*0.01))*sin(pi*i*(200.0/400.0)/180.0);<br>
+  LineTo(hdc, i, (int)y);<br>
+  }</b></font></p>
+<p><font face="Arial, Helvetica, sans-serif" size="2"> Иногда, требуется хранить 
+  значения физических величин несколько дней. Тогда график выполняется с длиннющей 
+  горизонтальной полосой прокрутки. При желании, можно вернуться и посмотреть 
+  были ли изменения, и если да, то какие.<br>
+  Другой выход из положения - вести историю, записывая её в файл, а на экран выводя 
+  только показания последних пяти минут. </font></p>
+<h2>Задания:</h2>
+<p><font face="Arial, Helvetica, sans-serif" size="2">1. Добавьте в приложения 
+  с графиком стрелочки и подписи к осям.<br>
+  2. Нарисуйте снеговика известными средствами GDI. Напомню, что снеговик состоит 
+  из трёх непрозрачных эллипсов грязно-белого цвета, на груди у него должны быть 
+  пуговки, в руке - метла, а на голове - ведро. <br>
+  3. Нарисуйте красивый паровозик, клубы из трубы которого будут выводиться в 
+  цикле в виде синих эллипсов<br>
+  4. Нарисуйте кораблик с жёлтой палубой и красными бортами, используя Polyline 
+  или Polydraw. Кораблик покоится на синих волнах, которые нарисованы дугами разной 
+  толщины. Попробуйте вывести дуги в цикле.<br>
+  5. Нарисуйте с помощью одних только линий домик с забором<br>
+  </font></p>
+<p align="center"><font face="Arial, Helvetica, sans-serif" size="2"><br>
+  <b><a href="http://radiofront.narod.ru/htm/prog/htm/winda/api/font.html" target="_self">Назад</a> <a href="http://radiofront.narod.ru/htm/prog/htm/indexprog.html" target="_parent">Главная</a> 
+  <a href="http://radiofront.narod.ru/htm/prog/htm/winda/api/mouse.html" target="_self">Вперёд</a></b></font></p>
+</body></html>

@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<!-- saved from url=(0079)http://aqdi.com/articles/using-the-golay-error-detection-and-correction-code-3/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Using The Golay Error Detection And Correction Code | Atlantic Quality Design, Inc. R&amp;D Services</title>
+
+<link rel="pingback" href="http://aqdi.com/wordpress/xmlrpc.php">
+<link rel="dns-prefetch" href="http://s.w.org/">
+<link rel="alternate" type="application/rss+xml" title="Atlantic Quality Design, Inc. R&amp;D Services » Feed" href="http://aqdi.com/feed/">
+<link rel="alternate" type="application/rss+xml" title="Atlantic Quality Design, Inc. R&amp;D Services » Comments Feed" href="http://aqdi.com/comments/feed/">
+		<div class="fit-vids-style">­<style>               .fluid-width-video-wrapper {                 width: 100%;                              position: relative;                       padding: 0;                            }                                                                                   .fluid-width-video-wrapper iframe,        .fluid-width-video-wrapper object,        .fluid-width-video-wrapper embed {           position: absolute;                       top: 0;                                   left: 0;                                  width: 100%;                              height: 100%;                          }                                       </style></div><script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/aqdi.com\/wordpress\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.6.1"}};
+			!function(a,b,c){function d(a){var c,d,e,f,g,h=b.createElement("canvas"),i=h.getContext&&h.getContext("2d"),j=String.fromCharCode;if(!i||!i.fillText)return!1;switch(i.textBaseline="top",i.font="600 32px Arial",a){case"flag":return i.fillText(j(55356,56806,55356,56826),0,0),!(h.toDataURL().length<3e3)&&(i.clearRect(0,0,h.width,h.height),i.fillText(j(55356,57331,65039,8205,55356,57096),0,0),c=h.toDataURL(),i.clearRect(0,0,h.width,h.height),i.fillText(j(55356,57331,55356,57096),0,0),d=h.toDataURL(),c!==d);case"diversity":return i.fillText(j(55356,57221),0,0),e=i.getImageData(16,16,1,1).data,f=e[0]+","+e[1]+","+e[2]+","+e[3],i.fillText(j(55356,57221,55356,57343),0,0),e=i.getImageData(16,16,1,1).data,g=e[0]+","+e[1]+","+e[2]+","+e[3],f!==g;case"simple":return i.fillText(j(55357,56835),0,0),0!==i.getImageData(16,16,1,1).data[0];case"unicode8":return i.fillText(j(55356,57135),0,0),0!==i.getImageData(16,16,1,1).data[0];case"unicode9":return i.fillText(j(55358,56631),0,0),0!==i.getImageData(16,16,1,1).data[0]}return!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i;for(i=Array("simple","flag","unicode8","diversity","unicode9"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script><script src="./Using The Golay Error Detection And Correction Code _ Atlantic Quality Design, Inc. R&amp;D Services_files/wp-emoji-release.min.js" type="text/javascript"></script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel="stylesheet" id="theme-stylesheet-css" href="./Using The Golay Error Detection And Correction Code _ Atlantic Quality Design, Inc. R&amp;D Services_files/style.css" type="text/css" media="all">
+<link rel="stylesheet" id="woo-layout-css" href="./Using The Golay Error Detection And Correction Code _ Atlantic Quality Design, Inc. R&amp;D Services_files/layout.css" type="text/css" media="all">
+<script type="text/javascript" src="./Using The Golay Error Detection And Correction Code _ Atlantic Quality Design, Inc. R&amp;D Services_files/jquery.js"></script>
+<script type="text/javascript" src="./Using The Golay Error Detection And Correction Code _ Atlantic Quality Design, Inc. R&amp;D Services_files/jquery-migrate.min.js"></script>
+<script type="text/javascript" src="./Using The Golay Error Detection And Correction Code _ Atlantic Quality Design, Inc. R&amp;D Services_files/third-party.js"></script>
+<script type="text/javascript" src="./Using The Golay Error Detection And Correction Code _ Atlantic Quality Design, Inc. R&amp;D Services_files/general.js"></script>
+<link rel="https://api.w.org/" href="http://aqdi.com/wp-json/">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://aqdi.com/wordpress/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://aqdi.com/wordpress/wp-includes/wlwmanifest.xml"> 
+<meta name="generator" content="WordPress 4.6.1">
+<link rel="canonical" href="http://aqdi.com/articles/using-the-golay-error-detection-and-correction-code-3/">
+<link rel="shortlink" href="http://aqdi.com/?p=208">
+<link rel="alternate" type="application/json+oembed" href="http://aqdi.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Faqdi.com%2Farticles%2Fusing-the-golay-error-detection-and-correction-code-3%2F">
+<link rel="alternate" type="text/xml+oembed" href="http://aqdi.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Faqdi.com%2Farticles%2Fusing-the-golay-error-detection-and-correction-code-3%2F&amp;format=xml">
+
+<!-- Theme version -->
+<meta name="generator" content="Resort 1.1.5">
+<meta name="generator" content="WooFramework 6.2.0">
+
+<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+<!--  Mobile viewport scale | Disable user zooming as the layout is optimised -->
+<meta content="initial-scale=1.0; maximum-scale=1.0; user-scalable=no" name="viewport">
+<!--[if lt IE 9]>
+<script src="https://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+		<link rel="icon" href="http://aqdi.com/wordpress/wp-content/uploads/2015/12/cropped-Logo-A-512-32x32.png" sizes="32x32">
+<link rel="icon" href="http://aqdi.com/wordpress/wp-content/uploads/2015/12/cropped-Logo-A-512-192x192.png" sizes="192x192">
+<link rel="apple-touch-icon-precomposed" href="http://aqdi.com/wordpress/wp-content/uploads/2015/12/cropped-Logo-A-512-180x180.png">
+<meta name="msapplication-TileImage" content="http://aqdi.com/wordpress/wp-content/uploads/2015/12/cropped-Logo-A-512-270x270.png">
+
+<script type="text/javascript" src="./Using The Golay Error Detection And Correction Code _ Atlantic Quality Design, Inc. R&amp;D Services_files/jscripts.php"></script> 
+
+<!-- Woo Custom Styling -->
+<style type="text/css">
+body { background: #4d3b3b !important; }
+a { color: #4994e3 !important; }
+a:hover, .post-more a:hover, .post-meta a:hover, .post p.tags a:hover { color: #85b2e2 !important; }
+a.button, a.comment-reply-link, #commentform #submit, #contact-page .submit { background: #6b2929 !important; border-color: #6b2929 !important; }
+a.button:hover, a.button.hover, a.button.active, a.comment-reply-link:hover, #commentform #submit:hover, #contact-page .submit:hover { background: #6b2929 !important; opacity: 0.9; }
+</style>
+
+<!-- Google Webfonts -->
+<link href="./Using The Golay Error Detection And Correction Code _ Atlantic Quality Design, Inc. R&amp;D Services_files/css" rel="stylesheet" type="text/css">
+
+<!-- Woo Custom Typography -->
+<style type="text/css">
+body { font:300 1.4em/1.5em Verdana, Geneva, sans-serif;color:#3d0600; }
+#navigation ul.nav > li a { font:normal 1.2em/1.4em 'Ubuntu', arial, sans-serif;color:#8B8B8B; }
+.page header h1 { font:normal 2em/1.4em 'Monda', arial, sans-serif;color:#3d0600; }
+.post header h1 { font:normal 2em/1.4em 'Monda', arial, sans-serif;color:#3d0600; }
+.post header h1 a:link, .post header h1 a:visited { font:normal 2em/1em 'Monda', arial, sans-serif;color:#3d0600; }
+.post-meta { font:300 1em/1em Verdana, Geneva, sans-serif;color:#BEBEBE; }
+.entry, .entry p { font:300 1em/1.5em Verdana, Geneva, sans-serif;color:#3d0600; } h1, h2, h3, h4, h5, h6 { font-family: Verdana, Geneva, sans-serif, arial, sans-serif; }
+.widget h3 { font:bold 1.2em/1em Verdana, Geneva, sans-serif;color:#4B4B4B; }
+.widget h3 { font:bold 1.2em/1em Verdana, Geneva, sans-serif;color:#4B4B4B; }
+</style>
+
+<!-- Alt Stylesheet -->
+<link href="./Using The Golay Error Detection And Correction Code _ Atlantic Quality Design, Inc. R&amp;D Services_files/default.css" rel="stylesheet" type="text/css">
+<!-- Options Panel Custom CSS -->
+<style type="text/css">
+/* this is needed to get BOLD TEXT TO WORK! */
+strong {font-weight: bold;}
+bold {font-weight: bold;}
+b {font-weight: bold;}
+
+hr {color: #aaaaaa; background-color: #aaaaaa; height: 3px; solid #000;}
+
+/* change background color */
+#header { background: #500000;
+padding: 5px 0px 5px 0px;}
+#header #fixed-header.fixed {
+background: #500000;}
+/*body {
+    background: #6D5B5B none repeat scroll 0% 0% !important;
+}*/
+#footer-wrapper {
+    background: #6D5B5B none repeat scroll 0% 0%;
+}/* this is needed to get BOLD TEXT TO WORK! */
+strong {font-weight: bold;}
+bold {font-weight: bold;}
+b {font-weight: bold;}
+
+hr {color: #aaaaaa; background-color: #aaaaaa; height: 3px; solid #000;}
+
+/* change background color */
+#header { background: #500000;
+padding: 5px 0px 5px 0px;}
+#header #fixed-header.fixed {
+background: #500000;}
+/*body {
+    background: #6D5B5B none repeat scroll 0% 0% !important;
+}*/
+#footer-wrapper {
+    background: #6D5B5B none repeat scroll 0% 0%;
+}
+#header #logo {margin-bottom: 0em;}
+#header #logo:active {  padding-top: 0em;}
+
+.post .entry a, .page .entry a, .portfolio .entry a, .comment-entry p a {
+       	text-decoration: underline;
+}
+
+/* remove bottom margin from general images */
+.page .entry img.marginlessimage{margin-bottom: 0; border:none;}
+
+/* maroon intro bar */
+#intro-message {
+  background: #500000; /* maroon added */
+  margin: 0 0 2.618em;
+  padding: 2.244em 0;
+  color: #E4E4E4;
+}
+
+/* maroon bottom bar */
+#bottom-social-connect {
+    margin: 0px;
+    padding: 1.618em 0px;
+    background: #500000 none repeat scroll 0% 0%;
+    border-bottom: 1px solid #486C8A;
+}
+
+/* maroon drop menus */
+#navigation ul.nav ul {
+    background: #500000 none repeat scroll 0% 0%;
+    border: 5px solid #700000;
+}
+/* center slider images */
+.slides img {
+ display: table;
+ margin: 0 auto;
+}
+
+/* smaller text for wide tables */
+table.smallfonttable{font-size : 80%;}
+table.smallfonttable td{background-color: #b0b0b0;}
+table.smallfonttable th{background-color: #c0c0c0;}
+
+/* usable table format! */
+table.usabletable td{background-color: #b0b0b0;
+padding: 0px 0px 0px 0px;}
+table.usabletable{width: auto;}
+
+/* product table format! */
+table.usableproducttable{width: auto; 
+margin: 10px;
+border-collapse: collapse !important;
+border-spacing: 0px;
+border: 1px solid;
+}
+table.usableproducttable tr{
+background-color: #ffffff;
+padding: 0px;
+margin: 0px;
+text-align: center;
+vertical-align: middle;
+border-collapse: collapse !important;
+border-spacing: 0px;
+border: 1px solid;
+}
+table.usableproducttable th, table.usableproducttable td{
+background-color: #ffffff;
+padding: 0px 2px 0px 2px;
+margin: 0px;
+text-align: center;
+vertical-align: middle;
+border-collapse: collapse !important;
+border-spacing: 0px;
+border: 1px solid;
+}
+
+/* cable type table format! */
+table.cabletypetable{width: auto; margin: 0px;}
+table.cabletypetable th, 
+table.cabletypetable td, 
+table.cabletypetable tr{
+background-color: #ffffff;
+padding: 0px 0px 0px 0px;
+text-align: center;
+vertical-align: middle;
+margin: 0px 0px 0px 0px;
+border-style: none;
+}
+
+/* smaller table to enclose audio player */
+table.smallplayertable{width : 40%;}
+
+/* simple table */
+table.simpletable{width : auto;}
+#header #logo {margin-bottom: 0em;}
+#header #logo:active {  padding-top: 0em;}
+
+.post .entry a, .page .entry a, .portfolio .entry a, .comment-entry p a {
+       	text-decoration: underline;
+}
+
+/* remove bottom margin from general images */
+.page .entry img.marginlessimage{margin-bottom: 0;}
+
+/* maroon intro bar */
+#intro-message {
+  background: #500000; /* maroon added */
+  margin: 0 0 2.618em;
+  padding: 2.244em 0;
+  color: #E4E4E4;
+}
+
+/* maroon bottom bar */
+#bottom-social-connect {
+    margin: 0px;
+    padding: 1.618em 0px;
+    background: #500000 none repeat scroll 0% 0%;
+    border-bottom: 1px solid #486C8A;
+}
+
+/* maroon drop menus */
+#navigation ul.nav ul {
+    background: #500000 none repeat scroll 0% 0%;
+    border: 5px solid #700000;
+}
+/* center slider images */
+.slides img {
+ display: table;
+ margin: 0 auto;
+}
+
+/* smaller text for wide tables */
+table.smallfonttable{font-size : 80%;}
+table.smallfonttable td{background-color: #b0b0b0;}
+table.smallfonttable th{background-color: #c0c0c0;}
+
+/* usable table format! */
+table.usabletable td{background-color: #b0b0b0;
+padding: 0px 0px 0px 0px;}
+table.usabletable{width: auto;}
+
+/* product table format! */
+table.usableproducttable{width: auto; 
+margin: 10px;
+border-collapse: collapse !important;
+border-spacing: 0px;
+border: 1px solid;
+}
+table.usableproducttable tr{
+background-color: #ffffff;
+padding: 0px;
+margin: 0px;
+text-align: center;
+vertical-align: middle;
+border-collapse: collapse !important;
+border-spacing: 0px;
+border: 1px solid;
+}
+table.usableproducttable th, table.usableproducttable td{
+background-color: #ffffff;
+padding: 0px 2px 0px 2px;
+margin: 0px;
+text-align: center;
+vertical-align: middle;
+border-collapse: collapse !important;
+border-spacing: 0px;
+border: 1px solid;
+}
+
+/* cable type table format! */
+table.cabletypetable{width: auto; margin: 0px;}
+table.cabletypetable th, 
+table.cabletypetable td, 
+table.cabletypetable tr{
+background-color: #ffffff;
+padding: 0px 0px 0px 0px;
+text-align: center;
+vertical-align: middle;
+margin: 0px 0px 0px 0px;
+border-style: none;
+}
+
+/* smaller table to enclose audio player */
+table.smallplayertable{width : 40%;}
+
+/* simple table */
+table.simpletable{width : auto;}
+
+/* unshaded table format! */
+table.unshadedtable{
+border-collapse: collapse !important;
+border: none !important;}
+table.unshadedtable td{
+background-color: #ffffff;
+padding: 0px 0px 0px 0px;}
+table.unshadedtable{width: auto;}
+</style>
+
+
+<!-- Woo Shortcodes CSS -->
+<link href="./Using The Golay Error Detection And Correction Code _ Atlantic Quality Design, Inc. R&amp;D Services_files/shortcodes.css" rel="stylesheet" type="text/css">
+
+<!-- Custom Stylesheet -->
+<link href="./Using The Golay Error Detection And Correction Code _ Atlantic Quality Design, Inc. R&amp;D Services_files/custom.css" rel="stylesheet" type="text/css">
+</head>
+<body class="page page-id-208 page-child parent-pageid-8 page-template page-template-template-fullwidth page-template-template-fullwidth-php chrome alt-style-default layout-left-content">
+
+<div id="wrapper">
+    
+    
+	<header id="header">
+
+		<div id="fixed-header">
+
+			<div class="col-full">
+
+				
+	<a id="logo" href="http://aqdi.com/" title="For Companies on a Budget and Schedule">
+		<img src="./Using The Golay Error Detection And Correction Code _ Atlantic Quality Design, Inc. R&amp;D Services_files/AQDLogo-200w.gif" alt="Atlantic Quality Design, Inc. R&amp;D Services">
+	</a>
+			    
+			    <hgroup>
+					<span class="nav-toggle"><a href="http://aqdi.com/articles/using-the-golay-error-detection-and-correction-code-3/#navigation"><span>Navigation</span></a></span>
+					<h1 class="site-title"><a href="http://aqdi.com/">Atlantic Quality Design, Inc. R&amp;D Services</a></h1>
+					<h2 class="site-description">For Companies on a Budget and Schedule</h2>
+				</hgroup>
+		        
+		        
+				<nav id="navigation" role="navigation">
+					
+					<ul id="main-nav" class="nav fl"><li id="menu-item-419" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-419"><a href="http://aqdi.com/articles/services-we-offer-3/">Services</a></li>
+<li id="menu-item-422" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-422"><a href="http://aqdi.com/articles/check-out-some-of-our-past-projects-3/">Projects</a></li>
+<li id="menu-item-423" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-423"><a href="http://aqdi.com/articles/what-do-our-customers-say-about-us-3/">Testimonials</a></li>
+<li id="menu-item-420" class="menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor menu-item-420"><a href="http://aqdi.com/articles/">Articles</a></li>
+<li id="menu-item-421" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-421"><a href="http://aqdi.com/articles/contacting-us-3/">Contact</a></li>
+</ul>			
+				</nav><!-- /#navigation -->
+				
+					<div id="header-contact">
+		<ul class="nav">
+						<li class="phone">
+				<span>Call us on</span>
+				540-966-4356			</li>
+					</ul>
+	</div>
+			
+			</div><!-- /.col-full -->
+
+		</div><!-- /#fixed-header -->
+
+	</header><!-- /#header -->
+
+	       
+    <div id="content" class="page col-full">
+    
+    	    	
+		<section id="main" class="fullwidth">
+           
+                                                                     
+                <article class="post-208 page type-page status-publish hentry">
+
+					<div class="inner">
+
+						<header>
+							<h1>Using The Golay Error Detection And Correction Code</h1>
+						</header>
+	                    
+	                    <section class="entry">
+		                	<h4>(C) 2003 Hank Wallace</h4>
+<p><i>The code exhibited in this article has been adapted and flown on the UKube-1 satellite! For more information on the UKube-1, see <a href="http://amsat-uk.org/2014/07/08/ukube-1-signals-received/">this article.</a></i></p>
+<p>This is the scene: Smoke wafts slowly in the darkened room, as with a mind of its own. Seedy characters sit at a dirty table under a naked bulb. At the focus, a Ouija board. Surrounding are piles of paper — data stacked upon data upon data, casting stark shadows. A sheet is snatched, examined, a scribble and it’s back to the pile. Occult bookies hard at work? No, error correction!</p>
+<p>Well, that was my vision of it, until I was forced to bone-up for a recent communications project. I found out that error correction is not really like what you see in the movies, smoky mirrors, crystal balls, and evil mathematicians. If your vision of error correction is something to be avoided, I would like to help you change that image.</p>
+<p>Most engineers are familiar with basic methods to verify the integrity of data transmitted over noisy communications channels. Simple checksums and cyclic redundancy checks (CRCs) are the most popular. Presented here is a related coding technique by which errors can not only be detected, but removed from received data without retransmissions.</p>
+<p>This code bears the name of its discoverer, Marcel J. E. Golay. The first reference to his work is a note he published in a 1949 Bell technical journal<sup>1</sup>. Then, there was much activity in information coding techniques spurred by Claude Shannon’s 1948 landmark work, <i>The Mathematical Theory Of Communication</i>. The codes that Golay discovered can enhance the reliability of communication on a noisy data link.</p>
+<p>Before we proceed, a note of caution. The theory of error detection and correction is deep (but not necessarily dark), as you can verify from any of the references cited. This article is intended only to give a brief overview of one of the many codes available. We will not dwell on the mathematical details or terse comparisons error correction techniques. If your system design calls for error correction methods, the C program fragments here may help you evaluate the Golay code. Just keep in mind that this is not a theoretically thorough treatment of this almost bottomless, fascinating subject. For that, see the references, and be sure you have a fresh pot of coffee on hand because you’re going to need it!</p>
+<p>We should get a couple of simple definitions out of the way to make what follows easier to digest.</p>
+<p><u>Weight</u>: The count of bits which are ones in a binary word. For example, the weight of the byte 01011011 is five since it contains five 1s.</p>
+<p><u>Hamming Distance</u>: The number of bits which differ between two binary numbers. If A and B are binary numbers, the distance is weight(A XOR B). For example, the Hamming distance between bytes 4Ah and 68h is weight(4Ah XOR 6Fh) = weight(22h) = 2 bits.</p>
+<p><u>Forward Error Correction</u>: A technique which can correct errors at the receiver without relying on retransmissions of data.</p>
+<h3>Codeword Structure</h3>
+<p>Let’s jump right in and examine the structure of the binary Golay code. A codeword is formed by taking 12 information bits and appending 11 check bits which are derived from a modulo-2 division, as with the CRC.</p>
+<table class="simpletable" border="1">
+<caption><b>Golay [23,12] Codeword</b></caption>
+<tbody>
+<tr>
+<th>Check bits</th>
+<th>Information bits</th>
+</tr>
+<tr class="alt-table-row">
+<th>XXX XXXX XXXX</th>
+<th>XXXX XXXX XXXX</th>
+</tr>
+</tbody>
+</table>
+<p>We will examine the modulo-2 division process later. The common notation for this structure is Golay [23,12], indicating that the code has 23 total bits, 12 information bits, and 23- 12=11 check bits. Since each codeword is 23 bits long, there are 2<sup>23</sup>, or 8,388,608 possible binary values. However, since each of the 12-bit information fields has only one corresponding set of 11 check bits, there are only 2<sup>12</sup>, or 4096, valid Golay codewords. You can think of the codewords as being distributed sparsely along the number line.</p>
+<p>The Golay codewords are not really spread evenly as you count along the number line, say every few ticks. Rather they are spaced with regard to the Hamming distance between them. It turns out that each Golay codeword has seven or more bits differing from every other. Mathematicians say that the code has a minimum distance, d, of seven. They have determined analytically that the Golay code can detect and correct a maximum of (d-1)/2=3 bit errors, in any pattern.</p>
+<p>To augment the power of the Golay code, an overall parity bit is usually added, resulting in a clean three-byte codeword called the extended Golay code, noted as Golay [24,12]. With this parity bit, all odd numbers of bit errors can be detected in each codeword, as well as all 4-bit errors.</p>
+<table class="simpletable" border="1">
+<caption><b>Golay [24,12] Codeword</b></caption>
+<tbody>
+<tr>
+<th>Parity bit</th>
+<th>Check bits</th>
+<th>Information bits</th>
+</tr>
+<tr class="alt-table-row">
+<th>X</th>
+<th>XXX XXXX XXXX</th>
+<th>XXXX XXXX XXXX</th>
+</tr>
+</tbody>
+</table>
+<p>Before you trash all your old CRC based designs, be advised that there is a trade-off associated with the Golay code’s error correction ability. If the code is used merely to detect errors, it can find a maximum 6 of them in any 24-bit codeword. However, if correction is performed, only three bits are correctable. Thus, we trade identifiable errors for correctability. As the code is used in an application, situations may demand changing the correction/detection methods to suit. Keep this trade-off in mind as you examine the performance of the Golay code and the requirements of your application.</p>
+<p>Let’s look at the error trapping ability of the code. If error correction is not attempted, these are the error-detection-only properties, per 24-bit extended Golay codeword:</p>
+<ul>
+<li>100% of one- to six-bit errors detected, any pattern</li>
+<li>100% of odd bit-errors detected, any pattern</li>
+<li>99.988% of other errors detected</li>
+</ul>
+<p>Using the error correction facilities of the code, these are the data reliability rates:</p>
+<ul>
+<li>100% of one- to three-bit errors corrected, any pattern</li>
+<li>100% of four-bit errors detected, any pattern</li>
+<li>100% of odd numbers of bit errors detected, any pattern</li>
+<li>0.24% of other errors corrected (1/4096)</li>
+</ul>
+<p>The parity bit of the extended Golay [24,12] code augments its error corrective properties, allowing all combinations of 4 bit errors to be detected, but not corrected.</p>
+<p>Error correction is obviously no panacea and does carry a penalty. Let me explain why. When a codeword is being corrected, the correction algorithm looks for the closest matching codeword. For example, say codeword E86555h is transmitted (data=555h, checkbits=E86h), but four bit errors occur, corrupting the codeword to E86476h. When we feed this codeword into the correction function, it returns 68E4E6h as the closest matching codeword, not E86555h. The receiver can use the parity bit to detect this error, but higher even numbers of errors it cannot detect. This is called an <i>uncorrectable error</i>, and illustrates the fact that every correction algorithm has a bit- error-rate (BER) limit, beyond which it cannot compensate. Fortunately, you may enable the correction facilities of the given Golay C routines according to your needs.</p>
+<p></p><center><br>
+<a href="./Using The Golay Error Detection And Correction Code _ Atlantic Quality Design, Inc. R&amp;D Services_files/art3_3.gif"><img class="alignnone size-full wp-image-276" src="./Using The Golay Error Detection And Correction Code _ Atlantic Quality Design, Inc. R&amp;D Services_files/art3_3.gif" alt="art3_3" width="300" height="150"></a><br>
+<strong>Simplified illustration of Golay [23,12] error correction.</strong></center>The diagram above illustrates what is happening during codeword correction. We see three valid Golay codewords, A and B. The X-axis represents Hamming distance between these codewords. The Y-axis represents the number of bit errors incurred as you move away from a valid codeword. Picture the correction algorithm as taking the corrupt input codeword (marked in red) and sliding down the slope to the nearest correct codeword. If the codeword is a corrupted version of codeword B, we’re in luck. If it is a very corrupted version of A, the correction algorithm lies to us and returns B as the corrected codeword. You can see that the minimum distance, d, of the code controls the amount of corruption that can be tolerated. This is a simplified explanation, of course. In reality, this diagram is multidimensional, and each Golay codeword has many error laden companions to keep it company in the abstract boredom of n-space.<p></p>
+<p>Now for some mathematical curiosities. Among error correction codes, there is a class known as perfect codes. Briefly, perfect codes are defined as those where each of the invalid codewords, when pumped through the correction process, will be transformed into a valid codeword. There are no orphan uncorrectable information vectors. Included as perfect codes are the Hamming codes, a one-bit correction scheme, and the binary and ternary Golay codes. The Golay codes are the only nontrivial multiple error correcting perfect codes that exist<sup>3</sup>.</p>
+<p>The perfect quality of the Golay code makes it an object of beauty in the eyes of mathematicians, especially when this property is expressed in terms of the optimum packing of spheres into a region of space<sup>4</sup>. However, the perfection of a code is not necessarily of concern to communications engineers.</p>
+<p>The Golay codeword has some very interesting properties:</p>
+<ul>
+<li>Cyclic Invariance. If you take a 23-bit Golay codeword and cyclically shift it by any number of bits, the result is also a valid Golay codeword.</li>
+<li>Inversion. If you take a 23-bit Golay codeword and invert it, the result is also a valid Golay codeword.</li>
+<li>Minimum Hamming Distance. The distance between any two Golay [23,12] codewords is always seven or more bits. The distance between any two Golay [24,12] codewords is always eight or more bits.</li>
+<li>Error Correction. The correction algorithm can detect and correct up to three bit errors per codeword.</li>
+</ul>
+<p>Let’s examine some practical aspects of the code.</p>
+<h3>What’s The Use?</h3>
+<p>The Golay code is obviously not able to encode a large amount of data in one codeword. Twelve bits is the maximum allowed per 23 or 24 bit codeword. So what is its use? Well, one advantage to error correction is the elimination of communications retries which can bog down a noisy channel. In some cases, the overhead associated with a resend request is much greater than the length of a data packet. For example, to send a data packet on a half duplex or simplex radio system, the microprocessor must turn on the transmitter and wait for it come up to full power, typically up to 100ms. The originating station must incur the same pre- transmit delay when resending its data. Even if all goes well, there is 200ms of wasted time involved in a resend request. At 1200 bits per second, 200ms represents 240 bits of data, a reasonable message length in some systems. And if the radio channel is busy with other traffic, the delays can be longer. The Golay code can reduce the number of retransmission events by allowing the receiving end to correct some errors in the received data, decreasing the probability that the channel will get overloaded.</p>
+<p>In other situations, there may be no resend request possible, say, with a one-way RF, infrared or ultrasonic data link. The Golay code allows such systems to increase the probability of one-way, error-free, reception.</p>
+<p>Some communications channels are more prone than others to burst errors, where many consecutive data bits are corrupted. The Golay code is not alone able to correct bursts of errors over three bits long in a single codeword. However, when augmented with a technique called bit interleaving, the Golay code’s small, modular format allows the correction of large burst errors, as we will see later. The unmodified Golay code really shines in applications prone to random bit errors though, and it tolerates a disgusting (3 bit errors)/(24 bits per codeword) = 12.5% bit error rate without data retransmissions.</p>
+<p>Of course, a disadvantage of the extended Golay code is that you must transmit as many check bits as data bits. Maybe you are asking, why not just send the data twice, without check bits? The answer is that no error correction is possible in such a system. How would you know which of two different messages, if not both, were corrupt? The Golay code allows error correction in exchange for the data-doubling price.</p>
+<h3>Golay Code Implementation – Encoding</h3>
+<p>The Golay code is encoded just like the CRC, using modulo-2 division. However, there are only 12 information bits per codeword, so you must break your data down into 12-bit chunks and encode each as one codeword. The characteristic polynomials for the Golay code are:</p>
+<ul>
+<li>X<sup>11</sup> + X<sup>9</sup> + X<sup>7</sup> + X<sup>6</sup> + X<sup>5</sup> + X + 1, coefficients AE3h.</li>
+<li>X<sup>11</sup> + X<sup>10</sup> + X<sup>6</sup> + X<sup>5</sup> + X<sup>4</sup> + X<sup>2</sup> + 1, coefficients C75h.</li>
+</ul>
+<p>Yes, there are two. You only need use one of them because they both have the same properties as mentioned above, though they generate differing checkbits. Pull a coin and choose a polynomial! We will use the coefficients of the X terms of the first polynomial, AE3h. Note that AE3h is the bit-reversed version of C75h, a byproduct of the code’s cyclic nature.</p>
+<p>An example worked out by hand illustrates the modulo-2 division process. Remember that in modulo-2 division we exclusive-OR instead of subtract. The data we wish to encode is 555h. To generate the 11 check bits, append 11 zeros onto the bit-reversed data (LSB first) and perform the division below.</p>
+<pre>        Golay                                                    
+      polynomial    info bits   zero fill                        
+     |----------|  |----------||---------|                       
+                  ________________________                       
+     101011100011 )10101010101000000000000                       
+                   101011100011                                  
+                   ------------ &lt;---------- Exclusive-OR         
+                        100100100000                             
+                        101011100011                             
+                        ------------                             
+                          111100001100                           
+                          101011100011                           
+                          ------------                           
+                           101111011110                          
+                           101011100011                          
+                           ------------                          
+                              100111101000                       
+                              101011100011                       
+                              ------------                       
+                               01100001011 &lt;-- checkbits         
+</pre>
+<p>We only care about the bit-reversed remainder from the division, 11010000110 = 686h, and so do not even write down the quotient. Putting the codeword together for transmission, we get 686555h. A parity bit could be added to the codeword to make an extended Golay code. Of course, you can scramble the bits around in any order for transmission, just as long as they are reassembled correctly before decoding. Grouping the checkbits and information bits together as we have done here is called <i>systematic encoding</i>.</p>
+<p>The encoding algorithm is shown below. Long integers are used to conveniently store one codeword.</p>
+<pre>#define POLY  0xAE3  /* or use the other polynomial, 0xC75 */
+
+unsigned long golay(unsigned long cw) 
+/* This function calculates [23,12] Golay codewords. 
+   The format of the returned longint is 
+   [checkbits(11),data(12)]. */ 
+{ 
+  int i; 
+  unsigned long c; 
+  cw&amp;=0xfffl; 
+  c=cw; /* save original codeword */ 
+  for (i=1; i&lt;=12; i++)  /* examine each data bit */ 
+    { 
+      if (cw &amp; 1)        /* test data bit */ 
+        cw^=POLY;        /* XOR polynomial */ 
+      cw&gt;&gt;=1;            /* shift intermediate result */
+    } 
+  return((cw&lt;&lt;12)|c);    /* assemble codeword */ 
+} 
+</pre>
+<p>The routine parity() adds the parity bit to complete the extended codeword. It is shown below.</p>
+<pre>int parity(unsigned long cw) 
+/* This function checks the overall parity of codeword cw.
+   If parity is even, 0 is returned, else 1. */ 
+{ 
+  unsigned char p; 
+
+  /* XOR the bytes of the codeword */ 
+  p=*(unsigned char*)&amp;cw; 
+  p^=*((unsigned char*)&amp;cw+1); 
+  p^=*((unsigned char*)&amp;cw+2); 
+
+  /* XOR the halves of the intermediate result */ 
+  p=p ^ (p&gt;&gt;4); 
+  p=p ^ (p&gt;&gt;2); 
+  p=p ^ (p&gt;&gt;1); 
+
+  /* return the parity result */ 
+  return(p &amp; 1); 
+} 
+</pre>
+<h3>Golay Code Implementation – Detecting Errors</h3>
+<p>Detection of errors in a codeword is easy. First, we use the overall parity bit to check for odd numbers of errors, possibly failing the codeword on that basis. If parity is correct, we compute the 23-bit syndrome of the codeword and check for zero. The syndrome is the remainder left after the codeword is divided by the generating polynomial, modulo-2. If the codeword is a valid Golay codeword, the syndrome is zero, else non-zero. The computation below shows a sample calculation using the previously constructed codeword, 686555h, bit reversed for the division process.</p>
+<pre>                  ________________________                          
+     101011100011 )10101010101001100001011                          
+                   101011100011                                     
+                   ------------                                     
+                        100100101100                                
+                        101011100011                                
+                        ------------                                
+                          111100111100                              
+                          101011100011                              
+                          ------------                              
+                           101110111111                             
+                           101011100011                             
+                           ------------                             
+                              101011100011                          
+                              101011100011                          
+                              ------------                          
+                              000000000000 &lt;-- syndrome = 0         
+
+</pre>
+<p>The routine in the next listing does the same sort of calculation. You could use a table of intermediate results to speed the process.</p>
+<pre>unsigned long syndrome(unsigned long cw) 
+/* This function calculates and returns the syndrome 
+   of a [23,12] Golay codeword. */ 
+{ 
+  int i; 
+  cw&amp;=0x7fffffl; 
+  for (i=1; i&lt;=12; i++)  /* examine each data bit */ 
+    { 
+      if (cw &amp; 1)        /* test data bit */ 
+        cw^=POLY;        /* XOR polynomial */ 
+      cw&gt;&gt;=1;            /* shift intermediate result */ 
+    } 
+  return(cw&lt;&lt;12);        /* value pairs with upper bits of cw */
+} 
+</pre>
+<p>These routines are all you need to implement a Golay error detection scheme. As above, you can detect up to 6 bit errors per codeword and, with the parity bit, all odd numbers of errors.</p>
+<h3>Implementation – Correcting Errors</h3>
+<p>Cue the smoke and mirrors; error correction is not so trivial. It relies on the cyclic properties of Golay codewords in a scheme called systematic search decoding<sup>2</sup>. There are other methods of Golay error correction listed in the references, though I have found this one easy to implement in software. This is a ‘nearest neighbor decoder’, because it determines which Golay codeword is closest in terms of Hamming distance.</p>
+<p>Here is a sketch of the systematic search algorithm.</p>
+<p>1. Compute the syndrome of the codeword. If zero, no errors exist so go to step 5. If a trial bit has been toggled, go to step 2a, else 2.</p>
+<p>2. If the syndrome has a weight of three or less, the syndrome matches the error pattern bit-for-bit, and can be used to exclusive-OR the errors out of the codeword; if so, remove the errors and go to step 5, else proceed to step 3.</p>
+<p>2a. If the syndrome has a weight of one or two, the syndrome matches the error pattern bit-for-bit, and can be used to exclusive-OR the errors out of the codeword; if so, remove the errors and go to step 5, else proceed.</p>
+<p>3. Toggle a trial bit in the codeword in an effort to eliminate one bit error. Restore any previously toggled trial bit. If all 23 bits have been toggled and tried once, go to step 4; else go to step 2a.</p>
+<p>4. Rotate the codeword cyclically left by one bit. Go to step 1.</p>
+<p>5. Rotate the codeword right to its original position, if needed.</p>
+<p>The idea is to fiddle with the codeword until the syndrome has a weight of three or less, in which case we can exclusive-OR the syndrome with the codeword to negate the errors. However, if a trial bit has been toggled, we might have introduced an error (making a total of 4), so the threshold for exclusive-ORing the errors away in step 2a must be reduced by one for safety, to two or less.</p>
+<p>We are relying on the perfect nature of the Golay code for a terminating condition of the systematic search algorithm. Normally, we would test in step 4 to see if all 23 shifts of the codeword had already been tried, but since the Golay code is perfect, we know that each 23-bit value maps to exactly one correct Golay codeword and the algorithm will terminate. (However, since the Golay code is perfect but programmers are not, I test to guard against infinite loops. Paranoia is my friend.)</p>
+<h3>Bring Out The Source Code!</h3>
+<p>Now to the good stuff, the source code that makes the system work for you.</p>
+<p>The rotations and trial bit bookkeeping make for a nontrivial looking routine for Golay error correction, correct(), shown below with its support routines. These routines are written for simplicity. You can tighten them up for optimum performance on your favorite scream machine.</p>
+<pre>int weight(unsigned long cw) 
+/* This function calculates the weight of 
+   23 bit codeword cw. */ 
+{ 
+  int bits,k; 
+
+  /* nibble weight table */ 
+  const char wgt[16] = {0,1,1,2,1,2,2,3,1,2,2,3,2,3,3,4}; 
+
+  bits=0; /* bit counter */ 
+  k=0; 
+  /* do all bits, six nibbles max */ 
+  while ((k&lt;6) &amp;&amp; (cw)) 
+    { 
+      bits=bits+wgt[cw &amp; 0xf]; 
+      cw&gt;&gt;=4; 
+      k++; 
+    } 
+
+  return(bits); 
+} 
+
+unsigned long rotate_left(unsigned long cw, int n) 
+/* This function rotates 23 bit codeword cw left by n bits. */ 
+{ 
+  int i; 
+
+  if (n != 0) 
+    { 
+      for (i=1; i&lt;=n; i++) 
+        { 
+          if ((cw &amp; 0x400000l) != 0) 
+            cw=(cw &lt;&lt; 1) | 1; 
+          else 
+            cw&lt;&lt;=1; 
+        } 
+    } 
+
+  return(cw &amp; 0x7fffffl); 
+} 
+
+unsigned long rotate_right(unsigned long cw, int n) 
+/* This function rotates 23 bit codeword cw right by n bits. */ 
+{ 
+  int i; 
+
+  if (n != 0) 
+    { 
+      for (i=1; i&lt;=n; i++) 
+        { 
+          if ((cw &amp; 1) != 0) 
+            cw=(cw &gt;&gt; 1) | 0x400000l; 
+          else 
+            cw&gt;&gt;=1; 
+        } 
+    } 
+
+  return(cw &amp; 0x7fffffl); 
+} 
+
+unsigned long correct(unsigned long cw, int *errs) 
+/* This function corrects Golay [23,12] codeword cw, returning the 
+   corrected codeword. This function will produce the corrected codeword 
+   for three or fewer errors. It will produce some other valid Golay 
+   codeword for four or more errors, possibly not the intended 
+   one. *errs is set to the number of bit errors corrected. */ 
+{ 
+  unsigned char 
+    w;                /* current syndrome limit weight, 2 or 3 */ 
+  unsigned long 
+    mask;             /* mask for bit flipping */ 
+  int 
+    i,j;              /* index */ 
+  unsigned long 
+    s,                /* calculated syndrome */ 
+    cwsaver;          /* saves initial value of cw */ 
+
+  cwsaver=cw;         /* save */ 
+  *errs=0; 
+  w=3;                /* initial syndrome weight threshold */ 
+  j=-1;               /* -1 = no trial bit flipping on first pass */ 
+  mask=1; 
+  while (j&lt;23) /* flip each trial bit */ 
+    { 
+      if (j != -1) /* toggle a trial bit */ 
+        { 
+          if (j&gt;0) /* restore last trial bit */ 
+            { 
+              cw=cwsaver ^ mask; 
+              mask+=mask; /* point to next bit */ 
+            } 
+          cw=cwsaver ^ mask; /* flip next trial bit */ 
+          w=2; /* lower the threshold while bit diddling */ 
+        } 
+
+      s=syndrome(cw); /* look for errors */ 
+      if (s) /* errors exist */ 
+        { 
+          for (i=0; i&lt;23; i++) /* check syndrome of each cyclic shift */ 
+            { 
+              if ((*errs=weight(s)) &lt;= w) /* syndrome matches error pattern */
+                { 
+                  cw=cw ^ s;              /* remove errors */ 
+                  cw=rotate_right(cw,i);  /* unrotate data */ 
+
+                  if (j &gt;= 0) /* count toggled bit (per Steve Duncan) */
+                    *errs=*errs+1;
+
+                  return(s=cw); 
+                } 
+              else 
+                { 
+                  cw=rotate_left(cw,1);   /* rotate to next pattern */ 
+                  s=syndrome(cw);         /* calc new syndrome */ 
+                } 
+            } 
+          j++; /* toggle next trial bit */ 
+        } 
+      else 
+        return(cw); /* return corrected codeword */ 
+    } 
+
+  return(cwsaver); /* return original if no corrections */ 
+} /* correct */ 
+</pre>
+<p>The correct() function returns the nearest matching Golay codeword. Note that this may not be the codeword you expect, if there are more than three bit errors, because the received, corrupted codeword may be closer in terms of Hamming distance to a different Golay codeword. (Thanks to Steve Duncan for the error correction correction (!), above.)</p>
+<p>While I’m loading your shopping cart with source code, below appears decode(), a function for either detecting or correcting errors in Golay [24,12] codewords, returning the corrected codeword and error detection status.</p>
+<pre>int decode(int correct_mode, int *errs, unsigned long *cw) 
+/* This function decodes codeword *cw in one of two modes. If correct_mode 
+   is nonzero, error correction is attempted, with *errs set to the number of
+   bits corrected, and returning 0 if no errors exist, or 1 if parity errors 
+   exist. If correct_mode is zero, error detection is performed on *cw, 
+   returning 0 if no errors exist, 1 if an overall parity error exists, and 
+   2 if a codeword error exists. */ 
+{ 
+  unsigned long parity_bit; 
+
+  if (correct_mode)               /* correct errors */ 
+    { 
+      parity_bit=*cw &amp; 0x800000l; /* save parity bit */ 
+      *cw&amp;=~0x800000l;            /* remove parity bit for correction */
+
+      *cw=correct(*cw, errs);     /* correct up to three bits */ 
+      *cw|=parity_bit;            /* restore parity bit */ 
+
+      /* check for 4 bit errors */ 
+      if (parity(*cw))            /* odd parity is an error */ 
+        return(1); 
+      return(0); /* no errors */ 
+    } 
+  else /* detect errors only */ 
+    { 
+      *errs=0; 
+      if (parity(*cw)) /* odd parity is an error */ 
+        { 
+          *errs=1; 
+          return(1); 
+        } 
+      if (syndrome(*cw)) 
+        { 
+          *errs=1; 
+          return(2); 
+        } 
+      else 
+        return(0); /* no errors */ 
+    } 
+} /* decode */ 
+</pre>
+<p>The parity bit in the extended Golay code is used as a final check on the integrity of the corrected codeword. If the received codeword has the right parity, the codeword is accepted, else it is rejected. The overall parity bit is used to trap the occurrence of odd numbers of errors and four-bit-error laden codewords.</p>
+<p>Why does the overall parity bit help to trap four bit errors? This is explained by the fact that the correction algorithm introduces three additional bit changes to get to the nearest codeword, which is seven bits distant from the original, noncorrupt codeword. Assume we have four bit errors in a codeword. The four bit errors, plus three additional changed bits makes seven bit changes total, and that changes the codeword’s parity. So the overall parity bit helps to trap four bit errors, but only after correction has been attempted.</p>
+<p>If one of the four errors is in the parity bit, the 23-bit codeword will be corrected properly, but must be discarded because the total parity is wrong and the receiver will not know exactly which bits were corrupted. For the interested few, this will occur in</p>
+<p></p><center>[<i>C</i>(24,4)-<i>C</i>(23,4)]/<i>C</i>(24,4) = (10626-8855)/10626 = 1/6</center><br>
+of cases of four bit errors, where <i>C</i>(n,r) is the number of combinations of n things taken r at a time.<p></p>
+<h3>Back To Reality</h3>
+<p>In practice, I have used the Golay code on radio channels and telephone lines, and have found it to be robust. Practically, one cannot rely on the error correction facilities alone, if there is a two-way communication link. Rather, I use the Golay code to reduce the incidence of message resends. Messages are always checked for framing errors and other problems which are specific to the information transmitted and the message context.</p>
+<p>A frailty of the Golay code is its inability to detect large bursts of bit errors. However, a technique called bit interleaving can remedy the situation. Assume we have a block of 48 bits to transmit, two codewords. An error of 4 consecutive bits will corrupt a Golay data packet and elicit a retransmission. However, if we transmit the 48 bits not in 2 sequential Golay codewords, but in a scrambled order, burst errors will be distributed over both codewords when the bits are unscrambled.</p>
+<pre>     Original codewords:
+
+         111111111111111111111111 000000000000000000000000 
+
+     Interleaved codewords:
+
+         101010101010101010101010 010101010101010101010101 
+
+     After a six bit burst error:
+
+         101010101001010110101010 010101010101010101010101 
+                   xxxxxx
+                6 bit-errors
+
+     After de-interleave:
+
+         111110001111111111111111 000001110000000000000000 
+              xxx                      xxx
+        three bit-errors        three bit-errors
+         (correctable)           (correctable)
+</pre>
+<p>The two resulting codewords are correctable, whereas a six-bit burst error in the original data would not have been. In general, the more data you interleave, the longer the burst of errors the message can withstand. The correctable burst size, in bits, is three times the number of codewords interleaved.</p>
+<p>The penalty is the reception delay incurred between the first and last bit of any one codeword. Using this method, it is theoretically possible to extend the 3/24=12.5% burst error correction capability of the Golay [23,12] code to arbitrarily long blocks of data. Imagine sending a 100-codeword, 2400 bit message and correcting a burst error of 300 consecutive bits!</p>
+<p>You may have noticed that the codewords used in the above examples are 000000h and FFFFFFh. These are valid Golay codewords. This alerts us to a possible communications failure mode: the stuck bit. If the hardware were to fail in mid-message, it could emit a default 1 or 0, depending on its configuration and the data format. This could be disastrous if undetected because the dead circuit would be interpreted as sending consecutive, valid Golay codewords.</p>
+<p>Happily, we can modify the Golay checkbits slightly, as is often done when using CRCs, by inverting one or more of them before transmission, and reinverting the same bits before decoding at the receiver. This way, 000000h and FFFFFFh are not valid Golay codewords, and the chances of a stuck data line mimicing good data are greatly reduced. In fact it is always good practice to structure your communications protocol so that a continuous 0 or 1 block of data cannot be misconstrued as valid information.</p>
+<p>By the way, do not ignore the information that spins off of the correction process: The number of errors corrected in each codeword. This is valuable information about the BER on the communications channel, useful for judging its quality. Say that you have a data system running over the telephone network in a remote area and these lines are not the best quality, degrading some with the weather. (This is not a contrived example. Some Mom ‘n Pop telcos run with twine and tin cans.) It would be nice to optimize the data rate based on the current condition of the lines.</p>
+<p>Counting corrected bit errors is one way to do this. As the error rate (corrected bits / total bits) passes a critical value, the data rate can be cut, with the cooperation of transmitter and receiver, of course. When the sun comes out, the data rate can be increased as the BER goes down to acceptable levels. (Note that this technique has a BER measurement ceiling of 12.5% because every corrupt codeword will have at most three correctable errors.)</p>
+<h3>Shift Register Golay Encoders<b> </b></h3>
+<p>I am sure that some readers are hardware types, wondering if the Golay code can be easily implemented in hardware. The references to this article describe various circuits suitable to the task of decoding — I mean suitable as a function of your personal Boolean logic overload level. The circuits are not trivial by any means, though the relatively small number of 4096 Golay codewords suggests that ROM based decoders may be economical. The decoder would easily fit in a small FPGA, too.</p>
+<p>The shift register implementations of the two Golay checkbit generators are simple, and are shown in Figures 1 and 2.</p>
+<p></p><center><a href="./Using The Golay Error Detection And Correction Code _ Atlantic Quality Design, Inc. R&amp;D Services_files/art3_1.gif"><img class="alignnone size-full wp-image-274" src="./Using The Golay Error Detection And Correction Code _ Atlantic Quality Design, Inc. R&amp;D Services_files/art3_1.gif" alt="art3_1" width="556" height="163"></a></center><a href="./Using The Golay Error Detection And Correction Code _ Atlantic Quality Design, Inc. R&amp;D Services_files/art3_4.gif"><img class="size-full wp-image-277 aligncenter" src="./Using The Golay Error Detection And Correction Code _ Atlantic Quality Design, Inc. R&amp;D Services_files/art3_4.gif" alt="art3_4" width="387" height="259"></a><p></p>
+<p>&nbsp;</p>
+<pre>                  ________________________
+     110001110101 )10101010101000000000000         
+                   110001110101                    
+                   ------------                    
+                    110110111110                   
+                    110001110101                   
+                    ------------                   
+                       111001011000                
+                       110001110101                
+                       ------------                
+                         100010110100              
+                         110001110101              
+                         ------------              
+                          100110000010             
+                          110001110101             
+                          ------------             
+                           101111101110            
+                           110001110101            
+                           ------------            
+                            111100110110           
+                            110001110101           
+                            ------------           
+                              110100001100         
+                              110001110101         
+                              ------------         
+                               00101111001         
+</pre>
+<p></p><center><strong>Figure 1. Golay checkbit generator, register contents, and modulo-2 division example for polynomial X<sup>11</sup> + X<sup>9 </sup> + X<sup>7</sup> + X<sup>6</sup> + X<sup>5</sup> + X + 1.</strong></center><center></center><center></center><center></center><center></center><center><a href="./Using The Golay Error Detection And Correction Code _ Atlantic Quality Design, Inc. R&amp;D Services_files/art3_2.gif"><img class="alignnone size-full wp-image-275" src="./Using The Golay Error Detection And Correction Code _ Atlantic Quality Design, Inc. R&amp;D Services_files/art3_2.gif" alt="art3_2" width="559" height="163"></a></center><p></p>
+<p style="text-align: center;"><strong>Figure 2. Golay checkbit generator and example for polynomial X<sup>11</sup> + X<sup>10</sup> + X<sup>6</sup> + X<sup>5</sup> + X<sup>4</sup> + X<sup>2</sup> + 1.</strong></p>
+<p>As before, either circuit produces valid Golay checkbits. Also shown is a sample calculation. The final register value in the top example is 11010000110, which we reverse and compare with the result of a previous hand calculation, finding agreement. This circuit is equivalent to that calculation with input data of 555h. The final register value of Figure 1 is 10011110100, which agrees with the accompanying modulo-2 division remainder, when reversed. Also notice that, like the two polynomials, the shift register circuits are mirror images of each other, suggesting that some more gating could make one bidirectional shift register encode either polynomial.</p>
+<h3>Conclusion</h3>
+<p>Of course, there are other error correcting codes, but it is generally agreed in the literature that they are more difficult to correct than the Golay code, though the Hamming codes are easier. In general, the more capable the code, the more processor power it takes to decode. The Golay code could be used in even the smallest microcontrollers, such as the PIC series and 68HC05.</p>
+<p>As a parting imperative, do your homework before choosing this or any other error detection/correction code. There are some important ideas that we did not discuss here, such as coding gain. This is an expression of the improvement in performance of the coded channel over the uncoded channel. Each code has a different coding gain for various channel noise conditions.</p>
+<p>You should also examine the references for matrix methods of encoding and decoding the Golay and other codes. And let me recommend the routine golay_test(), below. It does tests to verify the operation of your encoding and decoding routines by letting you induce a selectable number of errors in a test codeword on which correction is attempted. Always test your versions of these routines thoroughly before deploying; it is easy to slip up on a loop index and get a data-dependent error detector or corrector, which is certain to ruin a couple of nights’ sleep.</p>
+<pre>void golay_test(void)
+/* This function tests the Golay routines for detection and correction
+   of various patterns of error_limit bit errors. The error_mask cycles
+   over all possible values, and error_limit selects the maximum number
+   of induced errors. */
+{
+  unsigned long
+    error_mask,        /* bitwise mask for inducing errors */
+    trashed_codeword,  /* the codeword for trial correction */
+    virgin_codeword;   /* the original codeword without errors */
+  unsigned char        
+    pass=1,            /* assume test passes */
+    error_limit=3;     /* select number of induced bit errors here */
+  int
+    error_count;       /* receives number of errors corrected */
+
+  virgin_codeword=golay(0x555); /* make a test codeword */
+  if (parity(virgin_codeword))
+    virgin_codeword^=0x800000l;
+  for (error_mask=0; error_mask&lt;0x800000l; error_mask++)
+    {
+      /* filter the mask for the selected number of bit errors */
+      if (weight(error_mask) &lt;= error_limit) /* you can make this faster! */
+        {
+          trashed_codeword=virgin_codeword ^ error_mask; /* induce bit errors */
+
+          decode(1,&amp;error_count,&amp;trashed_codeword); /* try to correct bit errors */
+
+          if (trashed_codeword ^ virgin_codeword)
+            {
+              printf("Unable to correct %d errors induced with error mask = 0x%lX\n",
+                weight(error_mask),error_mask);
+              pass=0;
+            }
+
+          if (kbhit()) /* look for user input */
+            {
+              if (getch() == 27) return; /* escape exits */
+
+              /* other key prints status */
+              printf("Current test count = %ld of %ld\n",error_mask,0x800000l);
+            }
+        }
+    }
+  printf("Golay test %s!\n",pass?"PASSED":"FAILED");
+}
+</pre>
+<p><b>References</b></p>
+<p>1. Golay, Marcel J.E., “Notes on Digital Coding”, Proceedings of the IRE, Vol. 37, June, 1949, pp. 657.</p>
+<p>2. Lin, Shu, An Introduction to Error Correcting Codes. Englewood Cliffs, N.J., Prentice-Hall, 1970, pp. 101-106.</p>
+<p>3. MacWilliams, Sloane, The Theory of Error Correcting Codes. Amsterdam, North Holland Publishing Co., 1977, pp. 64-65, 482, 634-635.</p>
+<p>4. Pless, Vera, Introduction to the Theory of Error Correcting Codes. John Wiley &amp; Sons, 1982, pp. 1-13.</p>
+<p>5. Shannon, C.E., “A Mathematical Theory of Communication”, Bell System Technical Journal, Vol. 27, July, 1948, pp. 379-423; October, 1948, pp. 623-656.</p>
+<p><b>Author Biography</b></p>
+<p>Hank Wallace is the owner of Atlantic Quality Design, Inc., a consulting firm located in Fincastle, Virginia. He has experience in many areas of embedded software and hardware development, and system design. See <a href="http://www.aqdi.com/">www.aqdi.com</a> for more information.</p>
+		               	</section><!-- /.entry -->
+
+						
+					</div><!-- /.inner -->
+
+                </article><!-- /.post -->
+                                                    
+			  
+        
+		</section><!-- /#main -->
+		
+				
+    </div><!-- /#content -->
+		
+	
+	<div id="footer-wrapper">
+
+	
+		
+
+		<footer id="footer" class="col-full">
+
+
+			<div id="credit" class="col-right">
+			
+										</div>
+
+			<div id="copyright" class="col-left">
+			All content copyright Atlantic Quality Design, Inc.			</div>
+
+		</footer><!-- /#footer  -->
+
+	</div><!-- /#footer-wrapper -->
+
+</div><!-- /#wrapper -->
+
+<script type="text/javascript">
+/* <![CDATA[ */
+r3f5x9JS=escape(document['referrer']);
+hf4N='6b1013d6d1d24147ae615f217e6ff51a';
+hf4V='5ed823956d163258f5a2d51d0b03cb93';
+jQuery(document).ready(function($){var e="#commentform, .comment-respond form, .comment-form, #lostpasswordform, #registerform, #loginform, #login_form, #wpss_contact_form";$(e).submit(function(){$("<input>").attr("type","hidden").attr("name","r3f5x9JS").attr("value",r3f5x9JS).appendTo(e);$("<input>").attr("type","hidden").attr("name",hf4N).attr("value",hf4V).appendTo(e);return true;});$("#comment").attr({minlength:"15",maxlength:"15360"})});
+/* ]]> */
+</script> 
+<!--[if lt IE 9]>
+<script src="http://aqdi.com/wordpress/wp-content/themes/resort/includes/js/respond.js"></script>
+<![endif]-->
+<script type="text/javascript" src="./Using The Golay Error Detection And Correction Code _ Atlantic Quality Design, Inc. R&amp;D Services_files/jscripts-ftr-min.js"></script>
+<script type="text/javascript" src="./Using The Golay Error Detection And Correction Code _ Atlantic Quality Design, Inc. R&amp;D Services_files/wp-embed.min.js"></script>
+
+</body></html>

@@ -1,0 +1,7 @@
+﻿  cipher decode.cpp
+c:\users\pavelpicasso\documents\visual studio 2015\projects\cipher decode\cipher decode\cipher decode.cpp(18): warning C4473: "fscanf_s": передано недостаточно аргументов для строки формата
+  c:\users\pavelpicasso\documents\visual studio 2015\projects\cipher decode\cipher decode\cipher decode.cpp(18): note: заполнители и их параметры ожидают переменное число аргументов в количестве 2, но было предоставлено 1
+  c:\users\pavelpicasso\documents\visual studio 2015\projects\cipher decode\cipher decode\cipher decode.cpp(18): note: отсутствующий вариативный аргумент "2" требуется для строки форматирования "%c"
+  c:\users\pavelpicasso\documents\visual studio 2015\projects\cipher decode\cipher decode\cipher decode.cpp(18): note: этот аргумент используется в качестве размера буфера
+  cipher decode.vcxproj -> C:\Users\PavelPicasso\Documents\Visual Studio 2015\Projects\cipher decode\Debug\cipher decode.exe
+  cipher decode.vcxproj -> C:\Users\PavelPicasso\Documents\Visual Studio 2015\Projects\cipher decode\Debug\cipher decode.pdb (Partial PDB)

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Projects</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/layout.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+    <script type="text/javascript" src="js/jquery-1.4.2.js"></script>
+    <script type="text/javascript" src="js/cufon-yui.js"></script>
+    <script type="text/javascript" src="js/cufon-replace.js"></script>
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="http://info.template-help.com/files/ie6_warning/ie6_script_other.js"></script>
+    <script type="text/javascript" src="js/html5.js"></script>
+    <![endif]-->
+    <script>
+        $("[name = STEP2]").bind("click",function () {
+            $.ajax({
+                type: "POST",
+                url: "http://axd.semestr.ru/action.php",
+                cache: false,
+                data: "action=preview",
+                success: function (html) {
+                    if (document.getElementById('admain1')) destroyParent(document.getElementById('admain1'));
+                    html = '<button class="btn btn-lg btn-success" id="copy-button" data-clipboard-target="#premain">Копировать в буфер обмена</button><br>' + html;
+                    $("#premain").html(html);
+                    new Clipboard('#copy-button');
+                    document.getElementById('copy-button').style.margin = '10px 10px 10px 10px';
+                    var a = $("#premain").html();
+                    if (a.length > 500) {
+                        document.getElementById('premain').style.overflow = 'scroll';
+                        document.getElementById('premain').style.height = '500px';
+                        document.getElementById('premain').style.border = 'dashed 1px rgb(153, 170, 204)';
+                    }
+                }
+            });
+        });
+    </script>
+</head>
+<body id="page3">
+<div class="main">
+    <!-- header -->
+    <header>
+            <a href="index.html">
+                <img id="logo" src="img/logo2.png" width="245" height="85" alt="JPG">
+            </a>
+		<nav>
+			<ul id="menu">
+				<li class="alpha"><a href="index.html"><span><span>Главная</span></span></a></li>
+				<li><a href="About.php"><span><span>Конвертер</span></span> </a></li>
+				<li id="menu_active"><a href="Projects.html"><span><span>Проект</span></span></a></li>
+				<li><a href="Contacts.html"><span><span>Контакты</span></span></a></li>
+				<li class="omega"><a href="Sitemap.html"><span><span>Координаты</span></span></a></li>
+			</ul>
+		</nav>
+		  </header>
+    <!-- / header -->
+    <!-- content -->
+    <section id="content">
+        <div class="wrapper">
+            <div class="pad">
+                <div class="wrapper">
+                    <article class="col1"><h2>Равновесная цена и равновесный объем</h2></article>
+                </div>
+            </div>
+            <div class="box pad_bot1">
+                <div class="pad marg_top">
+                    <article class="col1">
+                        <p>Равновесная цена это цена, при которой объем спроса на рынке равен объему предложения.
+                            Выражается как Qd(P)
+                            = Qs(P).
+                            Назначение сервиса. Данный онлайн-калькулятор направлен на решение и
+                            проверку следующих задач:</p>
+                        <ol>
+                            <li>Параметры равновесия данного рынка (определение равновесной цены и равновесного
+                                объема);
+                            </li>
+                            <li>Коэффициенты прямой эластичности спроса и предложения в точке равновесия;</li>
+                            <li>Излишки потребителя и продавца, чистый общественный выигрыш;</li>
+                            <li>Правительство ввело потоварную дотацию с каждой проданной единицы товара в размере N
+                                руб.;
+                            </li>
+                            <li>Сумма дотации, направленную из государственного бюджета;</li>
+                            <li>Правительство ввело потоварный налог с каждой проданной единицы товара в размере N
+                                руб.;
+                            </li>
+                            <li>Описать последствия принятия государством решения о фиксации цены на N выше (ниже)
+                                равновесной.
+                            </li>
+                        </ol>
+                        <section id="content">
+                            <div class="wrapper">
+                                <div class="pad">
+                                    <div class="wrapper">
+                                        <article class="col1"><h2> Введите уравнения спроса и предложения</h2></article>
+                                    </div>
+                                </div>
+                                <div class="box pad_bot1">
+                                    <div class="pad marg_top">
+                                        <article class="col1">
+                                            <form id="ContactForm" action="">
+                                                <div>
+                                                    <div class="wrapper">
+                                                        <div class="bg"><input class="input" name="fxd" type="text" required
+                                                                               placeholder="-2*P+40"></div>
+                                                        Qd =
+                                                    </div>
+                                                    <div class="wrapper">
+                                                        <div class="bg"><input class="input" name="fxs" type="text" required
+                                                                               placeholder="4*P-26"></div>
+                                                        Qs =
+                                                    </div>
+                                                    <input type="submit" name="STEP2" value="Далее" class="button1">
+                                                </div>
+                                            </form>
+                                        </article>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <div class="well-color">
+                            <div class="tab-content">
+                                <div class="tab-pane active" id="online">
+                                    Qd - функция спроса, Qs - функция предложения
+                                </div>
+                                <br>
+                                <p><b>Пример</b>: Функция спроса на данный товар
+                                    Qd=200–5P, функция
+                                    предложения Qs=50+P.</p>
+                                <ol>
+                                    <li>Определить равновесную цену и равновесный объем продаж.</li>
+                                    <li>Предположим, что администрация города решила установить фиксированную цену на
+                                        уровне: а) 20 ден. ед.
+                                        за штуку, б) 30 ден. ед. за штуку.
+                                    </li>
+                                    <li>Проанализировать полученные результаты. Как это повлияет на поведение
+                                        потребителей и производителей?
+                                        Решение представить графически и аналитически.
+                                    </li>
+                                </ol>
+
+                                <p><em><b>Решение</b></em>.
+                                    <br>Найдем параметры равновесия на рынке.
+                                    <br>Функция спроса: Qd = 200 -5P.
+                                    <br>Функция предложения: Qs = 50 + P.
+                                    <br><b>1. Параметры равновесия данного рынка</b>.
+                                    <br>При равновесии Qd = Qs
+                                    <br>200 -5P = 50 + P
+                                    <br>6P = 150
+                                    <br>P равн = 25 руб. - равновесная цена.
+                                    <br>Q равн = 75 ед. - равновесный объем.
+                                    <br>W = P•Q = 1875 руб. - доход продавца.
+                                    <br><img width=500 height=500 src="images/ravn-image001.gif">
+
+                                <p>Потребительский излишек показывает, насколько лучше в среднем живут отдельные люди.
+                                    <br><b><i>Излишек потребителя</i></b> (или выигрыш) – это разность между
+                                    максимальной
+                                    ценой, которую он готов
+                                    отдать за товар, и той, которую он действительно платит. Если сложить излишки всех
+                                    потребителей, которые
+                                    приобретают данный товар, то мы получим размер совокупного излишка.
+                                    <br><i>Излишек производителя</i> (выигрыш) – эта разность между рыночной ценой и той
+                                    минимальной ценой,
+                                    за которую производители готовы продать свой товар.
+                                    <br>Излишек продавца (PsP0E): (Pравн - Ps)Qравн
+                                    / 2 = (25 -
+                                    (-50))75 / 2 = 2812.5 руб.
+                                    <br>Излишек покупателя (PdP0E): (Pd - Pравн)Qравн
+                                    / 2 = (40
+                                    - 25)75 /2 = 562.5 руб.
+                                    <br>Чистый общественный выигрыш: 2812.5 + 562.5 = 3375
+                                    <br>Знание излишков широко используется на практике, например, при распределении
+                                    налогового бремени или
+                                    субсидировании отраслей, фирм.
+
+                                <p>2) Предположим, что администрация города решила установить фиксированную цену на
+                                    уровне 20 ден. ед. за
+                                    штуку
+                                    <br>Pфикс = 20 руб.
+                                    <br>Объем спроса: Qd = 200 -5 • 20 = 100.
+                                    <br>Объем предложения: Qs = 50 + 1 • 20 = 70.
+                                    <br>После фиксации цены, объем спроса уменьшился на 25 шт. (75 - 100), а дефицит
+                                    производителей
+                                    уменьшился на 5 шт. (70 - 75). На рынке дефицит товаров в размере 30 шт. (70 - 100).
+                                    <br><img width=500 height=500 src="images/ravn-image002.gif">
+
+                                    <br>Предположим, что администрация города решила установить фиксированную цену на
+                                    уровне 30 ден. ед. за
+                                    штуку.
+                                    <br>Pфикс = 30 руб.
+                                    <br>Объем спроса: Qd = 200 -5 • 30 = 50.
+                                    <br>Объем предложения: Qs = 50 + 1 • 30 = 80.
+                                    <br>После фиксации цены, объем спроса увеличился на 25 шт. (75 - 50), а излишек
+                                    производителей
+                                    увеличился на 5 шт. (80 - 75). На рынке излишек товаров в размере 30 шт. (80 - 50).
+                                    <br><img width=500 height=500 src="images/ravn-image003.gif">
+                            </div>
+                        </div>
+
+                    </article>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- / content -->
+</div>
+<script type="text/javascript"> Cufon.now(); </script>
+</body>
+</html>

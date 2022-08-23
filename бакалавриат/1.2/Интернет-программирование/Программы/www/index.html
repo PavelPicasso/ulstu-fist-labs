@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Верстка сайта</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css?hash=<?= time(60 * 60 * 24) ?>" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="icon-menu">
+                <img src="img/menu-ham-icon.png">
+            </div>
+            <div class="row">
+                <img class="logo" src="img/logo2.png" width="130" height="60" alt="JPG">
+                <ul>
+                    <li><a href="game.php">Игра</a></li>
+                    <li><a href="">Музыка</a></li>
+                    <li><a href="info.html">Инфо</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="menu">
+        <img class="icon-close" src="img/left-arrow.png">
+        <div class="top-section">
+            <img class="profile-image" src="img/profile3.jpg" alt="Profile">
+            <h3 class="profile-title">Pavel Picasso</h3>
+            <p class="profile-description">Группа: ИВТАП Бд-11<br>Верстка сайта</p>
+        </div>
+        <!-- top-разделе -->
+        <ul class="navigation">
+            <li><a href="#Top"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>Добро пожаловать</a>
+            </li>
+            <li><a href="#about"><span class="glyphicon glyphicon-user glyphicon " aria-hidden="true"></span>Обо Мне</a>
+            </li>
+            <li><a href="#projects"><span class="glyphicon glyphicon-picture " aria-hidden="true"></span>Моя Галерея</a>
+            </li>
+            <li><a href="#contact"><span class="glyphicon glyphicon-envelope " aria-hidden="true"></span>Контакты</a>
+            </li>
+            <img class="arrow" src="img/up-arrow.png" alt="Arrow">
+        </ul>
+    </div>
+    <div class="services">
+        <div class="container">
+            <div class="row section" id="Top">
+                <div class="col-xs-12 col-md-12 text new">
+                    <h1>Просто Дизайн | Личное Портфолио<br>
+                        ЭТО ТО, ЧТО Я ДЕЛАЮ
+                    </h1>
+                    <h2>Никто не зажигает светильник, чтобы спрятать его за дверью: цель свет, чтобы создать больше
+                        света, чтобы открыть людям глаза, чтобы раскрыть чудеса вокруг.</h2>
+                </div>
+            </div>
+
+            <div class="row section" id="about">
+                <div class="col-xs-12 col-md-12">
+                    <img class="about-image" src="img/9.jpg" alt="about me">
+                </div>
+                <div class="col-xs-12 col-md-12 text">
+                    <h4 class="widget-title">УЗНАТЬ ОБО МНЕ</h4>
+                    <p>Меня зовут Павел Кондратьев. Я студент УлГТУ факультета ФИСТ (объединение людей, которым
+                        интересно программирование и всё, что с этим связано. Каждый день мы погружаемся в свежие
+                        новости IT-мира, пишем много pseudocode, работаем сообща, делаем
+                        интересное из того что попадется подруку).</p>
+                    <p> Создал сайт, чтобы продемонстрировать некоторые мои работы и рассказать вам немного о себе и с
+                        чем мне приходится работать. Я уже почти пять лет окружен IT областью. Стараюсь не
+                        быдлокодить:).
+                    </p>
+                </div>
+                <marquee class="line" direction="right"> what time is it? pseudocode time!</marquee>
+            </div>
+
+            <div class="row section" id="projects">
+                <div class="col-xs-12 col-md-12 text">
+                    <h4 class="widget-title">МОЁ ВООБРАЖЕНИЕ</h4>
+                        <a href="Gallery.php">Click</a>
+                    </p>
+                </div>
+
+    <!--                <div class="col-xs-12 col-md-12">-->
+    <!--                    <center>-->
+    <!--                    <span class="prev">← prev</span>-->
+    <!--                    <span class="next">next →</span>-->
+    <!--                    </center>-->
+    <!--                <div class="gallery">-->
+    <!--                   <div class="photo">-->
+    <!--                        <img id="0" src="">-->
+    <!--                    </div>-->
+    <!--                    <div class="photo">-->
+    <!--                        <img id="1" src="">-->
+    <!--                    </div>-->
+    <!--                    <div class="photo" >-->
+    <!--                        <img id="2" src="">-->
+    <!--                    </div>-->
+    <!--                    <div class="photo">-->
+    <!--                        <img id="3" src="">-->
+    <!--                    </div>-->
+    <!---->
+    <!---->
+    <!--                    <div class="lightbox">-->
+    <!--                        <div class="overlay"></div>-->
+    <!--                        <figure>-->
+    <!--                            <button title="Previous (Left arrow key)" type="button"-->
+    <!--                                    class="mfp-arrow mfp-arrow-left"></button>-->
+    <!--                            <button title="Next (Right arrow key)" type="button"-->
+    <!--                                    class="mfp-arrow mfp-arrow-right"></button>-->
+    <!--                            <img src="" onclick="slide()">-->
+    <!--                        </figure>-->
+    <!--                    </div><!-- //lightbox -->-->
+    <!--                </div><!-- //img-gallery -->-->
+    <!--                </div>-->
+            </div>
+    
+        <marquee class="line" direction="right"> To be continued...</marquee>
+    </div>
+    </div>
+
+    <script type="text/javascript" src="js/jquery-latest.min.js"></script>
+    <script type="text/javascript" src="js/functions.js"></script>
+    <script type="text/javascript" src="js/menu.js"></script>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>

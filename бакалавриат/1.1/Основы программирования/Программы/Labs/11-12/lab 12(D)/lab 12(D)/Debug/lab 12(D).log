@@ -1,0 +1,13 @@
+﻿  Source.cpp
+c:\users\pavelpicasso\documents\visual studio 2015\projects\lab 12(d)\lab 12(d)\source.cpp(24): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1270): note:  см. объявление "scanf"
+c:\users\pavelpicasso\documents\visual studio 2015\projects\lab 12(d)\lab 12(d)\source.cpp(27): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(205): note:  см. объявление "fopen"
+c:\users\pavelpicasso\documents\visual studio 2015\projects\lab 12(d)\lab 12(d)\source.cpp(30): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1270): note:  см. объявление "scanf"
+c:\users\pavelpicasso\documents\visual studio 2015\projects\lab 12(d)\lab 12(d)\source.cpp(32): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1270): note:  см. объявление "scanf"
+c:\users\pavelpicasso\documents\visual studio 2015\projects\lab 12(d)\lab 12(d)\source.cpp(35): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1270): note:  см. объявление "scanf"
+  lab 12(D).vcxproj -> C:\Users\PavelPicasso\Documents\Visual Studio 2015\Projects\lab 12(D)\Debug\lab 12(D).exe
+  lab 12(D).vcxproj -> C:\Users\PavelPicasso\Documents\Visual Studio 2015\Projects\lab 12(D)\Debug\lab 12(D).pdb (Partial PDB)

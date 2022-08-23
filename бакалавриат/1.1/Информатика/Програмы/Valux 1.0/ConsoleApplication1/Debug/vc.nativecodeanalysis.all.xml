@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?><DEFECTS><DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\pavelpicasso\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\</FILEPATH>
+      <FILENAME>consoleapplication1.cpp</FILENAME>
+      <LINE>62</LINE>
+      <COLUMN>10</COLUMN>
+    </SFA>
+    <DEFECTCODE>6246</DEFECTCODE>
+    <DESCRIPTION>Локальное объявление "i" скрывает объявление того же имени во внешней области. Дополнительные сведения см. в предыдущем объявлении в строке "31" файла "c:\users\pavelpicasso\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\consoleapplication1.cpp".</DESCRIPTION>
+    <FUNCTION>main</FUNCTION>
+    <DECORATED>main</DECORATED>
+    <FUNCLINE>8</FUNCLINE>
+    <PATH>
+      <SFA>
+        <FILEPATH>c:\users\pavelpicasso\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\</FILEPATH>
+        <FILENAME>consoleapplication1.cpp</FILENAME>
+        <LINE>31</LINE>
+        <COLUMN>8</COLUMN>
+      </SFA>
+    </PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\pavelpicasso\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\</FILEPATH>
+      <FILENAME>consoleapplication1.cpp</FILENAME>
+      <LINE>63</LINE>
+      <COLUMN>11</COLUMN>
+    </SFA>
+    <DEFECTCODE>6246</DEFECTCODE>
+    <DESCRIPTION>Локальное объявление "j" скрывает объявление того же имени во внешней области. Дополнительные сведения см. в предыдущем объявлении в строке "32" файла "c:\users\pavelpicasso\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\consoleapplication1.cpp".</DESCRIPTION>
+    <FUNCTION>main</FUNCTION>
+    <DECORATED>main</DECORATED>
+    <FUNCLINE>8</FUNCLINE>
+    <PATH>
+      <SFA>
+        <FILEPATH>c:\users\pavelpicasso\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\</FILEPATH>
+        <FILENAME>consoleapplication1.cpp</FILENAME>
+        <LINE>32</LINE>
+        <COLUMN>8</COLUMN>
+      </SFA>
+    </PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\pavelpicasso\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\</FILEPATH>
+      <FILENAME>consoleapplication1.cpp</FILENAME>
+      <LINE>8</LINE>
+      <COLUMN>8</COLUMN>
+    </SFA>
+    <DEFECTCODE>6262</DEFECTCODE>
+    <DESCRIPTION>Функция использует "40436" байт в стеке:  это превышает значение /analyze:stacksize"16384". Попробуйте переместить некоторые данные в кучу.</DESCRIPTION>
+    <FUNCTION>main</FUNCTION>
+    <DECORATED>main</DECORATED>
+    <FUNCLINE>8</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT></DEFECTS>

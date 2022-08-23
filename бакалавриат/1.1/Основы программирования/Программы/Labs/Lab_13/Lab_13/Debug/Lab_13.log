@@ -1,0 +1,7 @@
+﻿  Lab_13.cpp
+d:\л\lab_13\lab_13\lab_13.cpp(29): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1270): note:  см. объявление "scanf"
+d:\л\lab_13\lab_13\lab_13.cpp(33): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1270): note:  см. объявление "scanf"
+  Lab_13.vcxproj -> D:\Л\Lab_13\Debug\Lab_13.exe
+  Lab_13.vcxproj -> D:\Л\Lab_13\Debug\Lab_13.pdb (Partial PDB)

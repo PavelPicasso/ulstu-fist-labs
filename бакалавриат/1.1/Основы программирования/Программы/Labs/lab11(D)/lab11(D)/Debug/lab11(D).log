@@ -1,0 +1,12 @@
+﻿  Source.cpp
+d:\л\lab11(d)\lab11(d)\source.cpp(13): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(205): note:  см. объявление "fopen"
+d:\л\lab11(d)\lab11(d)\source.cpp(14): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(205): note:  см. объявление "fopen"
+d:\л\lab11(d)\lab11(d)\source.cpp(35): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(90): note:  см. объявление "strcat"
+d:\л\lab11(d)\lab11(d)\source.cpp(37): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(453): note:  см. объявление "strtok"
+  LINK : не найден или не выполнена сборка D:\Л\lab11(D)\Debug\lab11(D).exe при последней инкрементной компоновке; выполняется полная компоновка
+  lab11(D).vcxproj -> D:\Л\lab11(D)\Debug\lab11(D).exe
+  lab11(D).vcxproj -> D:\Л\lab11(D)\Debug\lab11(D).pdb (Partial PDB)
