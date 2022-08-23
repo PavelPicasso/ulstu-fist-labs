@@ -1,0 +1,5 @@
+GRANT INSERT ON zakazy.tovar TO PUBLIC;
+GRANT SELECT ON zakazy.tovar TO PUBLIC;
+GRANT SELECT, UPDATE, INSERT ON mytable TO admin;
+GRANT ALL PRIVILEGES ON kinds TO user1;
+GRANT admins TO user2;

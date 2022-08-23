@@ -1,0 +1,91 @@
+CREATE OR REPLACE FUNCTION zakazy.count_fio()
+RETURNS integer AS
+$BODY$
+declare
+num INTEGER;
+begin
+select into num count(fio_klient) from zakazy.klient;
+RETURN num;
+end;
+$BODY$
+LANGUAGE 'plpgsql';
+
+SELECT zakazy.count_fio()
+
+CREATE OR REPLACE FUNCTION zakazy.count_product()
+RETURNS integer AS
+$BODY$
+declare
+num INTEGER;
+begin
+select into num count(name_product) from zakazy.tovar;
+RETURN num;
+end;
+$BODY$
+LANGUAGE 'plpgsql';
+
+SELECT zakazy.count_product()
+
+CREATE OR REPLACE FUNCTION zakazy.get_slzh(id_klient1 integer)
+RETURNS character varying AS
+$BODY$
+DECLARE
+id_klient1 ALIAS FOR $1;
+fio_klient1 text;
+name_klient1 text;
+BEGIN
+SELECT INTO fio_klient1, name_klient1
+	    fio_klient , name_klient
+FROM zakazy.klient
+WHERE klient.id_klient = id_klient1;
+RETURN fio_klient1 || ' ' || name_klient1;
+END;
+$BODY$
+LANGUAGE 'plpgsql'
+
+SELECT zakazy.get_slzh(11)
+
+CREATE OR REPLACE FUNCTION zakazy.delete_product(id_product1 integer)
+RETURNS integer AS
+$BODY$
+DECLARE
+	num_product integer := 0;
+BEGIN
+	SELECT INTO num_product COUNT(id_product)
+	FROM zakazy.tovar
+	WHERE id_product1 = $1;
+	IF num_product > 0 THEN RETURN -1;
+	ELSE
+		DELETE FROM zakazy.tovar
+		WHERE id_product1 = $1;
+		RETURN 1;
+	END IF;
+END;
+$BODY$
+LANGUAGE 'plpgsql'
+
+SELECT zakazy.delete_product (4)
+
+CREATE OR REPLACE FUNCTION zakazy.get_fio()
+RETURNS character varying AS
+$BODY$
+DECLARE
+	row zakazy.sotrydnik%rowtype;
+	str text := '';
+BEGIN
+FOR row IN SELECT *
+	FROM zakazy.sotrydnik LOOP
+	str := str || row.fio_sotrydnik || ' ' || row.name_sotrydnik || ' ' || row.nomer || E'\n';
+END loop;
+RETURN str;
+END;
+$BODY$
+LANGUAGE 'plpgsql'
+
+SELECT zakazy.get_fio()
+
+
+
+********************************
+DROP PROCEDURE имя_процедуры
+********************************

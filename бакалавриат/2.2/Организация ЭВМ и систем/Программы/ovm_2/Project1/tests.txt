@@ -1,0 +1,592 @@
+Iteration #0
+System
+Ресурсы системной платы
+Error - 13
+
+Iteration #1
+System
+Ресурсы системной платы
+Error - 13
+
+Iteration #2
+System
+Ресурсы системной платы
+Error - 13
+
+Iteration #3
+System
+Интерфейс управления для ACPI Microsoft Windows
+Error - 13
+
+Iteration #4
+Battery
+Батарея с ACPI-совместимым управлением (Майкрософт)
+Error - 13
+
+Iteration #5
+System
+Агрегатор процессора ACPI
+Error - 13
+
+Iteration #6
+PrintQueue
+Локальная очередь печати
+Корневая очередь печати
+
+Iteration #7
+HIDClass
+HID-совместимое устройство, определенное поставщиком
+Error - 13
+
+Iteration #8
+Display
+NVIDIA GeForce 940MX
+Error - 13
+
+Iteration #9
+System
+Диспетчер томов
+Error - 13
+
+Iteration #10
+USB
+Составное USB устройство
+Error - 13
+
+Iteration #11
+System
+Intel(R) Dynamic Platform and Thermal Framework Manager
+Error - 13
+
+Iteration #12
+Net
+Мини-порт глобальной сети (PPPOE)
+WAN Miniport (PPPOE)
+
+Iteration #13
+Volume
+Том
+Error - 13
+
+Iteration #14
+System
+Базовый видеодрайвер (Майкрософт)
+Error - 13
+
+Iteration #15
+System
+Intel(R) Dynamic Platform and Thermal Framework Generic Participant
+Error - 13
+
+Iteration #16
+System
+Intel(R) Dynamic Platform and Thermal Framework Generic Participant
+Error - 13
+
+Iteration #17
+System
+Intel(R) Dynamic Platform and Thermal Framework Generic Participant
+Error - 13
+
+Iteration #18
+System
+Intel(R) Dynamic Platform and Thermal Framework Generic Participant
+Error - 13
+
+Iteration #19
+System
+Термальная зона ACPI
+Error - 13
+
+Iteration #20
+System
+Кнопка спящего режима ACPI
+Error - 13
+
+Iteration #21
+Monitor
+Универсальный монитор PnP
+Error - 13
+
+Iteration #22
+SoftwareDevice
+Универсальное программное устройство
+Шина адаптера IPv4 IPv6 (Майкрософт)
+
+Iteration #23
+PrintQueue
+Локальная очередь печати
+Отправить в OneNote 16
+
+Iteration #24
+Net
+Туннельный адаптер Microsoft Teredo
+Microsoft Teredo Tunneling Adapter
+
+Iteration #25
+Net
+TAP-Windows Adapter V9
+TAP-Windows Adapter V9
+
+Iteration #26
+Net
+VirtualBox Host-Only Ethernet Adapter
+VirtualBox Host-Only Ethernet Adapter
+
+Iteration #27
+System
+UMBus перечислитель
+Error - 13
+
+Iteration #28
+SoftwareDevice
+Универсальное программное устройство
+Microsoft RRAS Root Enumerator
+
+Iteration #29
+Processor
+Intel процессор
+Intel(R) Core(TM) i5-7200U CPU @ 2.50GHz
+
+Iteration #30
+Processor
+Intel процессор
+Intel(R) Core(TM) i5-7200U CPU @ 2.50GHz
+
+Iteration #31
+Processor
+Intel процессор
+Intel(R) Core(TM) i5-7200U CPU @ 2.50GHz
+
+Iteration #32
+Processor
+Intel процессор
+Intel(R) Core(TM) i5-7200U CPU @ 2.50GHz
+
+Iteration #33
+Net
+Мини-порт глобальной сети (PPTP)
+WAN Miniport (PPTP)
+
+Iteration #34
+Volume
+Том
+Error - 13
+
+Iteration #35
+System
+Высокоточный таймер событий
+Error - 13
+
+Iteration #36
+System
+Mobile 6th/7th Generation Intel(R) Processor Family I/O PMC - 9D21
+Error - 13
+
+Iteration #37
+Image
+USB-видеоустройство
+USB2.0 VGA UVC WebCam
+
+Iteration #38
+Net
+Мини-порт глобальной сети (IKEv2)
+WAN Miniport (IKEv2)
+
+Iteration #39
+System
+Перечислитель композитной шины
+Error - 13
+
+Iteration #40
+System
+Перечислитель виртуальных дисков (Майкрософт)
+Error - 13
+
+Iteration #41
+SoftwareDevice
+Универсальное программное устройство
+Беспроводная сеть
+
+Iteration #42
+System
+Intel(R) Serial IO I2C Host Controller - 9D60
+Error - 13
+
+Iteration #43
+System
+Устаревшее устройство
+Error - 13
+
+Iteration #44
+SCSIAdapter
+Контроллер дискового пространства (Майкрософт)
+Error - 13
+
+Iteration #45
+Net
+Сетевой адаптер с отладкой ядра (Майкрософт)
+Microsoft Kernel Debug Network Adapter
+
+Iteration #46
+System
+Mobile 6th/7th Generation Intel(R) Processor Family I/O PCI Express Root Port #5 - 9D14
+Error - 13
+
+Iteration #47
+VolumeSnapshot
+Универсальная теневая копия тома
+Error - 13
+
+Iteration #48
+VolumeSnapshot
+Универсальная теневая копия тома
+Error - 13
+
+Iteration #49
+VolumeSnapshot
+Универсальная теневая копия тома
+Error - 13
+
+Iteration #50
+System
+Крышка ACPI
+Error - 13
+
+Iteration #51
+System
+UMBus перечислитель
+Error - 13
+
+Iteration #52
+System
+Ресурсы системной платы
+Error - 13
+
+Iteration #53
+System
+Встроенный контроллер Microsoft, соответствующий стандарту ACPI
+Error - 13
+
+Iteration #54
+System
+Системный таймер
+Error - 13
+
+Iteration #55
+USB
+xHCI-совместимый хост-контроллер USB
+Расширяемый хост-контроллер Intel(R) USB 3.0 — 1.0 (Майкрософт)
+
+Iteration #56
+System
+Контроллер High Definition Audio (Microsoft)
+Error - 13
+
+Iteration #57
+System
+UMBus перечислитель корневой шины
+Error - 13
+
+Iteration #58
+System
+Драйвер вынесения решения по оплате
+Error - 13
+
+Iteration #59
+Keyboard
+Расширенная клавиатура PS/2 PC/AT (101/102 клавиши)
+Error - 13
+
+Iteration #60
+SoftwareDevice
+Универсальное программное устройство
+Microsoft Radio Device Enumeration Bus
+
+Iteration #61
+SoftwareDevice
+Универсальное программное устройство
+Microsoft Device Association Root Enumerator
+
+Iteration #62
+PrintQueue
+Локальная очередь печати
+Fax
+
+Iteration #63
+Computer
+Компьютер с ACPI на базе x64
+Error - 13
+
+Iteration #64
+System
+ASUS Wireless Radio Control
+Error - 13
+
+Iteration #65
+Net
+Мини-порт глобальной сети (Сетевой монитор)
+WAN Miniport (Network Monitor)
+
+Iteration #66
+Net
+Мини-порт глобальной сети (IP)
+WAN Miniport (IP)
+
+Iteration #67
+System
+Интерфейс управления для ACPI Microsoft Windows
+Error - 13
+
+Iteration #68
+System
+PCI Express Root Complex
+Error - 13
+
+Iteration #69
+HIDClass
+Элементы управления беспроводным радиоустройством с поддержкой HID
+Error - 13
+
+Iteration #70
+System
+Mobile 6th/7th Generation Intel(R) Processor Family I/O SMBUS - 9D23
+Error - 13
+
+Iteration #71
+Battery
+Адаптер переменного тока (Майкрософт)
+Error - 13
+
+Iteration #72
+Net
+Realtek PCIe GBE Family Controller
+Realtek PCIe GBE Family Controller
+
+Iteration #73
+System
+Intel(R) Dynamic Platform and Thermal Framework Processor Participant
+Error - 13
+
+Iteration #74
+System
+Кнопка питания ACPI
+Error - 13
+
+Iteration #75
+System
+Microsoft ACPI-совместимая система
+Error - 13
+
+Iteration #76
+Error - 13
+Error - 13
+Error - 13
+
+Iteration #77
+System
+Базовый драйвер отрисовки (Майкрософт)
+Error - 13
+
+Iteration #78
+MEDIA
+Аудио Intel(R) для дисплеев
+Error - 13
+
+Iteration #79
+DiskDrive
+Дисковый накопитель
+HGST HTS721010A9E630
+
+Iteration #80
+System
+UMBus перечислитель
+Error - 13
+
+Iteration #81
+Net
+Мини-порт глобальной сети (SSTP)
+WAN Miniport (SSTP)
+
+Iteration #82
+SecurityDevices
+Доверенный платформенный модуль 2.0
+Error - 13
+
+Iteration #83
+System
+Фиксированная функциональная кнопка ACPI
+Error - 13
+
+Iteration #84
+AudioEndpoint
+Конечная точка Audio
+Динамики (Realtek High Definition Audio)
+
+Iteration #85
+System
+Mobile 6th/7th Generation Intel(R) Processor Family I/O Thermal subsystem - 9D31
+Error - 13
+
+Iteration #86
+Display
+Intel(R) HD Graphics 620
+Error - 13
+
+Iteration #87
+HDC
+Intel(R) 6th Generation Core Processor Family Platform I/O SATA AHCI Controller
+Error - 13
+
+Iteration #88
+System
+Подключаемый модуль управления питанием Intel(R)
+Error - 13
+
+Iteration #89
+MEDIA
+Realtek High Definition Audio
+Error - 13
+
+Iteration #90
+System
+Ресурсы системной платы
+Error - 13
+
+Iteration #91
+AudioEndpoint
+Конечная точка Audio
+Микрофон (Realtek High Definition Audio)
+
+Iteration #92
+Volume
+Том
+Error - 13
+
+Iteration #93
+SoftwareDevice
+Универсальное программное устройство
+Программный синтезатор звуковой таблицы Microsoft
+
+Iteration #94
+System
+Intel(R) Management Engine Interface 
+Error - 13
+
+Iteration #95
+CDROM
+CD-ROM дисковод
+HL-DT-ST DVDRAM GUE1N
+
+Iteration #96
+System
+Remote Desktop USB Hub
+Error - 13
+
+Iteration #97
+System
+Mobile 6th/7th Generation Intel(R) Processor Family I/O PCI Express Root Port #1 - 9D10
+Error - 13
+
+Iteration #98
+System
+Перечислитель виртуальных сетевых адаптеров NDIS
+Error - 13
+
+Iteration #99
+System
+CMOS системы и часы реального времени
+Error - 13
+
+Iteration #100
+USB
+Realtek USB 2.0 Card Reader
+Error - 13
+
+Iteration #101
+System
+Программируемый контроллер прерываний
+Error - 13
+
+Iteration #102
+Mouse
+ASUS Touchpad
+Error - 13
+
+Iteration #103
+System
+Intel(R) Watchdog Timer Driver (Intel(R) WDT)
+Error - 13
+
+Iteration #104
+System
+Mobile 7th Generation Intel(R) Processor Family I/O LPC Controller (U Premium) - 9D58
+Error - 13
+
+Iteration #105
+System
+Драйвер Microsoft System Management BIOS
+Error - 13
+
+Iteration #106
+System
+Intel(R) Serial IO I2C Host Controller - 9D61
+Error - 13
+
+Iteration #107
+Net
+Qualcomm Atheros QCA9377 Wireless Network Adapter
+Qualcomm Atheros QCA9377 Wireless Network Adapter
+
+Iteration #108
+HIDClass
+Устройство HID на шине I2C
+Error - 13
+
+Iteration #109
+System
+Перечислитель программных устройств Plug and Play
+Error - 13
+
+Iteration #110
+System
+Mobile 6th/7th Generation Intel(R) Processor Family I/O PCI Express Root Port #6 - 9D15
+Error - 13
+
+Iteration #111
+System
+Remote Desktop Device Redirector Bus
+Error - 13
+
+Iteration #112
+Bluetooth
+Qualcomm Atheros Bluetooth 4.1
+Error - 13
+
+Iteration #113
+Net
+Мини-порт глобальной сети (IPv6)
+WAN Miniport (IPv6)
+
+Iteration #114
+USB
+Корневой USB-концентратор (USB 3.0)
+Error - 13
+
+Iteration #115
+Net
+Виртуальный адаптер Wi-Fi Direct (Майкрософт)
+Microsoft Wi-Fi Direct Virtual Adapter
+
+Iteration #116
+Net
+Мини-порт глобальной сети (L2TP)
+WAN Miniport (L2TP)
+
+Iteration #117
+System
+Intel(R) Xeon(R) E3 - 1200 v6/7th Gen Intel(R) Core(TM) Host Bridge/DRAM Registers - 5904
+Error - 13
+
+SetupDiEnumDeviceInfo error
+

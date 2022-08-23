@@ -1,0 +1,50 @@
+SELECT *
+FROM zakazy.zakaz
+WHERE stoimost_zakaz > 21000 and type_oplat = 'card'
+
+SELECT DISTINCT fio_klient
+FROM zakazy.klient
+
+SELECT fio_klient, stoimost_zakaz
+FROM zakazy.zakaz INNER JOIN zakazy.klient
+ON zakaz.id_klient = klient.id_klient
+ORDER BY fio_klient
+
+SELECT fio_klient, statys_zakaz
+FROM zakazy.klient INNER JOIN zakazy.zakaz
+ON klient.id_klient = zakaz.id_klient
+ORDER BY fio_klient
+
+SELECT fio_klient, type_oplat
+FROM zakazy.klient RIGHT OUTER JOIN zakazy.zakaz
+ON klient.id_klient = zakaz.id_klient
+ORDER BY type_oplat
+
+SELECT fio_klient, type_oplat
+FROM zakazy.klient LEFT OUTER JOIN zakazy.zakaz
+ON klient.id_klient = zakaz.id_klient
+ORDER BY type_oplat
+
+SELECT fio_klient, statys_zakaz
+FROM zakazy.zakaz FULL OUTER JOIN zakazy.klient
+ON zakaz.id_klient = klient.id_klient
+ORDER BY statys_zakaz
+
+SELECT DISTINCT klient.fio_klient, zakaz.statys_zakaz, zakaz.kolichectvo 
+FROM zakazy.klient, zakazy.zakaz 
+WHERE zakaz.id_klient = klient.id_klient
+
+SELECT DISTINCT klient.fio_klient, zakaz.statys_zakaz, tovar.name_product,  zakaz.kolichectvo
+FROM zakazy.klient, zakazy.zakaz, zakazy.tovar
+WHERE zakaz.id_klient = klient.id_klient AND zakaz.id_product = tovar.id_product
+
+/*
+	Перекрестное соединение
+	Число строк в результирующем множестве будет равно произведению числа строк в исходных таблицах. 
+	Поэтому будьте осторожны при использовании декартова произведения.
+*/
+
+ALTER TABLE zakazy.zakaz
+ADD CONSTRAINT df_klient
+FOREIGN KEY(id_klient)
+REFERENCES zakazy.klient(id_klient)

@@ -1,0 +1,5 @@
+﻿  Source.cpp
+c:\users\forty\documents\visual studio 2017\projects\alm_kurs\alm_kurs\source.cpp(21): warning C4018: <: несоответствие типов со знаком и без знака
+c:\users\forty\documents\visual studio 2017\projects\alm_kurs\alm_kurs\source.cpp(33): warning C4018: <: несоответствие типов со знаком и без знака
+c:\users\forty\documents\visual studio 2017\projects\alm_kurs\alm_kurs\source.cpp(314): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  alm_kurs.vcxproj -> C:\Users\forty\Documents\Visual Studio 2017\Projects\alm_kurs\Debug\alm_kurs.exe

@@ -1,0 +1,3 @@
+﻿  Source.cpp
+c:\users\forty\documents\visual studio 2017\projects\alm_kurs\alm_kurs\source.cpp(399): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  alm_kurs.vcxproj -> C:\Users\forty\Documents\Visual Studio 2017\Projects\alm_kurs\x64\Debug\alm_kurs.exe
