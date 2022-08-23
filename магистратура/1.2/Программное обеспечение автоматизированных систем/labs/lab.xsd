@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2010 (http://www.altova.com) by MESMERiZE (MiZE) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning" elementFormDefault="qualified" attributeFormDefault="unqualified" vc:minVersion="1.1">
+	<xs:include schemaLocation="lab_содержание.xsd"/>
+	<xs:include schemaLocation="lab_меры.xsd"/>
+	<xs:element name="приказ_о_мерах_по_об_исп_ф_з">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="документ"/>
+				<xs:element ref="содержание_документа" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+		<xs:key name="pkC">
+			<xs:selector xpath="документ"/>
+			<xs:field xpath="номер"/>
+			<xs:field xpath="дата"/>
+		</xs:key>
+		<xs:key name="pkM">
+			<xs:selector xpath="содержание_документа"/>
+			<xs:field xpath="номер_п"/>
+		</xs:key>
+		<xs:keyref name="fkM" refer="pkC">
+			<xs:selector xpath="содержание_документа"/>
+			<xs:field xpath="номер"/>
+			<xs:field xpath="дата"/>
+		</xs:keyref>
+	</xs:element>
+</xs:schema>

@@ -1,0 +1,30 @@
+#VRML_SIM R2021a utf8
+WorldInfo {
+  coordinateSystem "NUE"
+}
+Viewpoint {
+  orientation -0.9994830160302732 -0.03157828540346793 -0.006042562205382996 0.8448156558635387
+  position -0.037254554876346026 2.329816478388356 2.1268563617058054
+  follow "e-puck"
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  floorSize 2 2
+  floorTileSize 1 1
+}
+DEF E-puck E-puck {
+  controller "advance_odometry"
+  supervisor TRUE
+}
+DEF Supervisor Robot {
+  children [
+    Emitter {
+      channel 1
+    }
+  ]
+  controller "supervisor"
+  supervisor TRUE
+}

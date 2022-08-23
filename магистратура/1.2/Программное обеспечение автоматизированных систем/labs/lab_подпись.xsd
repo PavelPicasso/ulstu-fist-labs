@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2021 (x64) (http://www.altova.com) by tenet (tenet) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning" elementFormDefault="qualified" attributeFormDefault="unqualified" vc:minVersion="1.1">
+	<xs:element name="подпись">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="идентификатор" type="xs:integer"/>
+				<xs:element name="фио" type="xs:string"/>
+				<xs:element name="должность" type="xs:string"/>
+				<xs:element name="подпись" type="xs:string"/>
+				<xs:element name="номер" type="xs:integer"/>
+				<xs:element name="дата" type="xs:date"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

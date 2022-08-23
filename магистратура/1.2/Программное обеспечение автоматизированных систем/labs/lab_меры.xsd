@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2010 (http://www.altova.com) by MESMERiZE (MiZE) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning" elementFormDefault="qualified" attributeFormDefault="unqualified" vc:minVersion="1.1">
+	<xs:element name="содержание_документа">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="номер_п" type="xs:integer"/>
+				<xs:element name="меры">
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:maxLength value="350"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="номер" type="xs:integer"/>
+				<xs:element name="дата" type="xs:date"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

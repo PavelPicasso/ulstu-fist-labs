@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Методод-Ньютона</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <h1 style="margin-top: 30px;">Метод Ньютона, алгоритм Ньютона</h1>
+    
+            <form name="formulario" onsubmit="return procesar(this);">
+                <label for="x">f(x) = cos(x) - (x^3) | x0 =</label>
+                <input name="x" type="text" id="x" size="4" value="0.5"/>
+                <input type="submit" value="Обработать"/>
+            </form>
+    
+            <div id="resultado"></div>
+            <div id="time"></div>
+        </div>
+    </main>
+
+      
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/test.js"></script>
+</body>
+
+</html>

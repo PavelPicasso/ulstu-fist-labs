@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="styles.css"/>
+        <script src="jquery-3.1.1.js"></script>
+        <script src="jsPlumb-2.1.7.js"></script>
+        <script src="model.js"></script>
+        <script src="controller.js"></script>
+        <script src="graphBuilder.js"></script>
+    </head>
+    <body>
+        <div class="toolbar">
+            <button class="toolbar-button" onclick="addDot()">Добавить вершину</button>
+            <div class="block-container">
+                <label for="firstTop">Начальная вершина</label>
+                <input id="firstTop">
+                <label for="secondTop">Конечная вершина</label>
+                <input id="secondTop">
+            </div>
+            <button class="toolbar-button" onclick="model.calculate()">Найти кратчайший путь</button>
+        </div>
+        <div class="container"></div>
+    </body>
+</html>

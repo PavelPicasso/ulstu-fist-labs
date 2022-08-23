@@ -1,0 +1,77 @@
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+.container {
+    position: relative;
+    height: 90%;
+}
+
+.container .connectorHolder {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    background-color: aquamarine;
+    border: 1px solid;
+    border-radius: 50px;
+}
+
+.connectorHolder .dot-number {
+    padding-top: 40px;
+    padding-left: 45px;
+    cursor: default;
+}
+
+.container .connectorHolder.highlighted,
+.container .jsplumb-overlay.highlighted {
+    background-color: lightsalmon;
+}
+
+.container .jsplumb-overlay {
+    background-color: aquamarine;
+    border-radius: 10px;
+    border-width: 1px;
+    outline: none;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.container .jsplumb-overlay:hover:not(.highlighted) {
+    box-shadow: 0px 0px 50px aquamarine;
+}
+
+/**    Endpoints    **/
+
+.jsplumb-endpoint:not(.jsplumb-endpoint-connected):not(.jsplumb-hover):not(.jsplumb-connection-in-progress){
+    opacity: 0;
+}
+
+/**    Toolbar      **/
+.toolbar {
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    height: 50px;
+    background-color: black;
+}
+
+.toolbar-button {
+    cursor: pointer;
+    height: 40px;
+    margin: 0px 5px 0px 5px;
+}
+
+.toolbar label {
+    color: white;
+}
+
+.toolbar .block-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 325px;
+}
+
+.toolbar .block-container label{
+    width: 150px;
+}
